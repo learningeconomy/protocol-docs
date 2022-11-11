@@ -1,0 +1,130 @@
+# Table of contents
+
+## 🚀 Get Started
+
+* [👋 Welcome](README.md)
+* [⭐ Who are you?](get-started/who-are-you/README.md)
+  * [Learners & Employees](get-started/who-are-you/learners-and-employees.md)
+  * [Traditional Educator](get-started/who-are-you/traditional-educator.md)
+  * [Non-Traditional Educator](get-started/who-are-you/non-traditional-educator.md)
+  * [Assessment Provider](get-started/who-are-you/assessment-provider.md)
+  * [Employer](get-started/who-are-you/employer.md)
+  * [App Developer & EdTech](get-started/who-are-you/app-developer-and-edtech.md)
+  * [DAO & Communities](get-started/who-are-you/dao-and-communities.md)
+  * [Content Creators](get-started/who-are-you/content-creators.md)
+  * [Research Institutions](get-started/who-are-you/research-institutions.md)
+  * [NGOs & Governments](get-started/who-are-you/ngos-and-governments.md)
+  * [Plugfest Partner](get-started/who-are-you/plugfest-partner/README.md)
+    * [Guide for Interop Issuers](get-started/who-are-you/plugfest-partner/guide-for-interop-issuers/README.md)
+      * [🤽 Creating an Interop Issuer](get-started/who-are-you/plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md)
+    * [Guide for Interop Wallets](get-started/who-are-you/plugfest-partner/guide-for-interop-wallets.md)
+* [Protocol Overview](get-started/protocol-overview/README.md)
+  * [The Internet of Education](get-started/protocol-overview/the-internet-of-education.md)
+  * [The Learning Economy](get-started/protocol-overview/the-learning-economy.md)
+  * [Learner & Employee Privacy](get-started/protocol-overview/learner-and-employee-privacy.md)
+  * [22nd Century Education](get-started/protocol-overview/22nd-century-education.md)
+  * [The Open Credential Network](get-started/protocol-overview/the-open-credential-network.md)
+  * [PVCs](get-started/protocol-overview/pvcs.md)
+
+## 🔰 LearnCard SDK <a href="#learn-card-sdk" id="learn-card-sdk"></a>
+
+* [What is LearnCard?](learn-card-sdk/what-is-learncard/README.md)
+  * [Why a Universal Wallet?](learn-card-sdk/what-is-learncard/why-a-universal-wallet.md)
+* [LearnCard Core](learn-card-sdk/learncard-core/README.md)
+  * [Quick Start](learn-card-sdk/learncard-core/quick-start/README.md)
+    * [Create New Credentials](learn-card-sdk/learncard-core/quick-start/create-new-credentials.md)
+    * [Sign & Send Credentials](learn-card-sdk/learncard-core/quick-start/sign-and-send-credentials.md)
+    * [Accept & Verify Credentials](learn-card-sdk/learncard-core/quick-start/accept-and-verify-credentials.md)
+    * [Share & Present Credentials](learn-card-sdk/learncard-core/quick-start/share-and-present-credentials.md)
+    * [Setup Issuer Profile](learn-card-sdk/learncard-core/quick-start/setup-issuer-profile.md)
+  * [Construction](learn-card-sdk/learncard-core/construction/README.md)
+    * [initLearnCard](learn-card-sdk/learncard-core/construction/initlearncard.md)
+    * [DIDKit](learn-card-sdk/learncard-core/construction/didkit.md)
+    * [learnCardFromSeed](learn-card-sdk/learncard-core/construction/learncardfromseed.md)
+    * [emptyLearnCard](learn-card-sdk/learncard-core/construction/emptylearncard.md)
+  * [Control Planes](learn-card-sdk/learncard-core/control-planes/README.md)
+    * [ID](learn-card-sdk/learncard-core/control-planes/id.md)
+    * [Read](learn-card-sdk/learncard-core/control-planes/read.md)
+    * [Store](learn-card-sdk/learncard-core/control-planes/store.md)
+    * [Index](learn-card-sdk/learncard-core/control-planes/index.md)
+    * [Cache](learn-card-sdk/learncard-core/control-planes/cache.md)
+  * [Plugins](learn-card-sdk/learncard-core/plugins/README.md)
+    * [Adding Plugins](learn-card-sdk/learncard-core/plugins/adding-plugins.md)
+    * [Official Plugins](learn-card-sdk/learncard-core/plugins/official-plugins/README.md)
+      * [DIDKit](learn-card-sdk/learncard-core/plugins/official-plugins/didkit.md)
+      * [DID Key](learn-card-sdk/learncard-core/plugins/official-plugins/did-key.md)
+      * [VC](learn-card-sdk/learncard-core/plugins/official-plugins/vc/README.md)
+        * [Expiration Sub-Plugin](learn-card-sdk/learncard-core/plugins/official-plugins/vc/expiration-sub-plugin.md)
+      * [VC Resolution](learn-card-sdk/learncard-core/plugins/official-plugins/vc-resolution.md)
+      * [VC-Templates](learn-card-sdk/learncard-core/plugins/official-plugins/vc-templates.md)
+      * [VC-API](learn-card-sdk/learncard-core/plugins/official-plugins/vc-api.md)
+      * [Ceramic](learn-card-sdk/learncard-core/plugins/official-plugins/ceramic.md)
+      * [IDX](learn-card-sdk/learncard-core/plugins/official-plugins/idx.md)
+      * [VPQR](learn-card-sdk/learncard-core/plugins/official-plugins/vpqr.md)
+      * [Ethereum](learn-card-sdk/learncard-core/plugins/official-plugins/ethereum.md)
+      * [CHAPI](learn-card-sdk/learncard-core/plugins/official-plugins/chapi.md)
+      * [LearnCard](learn-card-sdk/learncard-core/plugins/official-plugins/learncard.md)
+    * [Writing Plugins](learn-card-sdk/learncard-core/plugins/writing-plugins/README.md)
+      * [The Simplest Plugin](learn-card-sdk/learncard-core/plugins/writing-plugins/the-simplest-plugin.md)
+      * [The Plugin Type](learn-card-sdk/learncard-core/plugins/writing-plugins/the-plugin-type.md)
+      * [The LearnCard Type](learn-card-sdk/learncard-core/plugins/writing-plugins/the-learncard-type.md)
+      * [Implementing Control Planes](learn-card-sdk/learncard-core/plugins/writing-plugins/implementing-control-planes.md)
+      * [Implementing Methods](learn-card-sdk/learncard-core/plugins/writing-plugins/implementing-methods.md)
+      * [The Implicit LearnCard](learn-card-sdk/learncard-core/plugins/writing-plugins/the-implicit-learncard.md)
+      * [Depending on Plugins](learn-card-sdk/learncard-core/plugins/writing-plugins/depending-on-plugins.md)
+      * [Private Fields](learn-card-sdk/learncard-core/plugins/writing-plugins/private-fields.md)
+      * [Publishing a Plugin to NPM](learn-card-sdk/learncard-core/plugins/writing-plugins/publishing-a-plugin-to-npm.md)
+  * [URIs](learn-card-sdk/learncard-core/uris.md)
+  * [CHAPI](learn-card-sdk/learncard-core/chapi/README.md)
+    * [⭐ CHAPI Wallet Setup Guide](learn-card-sdk/learncard-core/chapi/chapi-wallet-setup-guide.md)
+    * [↔ Translating to CHAPI documentation](learn-card-sdk/learncard-core/chapi/translating-to-chapi-documentation.md)
+    * [🖥 Demo Application](learn-card-sdk/learncard-core/chapi/demo-application.md)
+    * [🔰 Using LearnCard to Interact with a CHAPI Wallet](learn-card-sdk/learncard-core/chapi/using-learncard-to-interact-with-a-chapi-wallet.md)
+    * [📝 Cheat Sheets](learn-card-sdk/learncard-core/chapi/cheat-sheets/README.md)
+      * [Issuers](learn-card-sdk/learncard-core/chapi/cheat-sheets/issuers.md)
+      * [Wallets](learn-card-sdk/learncard-core/chapi/cheat-sheets/wallets.md)
+  * [API](https://api.docs.learncard.com/docs/core/modules)
+  * [Migration Guide](learn-card-sdk/learncard-core/migration-guide.md)
+* [LearnCard UX](learn-card-sdk/learncard-ux/README.md)
+  * [Quick Start](learn-card-sdk/learncard-ux/quick-start.md)
+  * [Components](learn-card-sdk/learncard-ux/components/README.md)
+    * [Verifiable Credentials](learn-card-sdk/learncard-ux/components/verifiable-credentials/README.md)
+      * [VC Thumbnail](learn-card-sdk/learncard-ux/components/verifiable-credentials/vc-thumbnail.md)
+      * [VC Thumbnail, Mini](learn-card-sdk/learncard-ux/components/verifiable-credentials/vc-thumbnail-mini.md)
+    * [LearnCards](learn-card-sdk/learncard-ux/components/learncards/README.md)
+      * [LearnCard Front](learn-card-sdk/learncard-ux/components/learncards/learncard-front.md)
+      * [LearnCard Back](learn-card-sdk/learncard-ux/components/learncards/learncard-back.md)
+  * [API](https://api.docs.learncard.com/docs/react/modules)
+* [LearnCard Bridge](learn-card-sdk/learncard-bridge.md)
+
+## 🚀 Applications <a href="#learn-card-examples" id="learn-card-examples"></a>
+
+* [LearnCard](learn-card-examples/learncard.md)
+* [SuperSkills!](learn-card-examples/superskills.md)
+* [Metaversity](learn-card-examples/metaversity.md)
+
+## 🔗 Resources
+
+* [Github](https://github.com/learningeconomy/LearnCard)
+* [Get Early Access](https://r18y4ggjlxv.typeform.com/to/Ou8DYi4s)
+* [Learning Economy](https://www.learningeconomy.io)
+
+## 🤖 LearnCard Services
+
+* [LearnCard CLI](learncard-services/learncard-cli.md)
+* [Discord Bot](learncard-services/discord-bot.md)
+* [Metamask Snap](learncard-services/metamask-snap.md)
+* [Build Your Own Service](learncard-services/build-your-own-service.md)
+
+## 💸 LearnBank SDK
+
+* [Why LearnBank?](learnbank-sdk/why-learnbank.md)
+
+## 📊 LearnGraph SDK
+
+* [Why LearnGraph?](learngraph-sdk/why-learngraph.md)
+
+## 🦸 Super Skills League
+
+* [Community](super-skills-league/community.md)
+* [💅 Custom Development](super-skills-league/custom-development.md)
