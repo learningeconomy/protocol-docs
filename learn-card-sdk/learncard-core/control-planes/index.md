@@ -48,6 +48,10 @@ The `get` method takes in a query and returns a list of `CredentialRecords`, whi
 
 The `add` method takes in a `CredentialRecord` and adds it to the holder's personal index.
 
+### index.addMany
+
+The optional `addMany` method takes in an array of `CredentialRecord`s and adds them to the holder's personal index.
+
 ### index.update
 
 The `update` method takes in an ID and an update object and updates a `CredentialRecord` in the holder's personal index.
@@ -55,6 +59,10 @@ The `update` method takes in an ID and an update object and updates a `Credentia
 ### index.remove
 
 The `remove` method takes in an ID and removes the `CredentialRecord` with the corresponding ID from the holder's personal index.
+
+### index.removeAll
+
+The optional `removeAll` method flushes all `CredentialRecord`s from the holder's personal index.
 
 ## Example plugins that implement the Index Plane
 
