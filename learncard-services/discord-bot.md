@@ -100,6 +100,12 @@ If all goes well, you should see your new credential template! ✅
 
 <img src="../.gitbook/assets/Screen Shot 2022-10-25 at 8.56.51 PM.png" alt="" data-size="original">
 
+{% hint style="info" %}
+Right now the Bot doesn't natively support hosting an image for your credential. Although you can host your image anywhere you would like, a great option is [NFT.Storage](https://nft.storage/files/)&#x20;
+
+Upload the image into [NFT.Storage](https://nft.storage/files/), then click “Actions” on your uploaded image and click “View URL”—that’s the URL you want! It should look like: `https://<cid>.ipfs.nftstorage.link/`&#x20;
+{% endhint %}
+
 ### **3️⃣**—**Send Your First Credential**&#x20;
 
 ****![](<../.gitbook/assets/Screen Shot 2022-10-25 at 8.58.18 PM.png>)****
