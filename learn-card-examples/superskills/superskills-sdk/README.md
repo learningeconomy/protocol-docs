@@ -15,8 +15,6 @@ This guide is split into two different sections:
 1. ****[**Guide for Issuers**](../../../get-started/who-are-you/plugfest-partner/guide-for-interop-issuers/): how to issue _from_ your issuing platform into our LearnCard app.&#x20;
 2. ****[**Guide for Creating an Issuer**](../../../get-started/who-are-you/plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md): how to use LearnCard SDK to issue credentials from your platform.  LearnCard SDK as part of your platform or infrastructure for issuing or for your own wallet application. We have prepared two additional guides for these scenarios:
 
-Additionally, if you haven't already, we would love for you to [**join our early access cohort**](broken-reference) as a collaborator in Plugfest—to help strengthen open-source tools for the whole ecosystem!&#x20;
-
 ### **Are you using SuperSkills?**
 
 _We'd love to hear to hear from you! Share your story in our_[ _Github Discussions_](https://github.com/learningeconomy/LearnCard/discussions/categories/show-and-tell)_, or send us an email at_ [_community@learningeconomy.io_](mailto:community@learningeconomy.io)_—we'd love to feature your work 🙌._
