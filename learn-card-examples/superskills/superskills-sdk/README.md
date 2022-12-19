@@ -10,10 +10,11 @@ This guide will walk you through everything you need to collaborate with our com
 
 **First things first:** SuperSkills! is built on top of the [LearnCard SDK](broken-reference). LearnCard is our open-source technology for enabling learners and workers to issue, earn, store, and share credentials in a safe, trusted way. SuperSkills! is a version of LearnCard geared toward a learning game ecosystem for kids, developed in partnership with LEGO Foundation, where children earn holistic skills through play activities on a quest to help save a league of super heroes. The learner's digital wallet stores all of their credentials, achievements, badges and skills.
 
-This guide is split into two different sections:
+This guide is split into three different sections:
 
-1. ****[**Guide for Issuers**](../../../get-started/who-are-you/plugfest-partner/guide-for-interop-issuers/): how to issue _from_ your issuing platform into our LearnCard app.&#x20;
-2. ****[**Guide for Creating an Issuer**](../../../get-started/who-are-you/plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md): how to use LearnCard SDK to issue credentials from your platform.  LearnCard SDK as part of your platform or infrastructure for issuing or for your own wallet application. We have prepared two additional guides for these scenarios:
+1. ****[**Digital Wallets**](digital-wallets.md)**:** background info on what digital wallets are and why they are important technology underpinning the SuperSkills! App.
+2. ****[**Guide for Issuing into SuperSkills**](issuing-into-superskills.md)**:** overview of CHAPI, and how to use CHAPI to issue credentials into SuperSkills.
+3. ****[**Guide for Creating a SuperSkills Issuer**:](creating-a-superskills-issuer.md) end-to-end guide on how to deploy an issuing service, using the LearnCard SDK, to issue credentials from your platform.&#x20;
 
 ### **Are you using SuperSkills?**
 
