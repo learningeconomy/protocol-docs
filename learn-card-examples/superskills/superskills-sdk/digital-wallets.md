@@ -23,6 +23,10 @@ Learning and employment systems that are secured in disconnected and centralized
 
 <figure><img src="https://lh3.googleusercontent.com/65R3gigXQO52F7SJD_vqehefF95npqfH0WeeAIsvYLBd1gdLinPDwYW-fG2hhuxwKhOnBLb66EG1z8N8lJgKSI_fq3X0of4YJdYZVb3jIEaOJebAzeCAq1YFnzzZ6nlNd4dXrYKRfbmfHHsc78tHPCefB131_CHuMtZBumAl81mGHsE1DiZAEo9ioBBmtw" alt=""><figcaption><p>The LearnCard, a digital wallet for education and work.</p></figcaption></figure>
 
-&#x20;
+### **So what are you waiting for?**
 
-\
+Let's start issuing credentials into the SuperSkills Digital Wallet!
+
+{% content-ref url="issuing-into-superskills.md" %}
+[issuing-into-superskills.md](issuing-into-superskills.md)
+{% endcontent-ref %}
