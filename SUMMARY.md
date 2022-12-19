@@ -100,7 +100,11 @@
 ## 🚀 Applications <a href="#learn-card-examples" id="learn-card-examples"></a>
 
 * [LearnCard](learn-card-examples/learncard.md)
-* [SuperSkills!](learn-card-examples/superskills.md)
+* [SuperSkills!](learn-card-examples/superskills/README.md)
+  * [SuperSkills! SDK](learn-card-examples/superskills/superskills-sdk/README.md)
+    * [Digital Wallets](learn-card-examples/superskills/superskills-sdk/digital-wallets.md)
+    * [Issuing into SuperSkills!](learn-card-examples/superskills/superskills-sdk/issuing-into-superskills.md)
+    * [🦸 Creating a SuperSkills! Issuer](learn-card-examples/superskills/superskills-sdk/creating-a-superskills-issuer.md)
 * [Metaversity](learn-card-examples/metaversity.md)
 
 ## 🔗 Resources
