@@ -38,3 +38,11 @@ In the meantime, checkout [the deck](https://www.dropbox.com/s/rt1qtdmrf03tgrc/S
 
 Please email us at [community@learningeconomy.io](mailto:community@learningeconomy.io) if you have any additional questions. We can't wait to hear from you! 💖
 
+### How can I send my own credentials and badges into SuperSkills?
+
+Glad you asked! You can take advantage of the SuperSkills SDK to start issuing credentials and badges into SuperSkills App:
+
+{% content-ref url="superskills-sdk/" %}
+[superskills-sdk](superskills-sdk/)
+{% endcontent-ref %}
+

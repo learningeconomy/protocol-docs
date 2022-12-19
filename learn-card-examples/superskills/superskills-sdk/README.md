@@ -10,7 +10,7 @@ This guide will walk you through everything you need to collaborate with our com
 
 **First things first:** SuperSkills! is built on top of the [LearnCard SDK](broken-reference). LearnCard is our open-source technology for enabling learners and workers to issue, earn, store, and share credentials in a safe, trusted way. SuperSkills! is a version of LearnCard geared toward a learning game ecosystem for kids, developed in partnership with LEGO Foundation, where children earn holistic skills through play activities on a quest to help save a league of super heroes. The learner's digital wallet stores all of their credentials, achievements, badges and skills.
 
-, this guide is split into two different guides:
+This guide is split into two different sections:
 
 1. ****[**Guide for Issuers**](../../../get-started/who-are-you/plugfest-partner/guide-for-interop-issuers/): how to issue _from_ your issuing platform into our LearnCard app.&#x20;
 2. ****[**Guide for Creating an Issuer**](../../../get-started/who-are-you/plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md): how to use LearnCard SDK to issue credentials from your platform.  LearnCard SDK as part of your platform or infrastructure for issuing or for your own wallet application. We have prepared two additional guides for these scenarios:
