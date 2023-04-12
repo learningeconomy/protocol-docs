@@ -18,7 +18,7 @@ description: >-
 
 2. (optional) Users will be redirected to your [connectUrl](connect-your-application.md#connecturl) when they click connect.
 3. (optional) Users sign up / login to your application.&#x20;
-4. Through a direct link, or a QR code, your application redirects the user to `https://learncard.app/launchpad?connectTo=yourAppProfileId&challange=aaaa-bbbb-cccc-dddd`
+4. Through a direct link, or a QR code, your application redirects the user to `https://learncard.app/launchpad?connectTo=yourAppProfileId&challenge=aaaa-bbbb-cccc-dddd`
 5.  The user will be given the option to Accept or Deny the request to connect with your application.
 
 
