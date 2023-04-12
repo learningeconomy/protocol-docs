@@ -42,7 +42,7 @@ Once you've established what credentials you would like to issue, you can checko
 On the client side, you will need to prepare your web application for issuing credentials. An easy way to achieve interoperability is to use CHAPI.&#x20;
 
 * [**Install**](../../../learn-card-sdk/learncard-core/quick-start/#install-the-library) [learn-card-core package](../../../learn-card-sdk/learncard-core/quick-start/#install-the-library) from pnpm, yarn, or npm into your project.
-* ****[**Initialize** LearnCard in your web application with CHAPI enabled](../../../learn-card-sdk/learncard-core/chapi/using-learncard-to-interact-with-a-chapi-wallet.md). Reference the[ Issuer cheatsheet for CHAPI.](../../../learn-card-sdk/learncard-core/chapi/cheat-sheets/issuers.md)&#x20;
+* [**Initialize** LearnCard in your web application with CHAPI enabled](../../../learn-card-sdk/learncard-core/chapi/using-learncard-to-interact-with-a-chapi-wallet.md). Reference the[ Issuer cheatsheet for CHAPI.](../../../learn-card-sdk/learncard-core/chapi/cheat-sheets/issuers.md)&#x20;
 * **Replace the Test VC** with the `newCredential()` you defined in [step 1](creating-a-superskills-issuer.md#1-identify-what-credentials-you-want-to-issue.).
 
 **You should be able to see the credential inside SuperSkills!** &#x20;
@@ -53,7 +53,7 @@ On the client side, you will need to prepare your web application for issuing cr
 
 At this point, it's up to you where and how you want to create the credential itself. A very common pattern is to host a remote issuer. Our current recommendation is to setup your own VC-API endpoints using the LearnBridge inside the LearnCard SDK for handling this:
 
-* ****[**Deploy LearnCard Bridge**](../../../learn-card-sdk/learncard-bridge.md) as your VC-API endpoint.&#x20;
+* [**Deploy LearnCard Bridge**](../../../learn-card-sdk/learncard-bridge.md) as your VC-API endpoint.&#x20;
 * **Configure** your [LearnCard to use your VC-API endpoint](../../../learn-card-sdk/learncard-core/plugins/official-plugins/vc-api.md) upon initialization.
 * When you use `learnCard.invoke.storeCredentialViaChapiDidAuth(vc)` to send the signed credential to an interoperable wallet, your LearnCard will now use your VC-API endpoint for signing the Verifiable Credential! ✅
 

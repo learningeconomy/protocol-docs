@@ -14,7 +14,7 @@ First things first: you need to identify your use case. **Why are you interested
 
 * &#x20;**🪪 IDs:** you want to issue a verifiable ID for your citizens. _Start_ [_here_](ngos-and-governments.md#1-issue-credentials-in-your-community)_._
 * &#x20;**⛑ Professional Licenses:** you want to issue a verifiable licenses for professions. _Start_ [_here_](ngos-and-governments.md#1-issue-credentials-in-your-community)_._
-* :white\_check\_mark: __ **Verification:** you want to verify IDs, licenses, skills, learning certificates, achievements, or another credential that a citizen presents to you. Start [here](ngos-and-governments.md#2-verify-credentials-from-your-agencies).
+* :white\_check\_mark: **Verification:** you want to verify IDs, licenses, skills, learning certificates, achievements, or another credential that a citizen presents to you. Start [here](ngos-and-governments.md#2-verify-credentials-from-your-agencies).
 * **🕊 Cultivate an Ecosystem:** you want to solve equity, skills, and mobility gaps in your state or nation. Start [here](ngos-and-governments.md#3-support-open-interoperable-ecosystems-with-policy).
 
 ### **Are you using LearnCard?**

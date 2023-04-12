@@ -19,7 +19,7 @@ description: A bot for sending verifiable credentials in your Discord community
 
     <img src="../.gitbook/assets/Screen Shot 2022-10-25 at 8.34.19 PM (1).png" alt="" data-size="original">
 
-#### **That's it!** :tada:****
+#### **That's it!** :tada:
 
 You should see LearnCard Discord bot on your Discord server:
 
@@ -31,7 +31,7 @@ Now that you've gotten your Discord Bot installed in your community, let's get y
 
 ### **1️⃣** —**Configure Your first Issuer!**
 
-****![](<../.gitbook/assets/Screen Shot 2022-10-25 at 8.42.15 PM.png>)
+![](<../.gitbook/assets/Screen Shot 2022-10-25 at 8.42.15 PM.png>)
 
 In any channel, type `/configure-issuer`, which will prompt you to fill out information about your community's issuer.&#x20;
 
@@ -47,7 +47,7 @@ Hit `Submit` and, if all went well, you should see a success message:
 
 ### **2️⃣**—**Create Your First Credential Template**
 
-****![](<../.gitbook/assets/Screen Shot 2022-10-25 at 8.51.51 PM.png>)****
+![](<../.gitbook/assets/Screen Shot 2022-10-25 at 8.51.51 PM.png>)
 
 In any channel, type the `/add-credential` command, which will allow you to setup a credential you would like to issue in your community.
 
@@ -108,7 +108,7 @@ Upload the image into [NFT.Storage](https://nft.storage/files/), then click “A
 
 ### **3️⃣**—**Send Your First Credential**&#x20;
 
-****![](<../.gitbook/assets/Screen Shot 2022-10-25 at 8.58.18 PM.png>)****
+![](<../.gitbook/assets/Screen Shot 2022-10-25 at 8.58.18 PM.png>)
 
 In any channel, type the `/send-credential @<user>` command, and @tag someone, which will allow you to send a credential to a user in your community.&#x20;
 

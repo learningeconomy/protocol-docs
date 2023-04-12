@@ -12,13 +12,13 @@ First things first: you need to identify your use case. **Why are you interested
 
 ### **Some common use cases:**
 
-* ****:trophy: **Achievements:** you want to recognize your members when they do cool or significant stuff in your community. _Start_ [_here_](dao-and-communities.md#1-issue-credentials-in-your-community)_._
-* ****:mortar\_board: **Courses:** you want to issue skills, learning certificates, achievements, and more when members of your community progress through your curriculum. _Start_ [_here_](dao-and-communities.md#1-issue-credentials-in-your-community)_._
-* ****:thumbsup: **Endorsements:** you want to enable or accept peer-to-peer endorsements within your community. _Start_ [_here_](dao-and-communities.md#1-issue-credentials-in-your-community)_._
-* ****:unlock: **Gated Content:** you want to unlock content or channels in your community based on the achievement of specific credentials. _Start_ [_here_](dao-and-communities.md#2-verify-credentials-in-your-community)_._
-* ****:white\_check\_mark: **Proof of Membership:** you want to issue proof of membership in your community. _Start_ [_here_](dao-and-communities.md#1-issue-credentials-in-your-community)_._
-* ****:handshake: **Hiring:** you want to verify skills, endorsements, and reputation when hiring people in and outside of your community.  _Start_ [_here_](dao-and-communities.md#2-verify-credentials-in-your-community)_._
-* ****:credit\_card: **Identity & KYC:** you want to verify identity of members or potential members. _Start_ [_here_](dao-and-communities.md#2-verify-credentials-in-your-community)_._
+* :trophy: **Achievements:** you want to recognize your members when they do cool or significant stuff in your community. _Start_ [_here_](dao-and-communities.md#1-issue-credentials-in-your-community)_._
+* :mortar\_board: **Courses:** you want to issue skills, learning certificates, achievements, and more when members of your community progress through your curriculum. _Start_ [_here_](dao-and-communities.md#1-issue-credentials-in-your-community)_._
+* :thumbsup: **Endorsements:** you want to enable or accept peer-to-peer endorsements within your community. _Start_ [_here_](dao-and-communities.md#1-issue-credentials-in-your-community)_._
+* :unlock: **Gated Content:** you want to unlock content or channels in your community based on the achievement of specific credentials. _Start_ [_here_](dao-and-communities.md#2-verify-credentials-in-your-community)_._
+* :white\_check\_mark: **Proof of Membership:** you want to issue proof of membership in your community. _Start_ [_here_](dao-and-communities.md#1-issue-credentials-in-your-community)_._
+* :handshake: **Hiring:** you want to verify skills, endorsements, and reputation when hiring people in and outside of your community.  _Start_ [_here_](dao-and-communities.md#2-verify-credentials-in-your-community)_._
+* :credit\_card: **Identity & KYC:** you want to verify identity of members or potential members. _Start_ [_here_](dao-and-communities.md#2-verify-credentials-in-your-community)_._
 
 ### **Are you using LearnCard?**
 
@@ -74,7 +74,7 @@ If you haven't already, **follow the instructions to get Metamask setup in your 
 
 #### Second, you need to _identify what credentials you will be issuing._
 
-If you are using the VCTemplatesPlugin (enabled by default with LearnCard), there are a variety of default credential templates to help you get started quickly! **** Flip through the tabs to see some default options, and what information you will need to compile: ****&#x20;
+If you are using the VCTemplatesPlugin (enabled by default with LearnCard), there are a variety of default credential templates to help you get started quickly! Flip through the tabs to see some default options, and what information you will need to compile:&#x20;
 
 {% tabs %}
 {% tab title="Achievement" %}
@@ -191,6 +191,6 @@ These features aren't yet available, but they are coming soon on our roadmap—n
 
 ### LearnBank
 
-* &#x20;**** :money\_with\_wings: **Earn-and-learn:** you want to incentivize learning in your community on a specific topic, or even incentivize people to learn _about_ your community.&#x20;
+* &#x20;:money\_with\_wings: **Earn-and-learn:** you want to incentivize learning in your community on a specific topic, or even incentivize people to learn _about_ your community.&#x20;
 * :moneybag:**Gig Micropayments**: smart contract templates for issuing micropayments with proof of a verifiable credential, i.e. streaming payments and proof-of-work. Credential the actual tasks connected to a todo list; tracked with PVCs feeds reputation, ability to access things, ability to get paid autonomously.
 

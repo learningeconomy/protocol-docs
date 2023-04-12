@@ -18,7 +18,7 @@ The easiest way to sign and send credentials from your platform into the SuperSk
   1. Open up the [SuperSkills! App ](../)
      * If you are on web, you will need to open up your profile, and click "Enable 3rd Party Credentials."
      * The Web application will walk you through registering SuperSkills! as a recognized digital wallet in your browser.
-  2. Then, try issuing from your platform and verify you can claim the Verifiable Credential in the SuperSkills! app. The[ CHAPI Playground](https://playground.chapi.io/issuer) is a great place to test as well.
+  2. Then, try issuing from your platform and verify you can claim the Verifiable Credential in the SuperSkills! app.
 * If your issuing platform **does not yet support CHAPI, or you have no idea what we are talking about.** [Start here](creating-a-superskills-issuer.md).
 
 {% content-ref url="creating-a-superskills-issuer.md" %}

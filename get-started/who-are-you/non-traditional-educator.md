@@ -14,7 +14,7 @@ First things first: you need to identify your use case. **Why are you interested
 
 ### Some common use cases:
 
-* ****:mortar\_board: **Credentials:** you want to issue skills, learning certificates, achievements, and more when members of your community progress through your curriculum. _Start_ [_here_](non-traditional-educator.md#1-issue-credentials-in-your-community)_._
+* :mortar\_board: **Credentials:** you want to issue skills, learning certificates, achievements, and more when members of your community progress through your curriculum. _Start_ [_here_](non-traditional-educator.md#1-issue-credentials-in-your-community)_._
 * _🦖_ **Museums & Workshops:** you want to issue or verify learning credentials in your exhibits to increase engagement and collaborate with partners in a wider ecosystem. Start [here](non-traditional-educator.md#1-issue-credentials).&#x20;
 * 📚 **Library:** you want to help learners and employees understand how they can leverage LearnCard to carry and use their IDs and credentials toward their own goals. Start here.
 * 🎸 **Music Teacher:** you want to issue credentials for your 1-on-1 tutoring sessions. Start here.
@@ -79,5 +79,5 @@ These features aren't yet available, but they are coming soon on our roadmap—n
 ### LearnGraph
 
 * **🥾 Pathways:** offer ways for your learners to visualize and navigate learning, skills, and jobs progressions based on their holistic goals.
-* ****:loudspeaker: **Publish Skills Frameworks:** publish your skills frameworks to increase the value of your credentials for your learners.
+* :loudspeaker: **Publish Skills Frameworks:** publish your skills frameworks to increase the value of your credentials for your learners.
 * :bar\_chart: **Learning Dashboards:** visualize skills, achievements, and opportunities data to enhance learning outcomes for your learners in a safe, trusted, and private environment.

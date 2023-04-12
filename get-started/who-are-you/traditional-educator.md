@@ -12,12 +12,12 @@ First things first: you need to identify your use case. **Why are you interested
 
 ### Some common use cases:
 
-* ****:mortar\_board: **Course Completion:** you want to issue credentials for completing courses. _Start_ [_here_](traditional-educator.md#1-issue-credentials-in-your-community)_._
+* :mortar\_board: **Course Completion:** you want to issue credentials for completing courses. _Start_ [_here_](traditional-educator.md#1-issue-credentials-in-your-community)_._
 * 🦸‍♀️ **Skill Assertion:** you want to issue skills & competencies aligned with the rubric in your syllabus to a classroom. Start [here](traditional-educator.md#1-issue-credentials-from-your-institution-to-a-learner).
-* &#x20;**** :trophy: **Achievements:** you want to issue micro-credentials or achievements in yours school. _Start_ [_here_](traditional-educator.md#1-issue-credentials-in-your-community)_._
+* &#x20;:trophy: **Achievements:** you want to issue micro-credentials or achievements in yours school. _Start_ [_here_](traditional-educator.md#1-issue-credentials-in-your-community)_._
 * &#x20;**🪪 IDs:** you want to issue a verifiable ID for your students. _Start_ [_here_](traditional-educator.md#1-issue-credentials-in-your-community)_._
-* __:family: __ **Guardianship**_:_ you want to issue credentials to learners with support from a guardian. _(coming soon 🚧)_
-* __:white\_check\_mark: __ **Verification:** you want to verify skills, learning certificates, achievements, or another credential that a learner presents to you, for validating an application or prerequisites. Start [here](traditional-educator.md#2-verify-credentials-within-your-institution-from-a-learner).
+* :family: **Guardianship**_:_ you want to issue credentials to learners with support from a guardian. _(coming soon 🚧)_
+* :white\_check\_mark: **Verification:** you want to verify skills, learning certificates, achievements, or another credential that a learner presents to you, for validating an application or prerequisites. Start [here](traditional-educator.md#2-verify-credentials-within-your-institution-from-a-learner).
 
 ### **Are you using LearnCard?**
 
@@ -84,5 +84,5 @@ These features aren't yet available, but they are coming soon on our roadmap—n
 ### LearnGraph
 
 * **🥾 Pathways:** offer ways for your learners to visualize and navigate learning, skills, and jobs progressions based on their holistic goals.
-* ****:loudspeaker: **Publish Skills Frameworks:** publish your skills frameworks to increase the value of your credentials for your learners.
+* :loudspeaker: **Publish Skills Frameworks:** publish your skills frameworks to increase the value of your credentials for your learners.
 * :bar\_chart: **Learning Dashboards:** visualize skills, achievements, and opportunities data to enhance learning outcomes for your learners in a safe, trusted, and private environment.

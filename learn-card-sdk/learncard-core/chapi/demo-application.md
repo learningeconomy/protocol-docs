@@ -71,7 +71,8 @@ We are going to be importing from a few common directories. To make this easier 
 </strong><strong>            "@layouts/*": ["./src/layouts/*"]
 </strong><strong>        }
 </strong><strong>    }
-</strong>}</code></pre>
+</strong>}
+</code></pre>
 
 ### HTTPS in Dev
 
@@ -98,7 +99,8 @@ export default defineConfig({
 </strong><strong>    plugins: [basicSsl()],
 </strong><strong>  },
 </strong>  integrations: [react(), tailwind()],
-});</code></pre>
+});
+</code></pre>
 
 ### Polyfills
 
@@ -130,7 +132,8 @@ export default defineConfig({
 </strong><strong>    resolve: { alias: stdlibbrowser },
 </strong>  },
   integrations: [react(), tailwind()],
-});</code></pre>
+});
+</code></pre>
 
 Great! With all that boilerplate out of the way, we can now _finally_ begin the real dev work!
 
@@ -148,7 +151,7 @@ Then, open up a browser and go to `https://localhost:3000` (take great care to m
 **Hint:** If you get a warning about the site being insecure, that is okay! You may just click "proceed anyway" and continue your local development.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Default Astro Landing Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Default Astro Landing Page</p></figcaption></figure>
 
 Let's remove all this default content and get a basic skeleton app for a simple wallet.&#x20;
 
@@ -174,7 +177,7 @@ import Layout from "@layouts/Layout.astro";
 
 The site should now look like this:
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Skeleton</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Skeleton</p></figcaption></figure>
 
 It's not much, but it's a start! Let's stop that loading text from lying to us and actually add in a wallet! For the purposes of this demo app, let's hardcode the seed `'1234'`. In a real app, you would never want to hardcode the seed used for the wallet, preferring instead to use a truly random source to generate a seed, then securely storing it, but for now, we will be fine simply hardcoding `'1234'`.
 
@@ -212,7 +215,8 @@ import Layout from "@layouts/Layout.astro";
 </strong><strong>  ) as HTMLElement;
 </strong><strong>
 </strong><strong>  loadingWallet.innerText = "Wallet loaded!";
-</strong><strong>&#x3C;/script></strong></code></pre>
+</strong><strong>&#x3C;/script>
+</strong></code></pre>
 
 This will update our UI to reveal that a wallet has been loaded! Great!
 
@@ -366,7 +370,8 @@ const CredentialStorage: React.FC = () => {
   return &#x3C;div>&#x3C;/div>;
 };
 
-export default CredentialStorage;</code></pre>
+export default CredentialStorage;
+</code></pre>
 
 Because `learnCard.invoke.receiveChapiEvent` can technically be run on both a `store` and `get` page, we need to make TypeScript happy by checking that this is actually a `store` event. This is done by the `if ("credential" in _event")` check.
 
@@ -427,7 +432,8 @@ const CredentialStorage: React.FC = () => {
 </strong><strong>  );
 </strong>};
 
-export default CredentialStorage;</code></pre>
+export default CredentialStorage;
+</code></pre>
 
 #### Storing the Credential
 
@@ -517,13 +523,14 @@ const CredentialStorage: React.FC = () => {
 </strong>  );
 };
 
-export default CredentialStorage;</code></pre>
+export default CredentialStorage;
+</code></pre>
 
 Phew! That was a lot of code! But now let's test it out! Head on over to [https://playground.chapi.io/issuer](https://playground.chapi.io/issuer) and try issuing yourself a credential! You should ultimately land on a page like this:
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>CredentialStorage in action!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>CredentialStorage in action!</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Backside of VC Card</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Backside of VC Card</p></figcaption></figure>
 
 ## Managing Credentials
 
@@ -659,4 +666,5 @@ import Credentials from "@components/Credentials";
   ) as HTMLElement;
 
   loadingWallet.innerText = "Wallet loaded!";
-&#x3C;/script></code></pre>
+&#x3C;/script>
+</code></pre>

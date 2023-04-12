@@ -10,6 +10,6 @@
 Our team is working around the clock to prepare for public launch of Metaversity! We appreciate your patience, and look forward to learning about how you want to use Metaversity.
 {% endhint %}
 
-We are **** currently beta testing Metaversity with University and College partners. **** Please fill out [this Typeform to express interest in partnering, or collaborating,](https://r18y4ggjlxv.typeform.com/to/Ou8DYi4s) and we will follow-up with you as soon as possible.  In the meantime, checkout [the deck](https://www.dropbox.com/s/apbwq4kssld16uo/Metaversity%20Deck%202022.pdf?dl=0) to learn more.
+We are currently beta testing Metaversity with University and College partners. Please fill out [this Typeform to express interest in partnering, or collaborating,](https://r18y4ggjlxv.typeform.com/to/Ou8DYi4s) and we will follow-up with you as soon as possible.  In the meantime, checkout [the deck](https://www.dropbox.com/s/apbwq4kssld16uo/Metaversity%20Deck%202022.pdf?dl=0) to learn more.
 
 Please email us at [community@learningeconomy.io](mailto:community@learningeconomy.io) if you have any additional questions. We can't wait to hear from you! 💖

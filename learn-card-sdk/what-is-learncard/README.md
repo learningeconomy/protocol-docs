@@ -14,9 +14,9 @@ The LearnCard is a key primitive in the architecture for a [global network of le
 
 Feeling like an eager beaver? Jump in to the quick start docs and get making your first wallet:
 
-* ****[**Quick Start with LearnCard Core**](../learncard-core/quick-start/): a pluggable wallet for issuing, receiving, storing, sharing, and spending currency and credentials.
-* ****[**Quick Start with LearnCard UX**](../learncard-ux/quick-start.md): a dedicated set of open-source, flexible, and reusable Storybook UX React components for credential and currency built for the future of education and work.
-* ****[**Quick Start with LearnCard Bridge**](../learncard-bridge.md): a suite of tools with a simple CLI for deploying a serverless execution environment for LearnCard Core exposed over an HTTP API.&#x20;
+* [**Quick Start with LearnCard Core**](../learncard-core/quick-start/): a pluggable wallet for issuing, receiving, storing, sharing, and spending currency and credentials.
+* [**Quick Start with LearnCard UX**](../learncard-ux/quick-start.md): a dedicated set of open-source, flexible, and reusable Storybook UX React components for credential and currency built for the future of education and work.
+* [**Quick Start with LearnCard Bridge**](../learncard-bridge.md): a suite of tools with a simple CLI for deploying a serverless execution environment for LearnCard Core exposed over an HTTP API.&#x20;
 
 ## **Want to read some background first?**
 

@@ -14,11 +14,11 @@ First things first: you need to identify your use case. **Why are you interested
 
 ### Some common use cases:
 
-* ****:mortar\_board: **Lifelong Resume:** you want to store skills, credentials, learning certificates, and achievements earned from many different places—at school, online, from a workshop, at a museum, etc.—and you want to be able to share them with a potential employer or school. [_Start here_](learners-and-employees.md#1-issue-credentials-in-your-community)_._
+* :mortar\_board: **Lifelong Resume:** you want to store skills, credentials, learning certificates, and achievements earned from many different places—at school, online, from a workshop, at a museum, etc.—and you want to be able to share them with a potential employer or school. [_Start here_](learners-and-employees.md#1-issue-credentials-in-your-community)_._
 * 📩 **Claim a Credential:** you received a credential, and you want to claim it! Start [here](learners-and-employees.md#2-claim-a-credential-youve-received).
-* ****:white\_check\_mark: **Prove Skills**: you want to prove your skills, in a way that's trusted and verifiable, for a school application, potential employer, or other use case. _Start_ [_here_](learners-and-employees.md#3-share-your-credentials)_._
-* __:penguin: **Peer-to-Peer Recognition**: you want to provide an endorsement or issue credentials to your peers in order to recognize them for their achievements. _Start_ [_here_](learners-and-employees.md#4-issue-credentials-to-a-peer)_._
-* ****:star: **Self-Attested Credentials:** you want to document, track, and share self-attested skills, achievements, and learning history. _Start_ [_here_](learners-and-employees.md#5-self-attest-a-credential)_._
+* :white\_check\_mark: **Prove Skills**: you want to prove your skills, in a way that's trusted and verifiable, for a school application, potential employer, or other use case. _Start_ [_here_](learners-and-employees.md#3-share-your-credentials)_._
+* :penguin: **Peer-to-Peer Recognition**: you want to provide an endorsement or issue credentials to your peers in order to recognize them for their achievements. _Start_ [_here_](learners-and-employees.md#4-issue-credentials-to-a-peer)_._
+* :star: **Self-Attested Credentials:** you want to document, track, and share self-attested skills, achievements, and learning history. _Start_ [_here_](learners-and-employees.md#5-self-attest-a-credential)_._
 
 ### **Are you using LearnCard?**
 
@@ -82,7 +82,7 @@ These features aren't yet available, but they are coming soon on our roadmap—n
 
 ### LearnBank
 
-* &#x20;**** :money\_with\_wings: **Earn-and-learn:** you want to incentivize learning in your community on a specific topic, or even incentivize people to learn _about_ your community.&#x20;
+* &#x20;:money\_with\_wings: **Earn-and-learn:** you want to incentivize learning in your community on a specific topic, or even incentivize people to learn _about_ your community.&#x20;
 
 ### LearnGraph
 

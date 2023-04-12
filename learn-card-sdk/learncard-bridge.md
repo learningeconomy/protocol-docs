@@ -5,7 +5,7 @@
 The LearnCard Bridge implements the [**W3C CCG VC-API**](https://w3c-ccg.github.io/vc-api/) **specification.**&#x20;
 
 {% hint style="success" %}
-The **LearnCard SDK,** including **LearnCard Bridge**, **** is in early beta as we work toward full public release in Q4 2022.&#x20;
+The **LearnCard SDK,** including **LearnCard Bridge**, is in early beta as we work toward full public release in Q4 2022.&#x20;
 
 We are **currently accepting requests to join the early access cohort!** Please fill out [this short Typeform to request access,](https://r18y4ggjlxv.typeform.com/to/Ou8DYi4s) and we will follow-up with you as soon as possible to get you setup.&#x20;
 {% endhint %}

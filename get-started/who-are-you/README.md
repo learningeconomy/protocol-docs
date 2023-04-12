@@ -15,15 +15,15 @@ There are so many different ways to engage in the Internet of Education ecosyste
 **Start your journey by selecting who you are, or how you are approaching these docs:**
 
 * 🎓 I am a [**Learner or Employee**](learners-and-employees.md).
-* 📚 I am a **** [**Traditional Educator**](traditional-educator.md), such as a teacher, or part of an academic institution like a school, college, or university.
-* 🕊 I am a **** [**Non-Traditional Educator**](non-traditional-educator.md)**,** such as a museum curator, librarian, media specialist, workshop leader, or music teacher.
+* 📚 I am a [**Traditional Educator**](traditional-educator.md), such as a teacher, or part of an academic institution like a school, college, or university.
+* 🕊 I am a [**Non-Traditional Educator**](non-traditional-educator.md)**,** such as a museum curator, librarian, media specialist, workshop leader, or music teacher.
 * 📝 I am an[ **Assessment Provider**](assessment-provider.md).
-* 🤝 I am an **** [**Employer**](employer.md).
+* 🤝 I am an [**Employer**](employer.md).
 * 📱I am an [**App Developer**](app-developer-and-edtech.md), such as an ed-tech vendor, learning app, or platform provider.
 * 🏘 I am a member or leader of a[ **DAO or Online Community**](dao-and-communities.md).
-* 📖 I am a **** [**Content Creator**](content-creators.md).
-* 🔬I am a Researcher, or part of a **** [**Research Institution**](research-institutions.md).
-* 🏛 I am, or am part of, an **** [**NGO or Government Institution**](ngos-and-governments.md).
+* 📖 I am a [**Content Creator**](content-creators.md).
+* 🔬I am a Researcher, or part of a [**Research Institution**](research-institutions.md).
+* 🏛 I am, or am part of, an [**NGO or Government Institution**](ngos-and-governments.md).
 
 ### Can't Find Yourself, or Not Sure Where to Get Started?
 

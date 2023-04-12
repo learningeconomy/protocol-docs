@@ -13,7 +13,7 @@ First things first: you need to identify your use case. **Why are you interested
 ### Some common use cases:
 
 * **💪 Workforce Development:** you want to issue skills, learning and employment certificates, achievements, and more when employees upskill and develop. _Start_ [_here_](employer.md#2-issue-credentials-for-up-skilling-in-your-organization)_._
-* :white\_check\_mark: __ **Verification:** you want to verify skills, learning certificates, achievements, or another credential that a job applicant presents to you. Start [here](employer.md#1-verify-credentials-in-your-hiring-practice).
+* :white\_check\_mark: **Verification:** you want to verify skills, learning certificates, achievements, or another credential that a job applicant presents to you. Start [here](employer.md#1-verify-credentials-in-your-hiring-practice).
 
 ### **Are you using LearnCard?**
 
@@ -69,7 +69,7 @@ These features aren't yet available, but they are coming soon on our roadmap—n
 
 ### LearnBank
 
-* ****:money\_with\_wings: **Earn-and-learn:** incentivize existing employees to upskill, or provide bounties for potential talent to learn key skills and apply for a job.&#x20;
+* :money\_with\_wings: **Earn-and-learn:** incentivize existing employees to upskill, or provide bounties for potential talent to learn key skills and apply for a job.&#x20;
 
 ### LearnGraph
 

@@ -115,6 +115,8 @@
 
 ## 🤖 LearnCard Services
 
+* [LearnCard Network](learncard-services/learncard-network/README.md)
+  * [🔌 Connect Your Application](learncard-services/learncard-network/connect-your-application.md)
 * [LearnCard CLI](learncard-services/learncard-cli.md)
 * [Discord Bot](learncard-services/discord-bot.md)
 * [Metamask Snap](learncard-services/metamask-snap.md)

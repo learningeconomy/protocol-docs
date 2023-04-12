@@ -134,7 +134,7 @@ Output a signed VC provided a credential object
 * Credential object: constructed credential object
 *   Signing method: method for signing credential
 
-    ****
+
 
 **Outputs:**
 

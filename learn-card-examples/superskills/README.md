@@ -32,7 +32,7 @@ As children journey through quests they develop cognitive, creative, social, emo
 Our team is working around the clock to prepare for public launch of SuperSkills! We appreciate your patience, and look forward to learning about how you want to use SuperSkills.
 {% endhint %}
 
-We are **** currently beta testing SuperSkills with k-12 learners to strengthen the core privacy and pedagogical goals of the SuperSkills experience. **** Please fill out [this Typeform to express interest in partnering, or collaborating,](https://r18y4ggjlxv.typeform.com/to/Ou8DYi4s) and we will follow-up with you as soon as possible. &#x20;
+We are currently beta testing SuperSkills with k-12 learners to strengthen the core privacy and pedagogical goals of the SuperSkills experience. Please fill out [this Typeform to express interest in partnering, or collaborating,](https://r18y4ggjlxv.typeform.com/to/Ou8DYi4s) and we will follow-up with you as soon as possible. &#x20;
 
 In the meantime, checkout [the deck](https://www.dropbox.com/s/rt1qtdmrf03tgrc/SuperSkills!%202.0.pdf?dl=0), or [this article](https://www.learningeconomy.io/post/superskillstech) to learn about the implementation details around how the app issues and stores verifiable credentials.
 
