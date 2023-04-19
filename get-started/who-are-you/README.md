@@ -6,10 +6,6 @@ description: >-
 
 # ⭐ Who are you?
 
-{% hint style="success" %}
-Are you participating in JFF's Plugfest and looking for how to demonstrate interop together? Click [here](plugfest-partner/).&#x20;
-{% endhint %}
-
 There are so many different ways to engage in the Internet of Education ecosystem, it can sometimes be overwhelming - these guides are designed to help cut through the noise with easy 1, 2, 3 step walkthroughs to laser in on your specific need and use case, and help you get started!
 
 **Start your journey by selecting who you are, or how you are approaching these docs:**

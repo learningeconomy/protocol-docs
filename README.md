@@ -6,10 +6,6 @@ description: >-
 
 # 👋 Welcome
 
-{% hint style="success" %}
-Are you participating in JFF's Plugfest and looking for how to demonstrate interop together? Click [here](get-started/who-are-you/plugfest-partner/).&#x20;
-{% endhint %}
-
 **Sovereignty, Mobility, Agency.** By your very presence, you have already embarked on a rich and rewarding journey with us, and countless allies around the globe, toward transforming learning to radically improve lives throughout the world.&#x20;
 
 So what are you waiting for? The easiest way to get started is by following a guidebook designed for your needs from a particular vantage point within the ecosystem:
@@ -27,12 +23,6 @@ For easy navigation, the rest of these docs are organized around high-level conc
 * [LearnBank SDK](broken-reference): an open-source suite of tools, smart-contracts, and UX to enable any individual or organization to mint learn-and-earn micro-scholarships to solve last mile equity challenges. _(coming soon 🚧)_
 * [LearnGraph SDK](broken-reference): an open-source suite of tools and UX for querying and mapping the topography of global learning and employment. _(coming soon 🚧)_
 * [Super Skills League](broken-reference): a developer community and grant-giving DAO for growing, building, and inspiring the LE Protocol ecosystem. _(coming soon 🚧)_
-
-{% hint style="success" %}
-The **LearnCard SDK** is in early beta as we work toward full public release in Q4 2022.&#x20;
-
-We are **currently accepting requests to join the early access cohort!** Please fill out [this short Typeform to request access,](https://r18y4ggjlxv.typeform.com/to/Ou8DYi4s) and we will follow-up with you as soon as possible to get you setup.&#x20;
-{% endhint %}
 
 ### Comments, Questions, or Palpitations of the Heart?
 
