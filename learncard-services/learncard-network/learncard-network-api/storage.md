@@ -23,7 +23,7 @@ await learnCard.store['LearnCard Network'].uploadEncrypted(credential);
 To resolve a URI to a credential or presentation, use the `learnCard.read` method. This method accepts a `uri` parameter.
 
 ```javascript
-econst uri = 'your_credential_or_presentation_uri';
+const uri = 'your_credential_or_presentation_uri';
 
 await learnCard.read.get(uri);
 ```

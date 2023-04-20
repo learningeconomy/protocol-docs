@@ -155,7 +155,29 @@ Coming soon.
 
 ### **#2—Verify Credentials in your Community**
 
-> 🚧 Coming soon
+In a community platform such as a DAO, you want to streamline the verification process of members' credentials for various use cases like achievements, courses, endorsements, gated content, proof of membership, hiring, and identity & KYC. You can achieve this using the CHAPI (Credential Handler API) and the LearnCard SDK. The following steps outline how an App Developer can accept and verify credentials in their platform using CHAPI and LearnCard SDK.
+
+### Accepting Credentials using CHAPI
+
+1. Import the CHAPI Polyfill into your platform based on your development environment. You can either use the script tag method for vanilla JavaScript or import the polyfill library in Node.js.
+2. Construct a Verifiable Presentation Request using the desired credential types (e.g., AchievementCredential for recognizing members' achievements).
+3. Wrap the Verifiable Presentation Request in a Web Credential Query, allowing your platform to request credentials from a user's digital wallet.
+4. Request a Web Credential using the `navigator.credentials.get(credentialQuery)` function. The user will be prompted to present the requested credentials from their digital wallet.
+5. Handle null results, which can occur when the user denies the request or does not have a wallet installed. As a developer, decide how to handle these situations by offering fallback mechanisms, retry options, or alternate paths.
+
+See the [full CHAPI documentation for verifiers here](https://chapi.io/developers/verifiers).
+
+### Verifying Credentials using LearnCard SDK
+
+1. After receiving the credentials from the user's wallet, use the LearnCard SDK's [`learnCard.invoke.verifyCredential(signedVc)`](../../learn-card-sdk/learncard-core/quick-start/accept-and-verify-credentials.md) function to verify the received credentials.
+2. Check the results of the verification to ensure the validity of the credentials. The result will contain an array of objects with status, check, and message properties.
+3. If the verification is successful, proceed with the next steps specific to the use case (e.g., granting access to gated content or issuing proof of membership). Otherwise, handle the failed verification case by either requesting the user to provide valid credentials or implementing any other suitable action.
+
+By integrating CHAPI and LearnCard SDK into your community platform, you can create a seamless and secure process for accepting and verifying member credentials for various use cases. This will not only streamline the verification process but also provide added security and trust in the credentials presented by the members, enhancing the overall community experience.
+
+{% content-ref url="../../learn-card-sdk/learncard-core/quick-start/accept-and-verify-credentials.md" %}
+[accept-and-verify-credentials.md](../../learn-card-sdk/learncard-core/quick-start/accept-and-verify-credentials.md)
+{% endcontent-ref %}
 
 {% hint style="info" %}
 **Did we miss your use case?** We'd love to chat and hear what you are working on to see how we can help. Post a question to our developer community, the Super Skills League, or shoot us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io). &#x20;
@@ -166,7 +188,7 @@ Coming soon.
 Sometimes you need more than the basic, out-of-the-box flows because you have a complex community or use case. That's great! All of our tooling is fully pluggable and open-source, so with a little elbow grease and developer time, you should be able to accomplish your goals.
 
 {% hint style="warning" %}
-**Don't have your own developers?** We're here to [help](../../super-skills-league/custom-development.md).&#x20;
+**Don't have your own developers?** We're here to [help](../../community/custom-development.md).&#x20;
 {% endhint %}
 
 ### **Build Your Own Bot**

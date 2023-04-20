@@ -22,7 +22,6 @@ For easy navigation, the rest of these docs are organized around high-level conc
 * [LearnCard SDK](broken-reference): an open-source digital wallet, ID, credentialing technology, and UX to enable any individual or organization to seamlessly **issue, earn, store, share, and spend currency and credentials.**
 * [LearnBank SDK](broken-reference): an open-source suite of tools, smart-contracts, and UX to enable any individual or organization to mint learn-and-earn micro-scholarships to solve last mile equity challenges. _(coming soon 🚧)_
 * [LearnGraph SDK](broken-reference): an open-source suite of tools and UX for querying and mapping the topography of global learning and employment. _(coming soon 🚧)_
-* [Super Skills League](broken-reference): a developer community and grant-giving DAO for growing, building, and inspiring the LE Protocol ecosystem. _(coming soon 🚧)_
 
 ### Comments, Questions, or Palpitations of the Heart?
 
@@ -32,4 +31,4 @@ The best way to start engaging in the community is to participate in our [Github
 * [Ask for Help](https://github.com/learningeconomy/LearnCard/discussions/categories/help) 💖
 * [Show off your project to the community!](https://github.com/learningeconomy/LearnCard/discussions/categories/show-and-tell) 🙌
 
-Do you need custom development or technical support? Click [here](super-skills-league/custom-development.md), or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).
+Do you need custom development or technical support? Click [here](community/custom-development.md), or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).

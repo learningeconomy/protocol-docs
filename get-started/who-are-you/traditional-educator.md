@@ -27,7 +27,23 @@ _We'd love to hear to hear from you! Share your story in our_[ _Github Discussio
 
 These are some of the most common and quickest ways to get started.&#x20;
 
-### #1**—Issue Credentials from your Institution to a Learner**
+### #1**—Issue Credentials directly to your learners**
+
+The easiest way to get started, is to use the LearnCard app to design and issue credentials directly to your learners! No coding required, and you can get started today. For free!
+
+**First, download LearnCard:**
+
+{% content-ref url="../../learn-card-examples/learncard.md" %}
+[learncard.md](../../learn-card-examples/learncard.md)
+{% endcontent-ref %}
+
+Second, watch this Loom to show you have to start issuing:
+
+{% hint style="warning" %}
+**🚧 Coming soon**
+{% endhint %}
+
+### #2**—Issue Credentials from your Institution to a Learner**
 
 {% hint style="info" %}
 **Example**: Stefania has completed a graded course in "Electrical Systems 1" at her local community college.
@@ -43,17 +59,17 @@ Let's walk through the steps to issue Stefania a course completion with LearnCar
 * You cryptographically sign and send a credential to Stefania.
 * Stefania accepts the credential into her LearnCard.
 
-To accomplish this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your Institution](../../super-skills-league/custom-development.md).
+To accomplish this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your Institution](../../community/custom-development.md).
 
 {% content-ref url="plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md" %}
 [creating-an-interop-issuer.md](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../super-skills-league/custom-development.md" %}
-[custom-development.md](../../super-skills-league/custom-development.md)
+{% content-ref url="../../community/custom-development.md" %}
+[custom-development.md](../../community/custom-development.md)
 {% endcontent-ref %}
 
-### **#2—Verify Credentials within your Institution from a Learner**
+### **#3—Verify Credentials within your Institution from a Learner**
 
 > 🚧 Coming soon
 
@@ -62,7 +78,7 @@ To accomplish this, you can either [setup your own, interoperable Issuer by foll
 Sometimes you need more than the basic, out-of-the-box flows because you have a complex institution or use case. That's great! All of our tooling is fully pluggable and open-source, so with a little elbow grease and developer time, you should be able to accomplish your goals.
 
 {% hint style="warning" %}
-**Don't have your own developers?** We're here to [help](../../super-skills-league/custom-development.md).&#x20;
+**Don't have your own developers?** We're here to [help](../../community/custom-development.md).&#x20;
 {% endhint %}
 
 ### **Build Your Own Plugin**

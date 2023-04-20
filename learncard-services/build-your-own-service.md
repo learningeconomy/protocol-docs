@@ -10,4 +10,4 @@ While we finish up these docs, ask some questions in our [Github Discussions](ht
 * [Ask for Help Creating Your Service](https://github.com/learningeconomy/LearnCard/discussions/categories/help) 💖
 * [Show off your project to the community!](https://github.com/learningeconomy/LearnCard/discussions/categories/show-and-tell) 🙌
 
-Or, if you want us to help you build specific service or bot, click [here](../super-skills-league/custom-development.md) or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).
+Or, if you want us to help you build specific service or bot, click [here](../community/custom-development.md) or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).

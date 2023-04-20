@@ -12,7 +12,7 @@ description: >-
 ### Where can I access LearnCard?
 
 {% hint style="success" %}
-We are **currently accepting requests for** [**custom projects and development support**](../super-skills-league/custom-development.md)**!**&#x20;
+We are **currently accepting requests for** [**custom projects and development support**](../community/custom-development.md)**!**&#x20;
 {% endhint %}
 
 The **LearnCard App beta is live!** :white\_check\_mark:&#x20;

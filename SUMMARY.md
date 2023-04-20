@@ -141,7 +141,7 @@
 
 * [Why LearnGraph?](learngraph-sdk/why-learngraph.md)
 
-## 🦸 Super Skills League
+## 🦸 Community
 
-* [Community](super-skills-league/community.md)
-* [💅 Custom Development](super-skills-league/custom-development.md)
+* [Community](community/community.md)
+* [💅 Custom Development](community/custom-development.md)

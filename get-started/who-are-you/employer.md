@@ -29,14 +29,14 @@ These are some of the most common and quickest ways to get started.&#x20;
 
 ### **#2—Issue Credentials for Up-skilling in Your Organization**
 
-To **issue credentials to your employees** this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your organization](../../super-skills-league/custom-development.md).
+To **issue credentials to your employees** this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your organization](../../community/custom-development.md).
 
 {% content-ref url="plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md" %}
 [creating-an-interop-issuer.md](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../super-skills-league/custom-development.md" %}
-[custom-development.md](../../super-skills-league/custom-development.md)
+{% content-ref url="../../community/custom-development.md" %}
+[custom-development.md](../../community/custom-development.md)
 {% endcontent-ref %}
 
 ## Advanced
@@ -44,7 +44,7 @@ To **issue credentials to your employees** this, you can either [setup your own,
 Sometimes you need more than the basic, out-of-the-box flows because you have a complex community or use case. That's great! All of our tooling is fully pluggable and open-source, so with a little elbow grease and developer time, you should be able to accomplish your goals.
 
 {% hint style="warning" %}
-**Don't have your own developers?** We're here to [help](../../super-skills-league/custom-development.md).&#x20;
+**Don't have your own developers?** We're here to [help](../../community/custom-development.md).&#x20;
 {% endhint %}
 
 ### **Build Your Own Bot**
