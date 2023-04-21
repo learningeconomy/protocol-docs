@@ -66,6 +66,8 @@ const learnCard = await initLearnCard({ seed: 'abc123', didkit });
 
 If you're curious about what the above code is doing, read more[ here](didkit.md).
 
-## Ceramic/IDX config
+Next, refer to our documentation on Managing Seed Phrase:
 
-The `ceramicIdx` field is passed directly to the [IDX Plugin](broken-reference). If you'd like to use the WeLibrary public Ceramic node, you may omit passing this in. For reference, have a look at the [@glazed/did-datastore](https://developers.ceramic.network/reference/glaze/modules/did\_datastore/) documentation, as well as the [@ceramicnetwork/http-client](https://developers.ceramic.network/reference/core-clients/ceramic-http/) documentation. Additionally, we do expose one bespoke field, `credentialAlias`, which allows you to specify what IDX alias to use by default when storing/retrieving credentials.
+{% content-ref url="managing-seed-phrases.md" %}
+[managing-seed-phrases.md](managing-seed-phrases.md)
+{% endcontent-ref %}
