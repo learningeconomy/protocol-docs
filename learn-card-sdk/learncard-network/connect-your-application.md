@@ -6,10 +6,6 @@ description: >-
 
 # 🔌 Connect Your Application
 
-{% hint style="warning" %}
-**LearnCard Network & Connected Applications** is in beta! This functionality is being rolled out to beta users, and will be live in production shortly. This documentation is actively changing, and should be used primarily for reference. Check back soon for the production release!&#x20;
-{% endhint %}
-
 ## How Connected Applications Work
 
 1. (optional) Apps in the [**Trusted App Registry**](connect-your-application.md#become-a-trusted-application) will be displayed in the LearnCard Launchpad.
@@ -19,9 +15,7 @@ description: >-
 2. (optional) Users will be redirected to your [connectUrl](connect-your-application.md#connecturl) when they click connect.
 3. (optional) Users sign up / login to your application.&#x20;
 4. Through a direct link, or a QR code, your application redirects the user to `https://learncard.app/launchpad?connectTo=yourAppProfileId&challenge=aaaa-bbbb-cccc-dddd`
-5.  The user will be given the option to Accept or Deny the request to connect with your application.
-
-
+5. The user will be given the option to Accept or Deny the request to connect with your application.
 
 {% hint style="info" %}
 If you are not in the [Trusted App Registry](connect-your-application.md#get-added-to-the-trusted-app-registry), the user will see the "Unknown App Request" prompt:

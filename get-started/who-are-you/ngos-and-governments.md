@@ -27,14 +27,14 @@ These are some of the most common and quickest ways to get started.&#x20;
 
 ### #1**—Issue IDs from your Agencies**
 
-To **issue credentials to your citizens** this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your Agencies](../../community/custom-development.md).
+To **issue credentials to your citizens** this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your Agencies](../../resources/custom-development.md).
 
 {% content-ref url="plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md" %}
 [creating-an-interop-issuer.md](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../community/custom-development.md" %}
-[custom-development.md](../../community/custom-development.md)
+{% content-ref url="../../resources/custom-development.md" %}
+[custom-development.md](../../resources/custom-development.md)
 {% endcontent-ref %}
 
 ### **#2—Verify Credentials from your Agencies**

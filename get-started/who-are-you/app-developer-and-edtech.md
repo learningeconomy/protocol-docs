@@ -33,19 +33,19 @@ The easiest way to sign and send credentials from your platform, is to leverage 
 
 As an App Developer, if you want to sign and send credentials using the LearnCard Network Plugin, follow the steps below. This guide assumes you have already set up the LearnCard SDK and the LearnCard Network Plugin in your platform.
 
-{% content-ref url="../../learncard-services/learncard-network/" %}
-[learncard-network](../../learncard-services/learncard-network/)
+{% content-ref url="../../learn-card-sdk/learncard-network/" %}
+[learncard-network](../../learn-card-sdk/learncard-network/)
 {% endcontent-ref %}
 
 ### Step 1: Create Your Service Profile in the LearnCard Network
 
 &#x20;Follow the instructions in "Connect Your Application" to setup your platform's DID, register your service profile, and connect to the LearnCard Network.
 
-{% content-ref url="../../learncard-services/learncard-network/connect-your-application.md" %}
-[connect-your-application.md](../../learncard-services/learncard-network/connect-your-application.md)
+{% content-ref url="../../learn-card-sdk/learncard-network/connect-your-application.md" %}
+[connect-your-application.md](../../learn-card-sdk/learncard-network/connect-your-application.md)
 {% endcontent-ref %}
 
-Then, ensure you have initialized the [LearnCard Network Plugin ](../../learncard-services/learncard-network/)with your platform's configuration.
+Then, ensure you have initialized the [LearnCard Network Plugin ](../../learn-card-sdk/learncard-network/)with your platform's configuration.
 
 ```javascript
 import { initNetworkLearnCard } from '@learncard/network-plugin';
@@ -115,16 +115,16 @@ By following these steps, you can sign and send credentials to users within your
 
 Alternatively, given your specific use case, you may not want to leverage the LearnCard Network for sending credentials from your platform. In that case, you have several options!&#x20;
 
-* [Deploy your own federated LearnCard Network node](../../learncard-services/learncard-network/learncard-network-api/launch-your-own-network.md)**:** have full control over the exchange network while remaining fully interoperable with the total ecosystem!
+* [Deploy your own federated LearnCard Network node](../../learn-card-sdk/learncard-network/learncard-network-api/launch-your-own-network.md)**:** have full control over the exchange network while remaining fully interoperable with the total ecosystem!
 * &#x20;[Setup your own VC-API Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md).&#x20;
-* Or, you can [reach out to us for support and custom development to help connect your Institution](../../community/custom-development.md).
+* Or, you can [reach out to us for support and custom development to help connect your Institution](../../resources/custom-development.md).
 
 {% hint style="info" %}
 Note: these options are not mutually exclusive! For example, you can use your existing or new VC-API compliant issuer within the LearnCard Network to send and sign VCs and handle key material. Or, you could launch your own Network node and use your own VC-API.
 {% endhint %}
 
-{% content-ref url="../../community/custom-development.md" %}
-[custom-development.md](../../community/custom-development.md)
+{% content-ref url="../../resources/custom-development.md" %}
+[custom-development.md](../../resources/custom-development.md)
 {% endcontent-ref %}
 
 ### #2—Accept & Verify Credentials in Your Platform&#x20;
@@ -169,8 +169,8 @@ By integrating CHAPI and LearnCard SDK into your hiring platform, you can create
 
 ### #5—Build a Bot or Service for Your Platform
 
-{% content-ref url="../../learncard-services/build-your-own-service.md" %}
-[build-your-own-service.md](../../learncard-services/build-your-own-service.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ## Advanced
@@ -178,7 +178,7 @@ By integrating CHAPI and LearnCard SDK into your hiring platform, you can create
 Sometimes you need more than the basic, out-of-the-box flows because you have a complex community or use case. That's great! All of our tooling is fully pluggable and open-source, so with a little elbow grease and developer time, you should be able to accomplish your goals.
 
 {% hint style="warning" %}
-**Need additional development assistance?** We're here to [help](../../community/custom-development.md).&#x20;
+**Need additional development assistance?** We're here to [help](../../resources/custom-development.md).&#x20;
 {% endhint %}
 
 ## Coming Soon

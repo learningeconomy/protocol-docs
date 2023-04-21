@@ -34,15 +34,15 @@ These are some of the most common and quickest ways to get started.&#x20;
 Sometimes you need more than the basic, out-of-the-box flows because you have a complex community or use case. That's great! All of our tooling is fully pluggable and open-source, so with a little elbow grease and developer time, you should be able to accomplish your goals.
 
 {% hint style="warning" %}
-**Don't have your own developers?** We're here to [help](../../community/custom-development.md).&#x20;
+**Don't have your own developers?** We're here to [help](../../resources/custom-development.md).&#x20;
 {% endhint %}
 
 ### **Build Your Own Bot**
 
 Does your community use a platform not yet supported? Let's change that:
 
-{% content-ref url="../../learncard-services/build-your-own-service.md" %}
-[build-your-own-service.md](../../learncard-services/build-your-own-service.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 ### **Build Your Own Plugin**

@@ -36,7 +36,7 @@
     * [Sign & Send Credentials](learn-card-sdk/learncard-core/quick-start/sign-and-send-credentials.md)
     * [Accept & Verify Credentials](learn-card-sdk/learncard-core/quick-start/accept-and-verify-credentials.md)
     * [Share & Present Credentials](learn-card-sdk/learncard-core/quick-start/share-and-present-credentials.md)
-    * [Setup Issuer Profile](learn-card-sdk/learncard-core/quick-start/setup-issuer-profile.md)
+    * [Managing Seed Phrases](learn-card-sdk/learncard-core/quick-start/managing-seed-phrases.md)
   * [Construction](learn-card-sdk/learncard-core/construction/README.md)
     * [initLearnCard](learn-card-sdk/learncard-core/construction/initlearncard.md)
     * [DIDKit](learn-card-sdk/learncard-core/construction/didkit.md)
@@ -86,6 +86,18 @@
       * [Wallets](learn-card-sdk/learncard-core/chapi/cheat-sheets/wallets.md)
   * [API](https://api.docs.learncard.com/docs/core/modules)
   * [Migration Guide](learn-card-sdk/learncard-core/migration-guide.md)
+* [LearnCard Network](learn-card-sdk/learncard-network/README.md)
+  * [LearnCard Network API](learn-card-sdk/learncard-network/learncard-network-api/README.md)
+    * [Authentication](learn-card-sdk/learncard-network/learncard-network-api/authentication.md)
+    * [Profile](learn-card-sdk/learncard-network/learncard-network-api/profile.md)
+    * [Credentials](learn-card-sdk/learncard-network/learncard-network-api/credentials.md)
+    * [Boosts](learn-card-sdk/learncard-network/learncard-network-api/boosts.md)
+    * [Presentations](learn-card-sdk/learncard-network/learncard-network-api/presentations.md)
+    * [Storage](learn-card-sdk/learncard-network/learncard-network-api/storage.md)
+    * [Signing Authorities](learn-card-sdk/learncard-network/learncard-network-api/signing-authorities.md)
+    * [API Docs](https://network.learncard.com/docs#/)
+    * [Launch Your Own Network](learn-card-sdk/learncard-network/learncard-network-api/launch-your-own-network.md)
+  * [🔌 Connect Your Application](learn-card-sdk/learncard-network/connect-your-application.md)
 * [LearnCard UX](learn-card-sdk/learncard-ux/README.md)
   * [Quick Start](learn-card-sdk/learncard-ux/quick-start.md)
   * [Components](learn-card-sdk/learncard-ux/components/README.md)
@@ -111,27 +123,16 @@
 ## 🔗 Resources
 
 * [Github](https://github.com/learningeconomy/LearnCard)
-* [Get Early Access](https://r18y4ggjlxv.typeform.com/to/Ou8DYi4s)
+* [Community](resources/community.md)
+* [💅 Custom Development](resources/custom-development.md)
+* [Contact Our Team](https://r18y4ggjlxv.typeform.com/to/Ou8DYi4s)
 * [Learning Economy](https://www.learningeconomy.io)
 
 ## 🤖 LearnCard Services
 
-* [LearnCard Network](learncard-services/learncard-network/README.md)
-  * [LearnCard Network API](learncard-services/learncard-network/learncard-network-api/README.md)
-    * [Authentication](learncard-services/learncard-network/learncard-network-api/authentication.md)
-    * [Profile](learncard-services/learncard-network/learncard-network-api/profile.md)
-    * [Credentials](learncard-services/learncard-network/learncard-network-api/credentials.md)
-    * [Boosts](learncard-services/learncard-network/learncard-network-api/boosts.md)
-    * [Presentations](learncard-services/learncard-network/learncard-network-api/presentations.md)
-    * [Storage](learncard-services/learncard-network/learncard-network-api/storage.md)
-    * [Signing Authorities](learncard-services/learncard-network/learncard-network-api/signing-authorities.md)
-    * [API Docs](https://network.learncard.com/docs#/)
-    * [Launch Your Own Network](learncard-services/learncard-network/learncard-network-api/launch-your-own-network.md)
-  * [🔌 Connect Your Application](learncard-services/learncard-network/connect-your-application.md)
 * [LearnCard CLI](learncard-services/learncard-cli.md)
 * [Discord Bot](learncard-services/discord-bot.md)
 * [Metamask Snap](learncard-services/metamask-snap.md)
-* [Build Your Own Service](learncard-services/build-your-own-service.md)
 
 ## 💸 LearnBank SDK
 
@@ -140,8 +141,3 @@
 ## 📊 LearnGraph SDK
 
 * [Why LearnGraph?](learngraph-sdk/why-learngraph.md)
-
-## 🦸 Community
-
-* [Community](community/community.md)
-* [💅 Custom Development](community/custom-development.md)
