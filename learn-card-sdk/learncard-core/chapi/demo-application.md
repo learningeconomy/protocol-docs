@@ -181,10 +181,10 @@ The site should now look like this:
 
 It's not much, but it's a start! Let's stop that loading text from lying to us and actually add in a wallet! For the purposes of this demo app, let's hardcode the seed `'1234'`. In a real app, you would never want to hardcode the seed used for the wallet, preferring instead to use a truly random source to generate a seed, then securely storing it, but for now, we will be fine simply hardcoding `'1234'`.
 
-To begin, let's install `@learncard/core`
+To begin, let's install `@learncard/init`, `@learncard/types`, and `@learncard/chapi-plugin`
 
 ```bash
-pnpm i @learncard/core
+pnpm i @learncard/init @learncard/types @learncard/chapi-plugin
 ```
 
 Then, we'll instantiate a wallet, and update the UI to reflect that our loading is finished.
@@ -206,7 +206,7 @@ import Layout from "@layouts/Layout.astro";
 &#x3C;/Layout>
 
 <strong>&#x3C;script>
-</strong><strong>  import { initLearnCard } from "@learncard/core";
+</strong><strong>  import { initLearnCard } from "@learncard/init";
 </strong><strong>
 </strong><strong>  const learnCard = await initLearnCard({ seed: "1234" });
 </strong><strong>
@@ -286,7 +286,7 @@ import Layout from "@layouts/Layout.astro";
 </Layout>
 
 <script>
-  import { initLearnCard } from "@learncard/core";
+  import { initLearnCard } from "@learncard/init";
 
   const learnCard = await initLearnCard();
 
@@ -349,7 +349,8 @@ Now, let's figure out how to retrieve and display the requested credential!
 In order to retrieve the credential, we can use the `receiveChapiEvent` method on a LearnCard wallet. This method is asynchronous, so we'll need to use state and an effect for this to work:
 
 <pre class="language-tsx" data-title="src/components/CredentialStorage.tsx" data-line-numbers><code class="lang-tsx"><strong>import React, { useState, useEffect } from "react";
-</strong><strong>import { initLearnCard, CredentialStoreEvent } from "@learncard/core";
+</strong><strong>import { initLearnCard } from "@learncard/init";
+</strong><strong>import { CredentialStoreEvent } from "@learncard/chapi-plugin";
 </strong>
 const CredentialStorage: React.FC = () => {
 <strong>  const [event, setEvent] = useState&#x3C;CredentialStoreEvent>();
@@ -381,7 +382,7 @@ In order to display the credential, we will use the `VCCard` component from `@le
 
 {% code title="src/helpers/credential.helpers.ts" lineNumbers="true" %}
 ```typescript
-import type { VP, VC } from "@learncard/core";
+import type { VP, VC } from "@learncard/types";
 
 export const getCredentialFromVp = (vp: VP): VC => {
   const vcField = vp.verifiableCredential;
@@ -398,7 +399,8 @@ pnpm i @learncard/react
 ```
 
 <pre class="language-tsx" data-title="src/components/CredentialStorage.tsx" data-line-numbers><code class="lang-tsx">import React, { useState, useEffect } from "react";
-import { initLearnCard, CredentialStoreEvent } from "@learncard/core";
+import { initLearnCard } from "@learncard/init";
+import { CredentialStoreEvent } from "@learncard/chapi-plugin";
 <strong>import { VCCard } from "@learncard/react";
 </strong><strong>
 </strong><strong>import "@learncard/react/dist/main.css";
@@ -440,7 +442,8 @@ export default CredentialStorage;
 The final step for this page is to allow the user to either add an id and store this credential, or to reject this credential without storing it. Let's add that now!
 
 <pre class="language-tsx" data-title="src/components/CredentialStorage.tsx" data-line-numbers><code class="lang-tsx">import React, { useState, useEffect } from "react";
-import { initLearnCard, CredentialStoreEvent } from "@learncard/core";
+import { initLearnCard } from "@learncard/init";
+import { CredentialStoreEvent } from "@learncard/chapi-plugin";
 import { VCCard } from "@learncard/react";
 
 import "@learncard/react/dist/main.css";
@@ -543,10 +546,11 @@ We will want to display our credentials in an unordered list, so let's start wit
 {% code title="src/components/CredentialListItem.tsx" lineNumbers="true" %}
 ```tsx
 import React from "react";
-import { IDXCredential, initLearnCard } from "@learncard/core";
+import { initLearnCard } from "@learncard/init";
+import type { CredentialRecord } from "@learncard/types";
 
 export type CredentialListItemProps = {
-  credential: IDXCredential;
+  credential: CredentialRecord;
 };
 
 const CredentialListItem: React.FC<CredentialListItemProps> = ({
@@ -589,15 +593,16 @@ In order to actually render those List Items, we'll need to grab our credentials
 {% code title="src/components/Credentials.tsx" lineNumbers="true" %}
 ```tsx
 import React, { useState, useEffect } from "react";
-import { CredentialRecord, initLearnCard, LearnCardFromKey } from "@learncard/core";
+import { initLearnCard, LearnCardFromSeed } from "@learncard/init";
+import type { CredentialRecord } from "@learncard/types";
 import CredentialListItem from "@components/CredentialListItem";
 
 const Credentials: React.FC = () => {
   const [credentialsList, setCredentialsList] = useState<CredentialRecord[]>();
-  const [learnCard, setLearnCard] = useState<LearnCardFromKey['returnValue']>();
+  const [learnCard, setLearnCard] = useState<LearnCardFromSeed['returnValue']>();
 
   useEffect(() => {
-    initLearnCard({ seed: "1234" }).then(setWallet);
+    initLearnCard({ seed: "1234" }).then(setLearnCard);
   }, []);
 
   useEffect(() => {

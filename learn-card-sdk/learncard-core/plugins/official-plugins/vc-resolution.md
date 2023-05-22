@@ -5,6 +5,14 @@ description: The (Deprecated) building block of the LearnCard URI
 # VC Resolution
 
 {% hint style="danger" %}
+**Removed**
+
+As of `@learncard/core@9.0.0`, this plugin has been removed. Please use the Read and Store Control Planes instead!
+{% endhint %}
+
+{% hint style="warning" %}
+**Deprecated**
+
 This plugin is now deprecated in favor of using the Read and Store Control Planes! It _will_ be removed in the future
 {% endhint %}
 
@@ -34,14 +42,16 @@ The Ceramic plugin exposes lots of methods via the `CeramicPluginMethods` type, 
 
 <pre class="language-typescript"><code class="lang-typescript">export type CeramicPluginMethods = {
 //-- snip
-<strong>} &#x26; ResolutionExtension&#x3C;CeramicURI>;</strong></code></pre>
+<strong>} &#x26; ResolutionExtension&#x3C;CeramicURI>;
+</strong></code></pre>
 
 This type is then used in the function signature of `getCeramicPlugin` like this:
 
 <pre class="language-typescript"><code class="lang-typescript">export const getCeramicPlugin = async (
     wallet: Wallet&#x3C;any, any, CeramicPluginDependentMethods>,
     //-- snip
-<strong>): Promise&#x3C;Plugin&#x3C;'Ceramic', any, CeramicPluginMethods>> => {</strong></code></pre>
+<strong>): Promise&#x3C;Plugin&#x3C;'Ceramic', any, CeramicPluginMethods>> => {
+</strong></code></pre>
 
 The presence of `ResolutionExtension` in the `CeramicPluginMethods` type signature forces the return value of `getCeramicPlugin` to include a `resolveCredential` method that takes in a `CeramicURI` and returns a `VC`.
 
@@ -86,7 +96,8 @@ With the above information in mind, let's take a quick look at how the Ceramic P
 </strong>            },
         }
     };
-};</code></pre>
+};
+</code></pre>
 
 Essentially, what this code is doing is validating the incoming URI to see if it is a Ceramic URI using the `CeramicURIValidator`. If it is _not_ a Ceramic URI, this plugin that passes it down to the existing wallet's `resolveCredential` method, giving other plugins the chance to take a crack at resolving this URI. If is _is_ a Ceramic URI, it goes about it's business resolving it!
 

@@ -3,7 +3,7 @@
 Depending on your use-case and specific needs, constructing a LearnCard is likely as simple as the following code:
 
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const learnCard = await initLearnCard({ seed: 'abc123' });
 ```
@@ -46,21 +46,23 @@ To speed up instantiation of the wallet, you can host our[ didkit](https://githu
 
 {% tabs %}
 {% tab title="Webpack 5" %}
-```typescript
-import { initLearnCard } from '@learncard/core';
-import didkit from '@learncard/core/dist/didkit/didkit_wasm_bg.wasm';
+<pre class="language-typescript"><code class="lang-typescript">// Make sure you have the didkit plugin installed! pnpm i @learncard/didkit-plugin
 
+import { initLearnCard } from '@learncard/init';
+<strong>import didkit from '@learncard/didkit-plugin/dist/didkit/didkit_wasm_bg.wasm';
+</strong>
 const learnCard = await initLearnCard({ seed: 'abc123', didkit });
-```
+</code></pre>
 {% endtab %}
 
 {% tab title="Vite" %}
-```typescript
-import { initLearnCard } from '@learncard/core';
-import didkit from '@learncard/core/dist/didkit/didkit_wasm_bg.wasm?url';
+<pre class="language-typescript"><code class="lang-typescript">// Make sure you have the didkit plugin installed! pnpm i @learncard/didkit-plugin
 
+import { initLearnCard } from '@learncard/init';
+<strong>import didkit from '@learncard/didkit-plugin/dist/didkit/didkit_wasm_bg.wasm?url';
+</strong>
 const learnCard = await initLearnCard({ seed: 'abc123', didkit });
-```
+</code></pre>
 {% endtab %}
 {% endtabs %}
 

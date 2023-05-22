@@ -8,6 +8,57 @@ We try not to needlessly add breaking changes, but sometimes it can happen! To f
 
 > “Love doesn't just sit there, like a stone, it has to be made, like bread; remade all the time, made new.” **- Ursula Le Guin, the Lathe of Heaven**
 
+## 8.0 -> 9.0
+
+### BREAKING CHANGE: @learncard/core package split
+
+#### Breaking Changes
+
+* `initLearnCard` is no longer exported by `@learncard/core`, as it is now the responsibility of `@learncard/init`
+
+```typescript
+// Old
+import { initLearnCard } from '@learncard/core';
+
+// New
+import { initLearnCard } from '@learncard/init';
+```
+
+* The didkit wasm binary is no longer exported by `@learncard/core`, as it is now the responsibility of `@learncard/init`
+
+```typescript
+// Old
+import didkit from '@learncard/core/dist/didkit/didkit_wasm_bg.wasm';
+
+// New
+import didkit from '@learncard/didkit-plugin/dist/didkit/didkit_wasm_bg.wasm';
+```
+
+* `@learncard/network-plugin` and `@learncard/did-web-plugin` no longer export their own version of `initLearnCard`, and are instead now proper instantiation targets from `@learncard/init`
+
+```typescript
+// Old
+import { initNetworkLearnCard } from '@learncard/network-plugin';
+import { initDidWebLearnCard } from '@learncard/did-web-plugin';
+
+const networkLearnCard = await initNetworkLearnCard({ seed: 'a'.repeat(64) });
+const didWebLearnCard = await initDidWebLearnCard({ seed: 'a'.repeat(64), didWeb: 'did:web:test' });
+
+// New
+import { initLearnCard } from '@learncard/init';
+
+const networkLearnCard = await initLearnCard({ seed: 'a'.repeat(64), network: true });
+const didWebLearnCard = await initLearnCard({ seed: 'a'.repeat(64), didWeb: 'did:web:test' });
+```
+
+### Migration Steps
+
+For the most part, you can just rename `@learncard/core` to `@learncard/init`, and everything should just work, with the exceptions listed above! In the rare case that doesn't immediately work, you _may_ need to import something directly from the plugin itself, such as the case with the didkit wasm binary.
+
+### Notes
+
+With this change, `@learncard/core` becomes version 9.0, however it also becomes much less public facing compared to the newly released `@learncard/init` (version 1.0). This documentation will continue to use the `@learncard/core` versioning.
+
 ## 7.0 -> 8.0
 
 ### BREAKING CHANGE: Control Planes Overhaul

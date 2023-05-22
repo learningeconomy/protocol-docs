@@ -6,6 +6,12 @@ description: Plugin for creating new credentials from basic templates
 
 This is a plugin for simplifying useful, meaningful credentials with minimal input. Additionally, this plugin can be used as reference for[ creating your own plugin](../writing-plugins/) to add simple templates for creating new credentials.
 
+### Install
+
+```bash
+pnpm i @learncard/vc-templates-plugin
+```
+
 ### Basic Credential
 
 The credential of type `basic` is the most simple credential, following the minimum information required by the Verifiable Credential specification.&#x20;

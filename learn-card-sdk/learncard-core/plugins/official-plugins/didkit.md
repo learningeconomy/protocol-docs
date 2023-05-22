@@ -10,6 +10,12 @@ In order to interact with DIDs, Verifiable Credentials and Verifiable Presentati
 
 The folks over at [Spruce](https://www.spruceid.com/) have made a wonderful Rust crate named [DIDKit](https://www.spruceid.dev/didkit/didkit) that can be used for this purpose via the DIDKit plugin.
 
+### Install
+
+```bash
+pnpm i @learncard/didkit-plugin
+```
+
 ### What is DIDKit?
 
 > DIDKit provides Verifiable Credential and Decentralized Identifier functionality across different platforms. DIDKit's core libraries are written in Rust due to Rust's expressive type system, memory safety, simple dependency web, and suitability across different platforms including embedded systems, but the comprehensive DIDKit SDK includes many libraries and interfaces for using it almost everywhere.

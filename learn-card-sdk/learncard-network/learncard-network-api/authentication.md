@@ -21,11 +21,12 @@ Then, either instantiate a LearnCard Network enabled LearnCard, or add the Netwo
 {% tab title="Direct Instantiation" %}
 {% code lineNumbers="true" %}
 ```typescript
-import { initNetworkLearnCard } from '@learncard/network-plugin';
-import didkit from '@learncard/core/dist/didkit/didkit_wasm_bg.wasm?url';
+import { initLearnCard } from '@learncard/init';
+import didkit from '@learncard/didkit-plugin/dist/didkit/didkit_wasm_bg.wasm?url';
 
-const networkLearnCard = await initNetworkLearnCard({
+const networkLearnCard = await initLearnCard({
     seed,
+    network: true,
     didkit,
 });
 ```

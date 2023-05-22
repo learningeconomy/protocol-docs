@@ -11,19 +11,19 @@ Install using the package manager of your choice:
 {% tabs %}
 {% tab title="pnpm" %}
 ```bash
-pnpm i @learncard/core
+pnpm i @learncard/init
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @learncard/core
+yarn add @learncard/init
 ```
 {% endtab %}
 
 {% tab title="npm" %}
 ```bash
-npm i @learncard/core
+npm i @learncard/init
 ```
 {% endtab %}
 {% endtabs %}
@@ -41,7 +41,7 @@ To make your first wallet, import and call `initLearnCard` with a unique string 
 {% endhint %}
 
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const learnCard = await initLearnCard({ seed: '8f476ba148360c7d1830beb2520e6bf883e934a7d16159ce0930e3cc53799fd9' });
 ```

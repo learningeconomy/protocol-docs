@@ -4,6 +4,14 @@ The IDX Plugin adds support for managing a bespoke list of Credential Records fo
 
 This plugin implements the [Index Plane](../../control-planes/index.md).
 
+### Installation
+
+```bash
+pnpm i @learncard/idx-plugin
+```
+
+### General Use
+
 To make using this plugin easier, it is recommended to use the index plane to access all of its methods
 
 The IDX Plugin mostly deals with `CredentialRecord` objects, which are objects that contain an ID, a [URI](../../uris.md) pointing to a Verifiable Credential, and any other metadata that you'd like to add in. You can use a generic parameter to add type safety to any custom metadata!

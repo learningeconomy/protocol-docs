@@ -5,7 +5,7 @@ description: Add the following code to issue credentials via CHAPI with LearnCar
 # Issuers
 
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const learnCard = await initLearnCard({ seed: '1234' });
 

@@ -63,7 +63,7 @@ In most bundlers/webapp setups, you will simply place this file inside the `publ
 Using the `url` defined in the `manifest.json` above, add a public endpoint to your site that can be used to instantiate an empty wallet and run the following code:
 
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const learnCard = await initLearnCard();
 

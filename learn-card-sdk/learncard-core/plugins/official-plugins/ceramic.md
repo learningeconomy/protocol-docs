@@ -4,6 +4,12 @@ The Ceramic Plugin adds support for storing and retrieving credentials on [Ceram
 
 This plugin implements the [Read](../../control-planes/read.md) and [Store](../../control-planes/store.md) Planes.
 
+### Install
+
+```bash
+pnpm i @learncard/ceramic-plugin
+```
+
 ### Uploading to Ceramic
 
 To upload a credential to Ceramic, you may use the [Store Plane](../../control-planes/store.md):
@@ -17,7 +23,8 @@ const uri = await learnCard.store.Ceramic.upload(vc);
 To upload a credential to Ceramic using encryption, you may use the [Store Plane](../../control-planes/store.md):
 
 <pre class="language-typescript"><code class="lang-typescript"><strong>// Encrypted, only the controller(s) can decrypt
-</strong><strong>const uri = await learnCard.store.Ceramic.uploadEncrypted(vc);</strong></code></pre>
+</strong><strong>const uri = await learnCard.store.Ceramic.uploadEncrypted(vc);
+</strong></code></pre>
 
 {% hint style="warning" %}
 Ceramic's uploadEncrypted method encrypts VCs as JWEs with the controller's DID and other specified recipients ([see below for advanced encryption options](ceramic.md#advanced-encryption-settings)). JOSE encryption is implemented with `ECDH-ES+XC20PKW` on the `x25519`curve with a key length of `256`. This is handled by the [did-jwt](https://github.com/decentralized-identity/did-jwt) library from the [Decentralized Identity Foundation](https://identity.foundation/).&#x20;
@@ -129,5 +136,5 @@ await malicious.read.get(unidirectionalStreamId);
 {% hint style="info" %}
 You can also use `publishContentToCeramic` to upload VPs! Try:
 
-`learnCard.invoke.publishContentToCeramic(vc, encryption)`
+`learnCard.invoke.publishContentToCeramic(vp, encryption)`
 {% endhint %}

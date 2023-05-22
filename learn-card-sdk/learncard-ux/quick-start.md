@@ -18,9 +18,9 @@ pnpm install @learncard/react
 import React, { useState, useEffect } from "react";
 import '@learncard/react/dist/base.css'; // if not already using tailwind
 import '@learncard/react/dist/main.css';
-import { initLearnCard } from "@learncard/core";
+import { initLearnCard } from "@learncard/init";
 import { VCCard } from "@learncard/react";
-import { VC } from "@learncard/types";
+import type { VC } from "@learncard/types";
 
 const Test = () => {
     const [vc, setVc] = useState<VC | null>(null);

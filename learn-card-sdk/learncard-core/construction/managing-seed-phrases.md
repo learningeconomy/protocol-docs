@@ -16,10 +16,10 @@ In some cases, you may want to store and manage the seed phrases for LearnCard w
 2. **Generate seed phrases**: Generate a deterministic, 64-character seed phrase using your chosen KMS provider's API or SDK. This seed phrase will be used to derive the keys for your LearnCard wallet.
 3. **Securely store seed phrases**: Store the generated seed phrase securely in the remote KMS, ensuring proper access control and encryption are in place.
 4. **Retrieve seed phrases**: When needed, retrieve the seed phrase from the remote KMS using a secure connection and authentication mechanism provided by your KMS provider.
-5. **Initialize LearnCard wallet**: Import the `initLearnCard` function from the `@learncard/core` package, and initialize the LearnCard wallet using the retrieved seed phrase.
+5. **Initialize LearnCard wallet**: Import the `initLearnCard` function from the `@learncard/init` package, and initialize the LearnCard wallet using the retrieved seed phrase.
 
 ```javascript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const seed = getSeedFromKMS(); // Replace with the seed retrieved from your remote KMS
 const learnCard = await initLearnCard({ seed });

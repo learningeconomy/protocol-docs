@@ -41,19 +41,19 @@ First, install the **Network Plugin** for LearnCard in your project:
 {% tabs %}
 {% tab title="pnpm" %}
 ```bash
-pnpm i @learncard/network-plugin
+pnpm i @learncard/init
 ```
 {% endtab %}
 
 {% tab title="yarn" %}
 ```bash
-yarn add @learncard/network-plugin
+yarn add @learncard/init
 ```
 {% endtab %}
 
 {% tab title="npm" %}
 ```bash
-npm i @learncard/network-plugin
+npm i @learncard/init
 ```
 {% endtab %}
 {% endtabs %}
@@ -69,12 +69,12 @@ Refer to [Key Generation](https://docs.learncard.com/learn-card-sdk/learncard-co
 {% endhint %}
 
 ```typescript
-// pnpm i @learncard/network-plugin
-import { initNetworkLearnCard } from '@learncard/network-plugin';
+// pnpm i @learncard/init
+import { initLearnCard } from '@learncard/init';
 
 // Create your LearnCard
 const secretSeed = // string of hex characters 0123456789abcdef
-const networkLearnCard = await initNetworkLearnCard({ seed: secretSeed });
+const networkLearnCard = await intiLearnCard({ seed: secretSeed, network: true });
 
 // Initialize your profile (one-time only - can also be done using LearnCard CLI)
 // Your LearnCard Network account will be discoverable by both your profileId and displayName
@@ -97,10 +97,10 @@ A URL where users will be redirected to when they click the "Connect" button in 
 * When you're ready, generate an invitation to connect with your application and redirect them back to LearnCard
 
 ```typescript
-import { initNetworkLearnCard } from '@learncard/network-plugin';
+import { initLearnCard } from '@learncard/init';
 
 // using secretSeed and appProfileId from above
-const networkLearnCard = await initNetworkLearnCard({ seed: secretSeed });
+const networkLearnCard = await initNetworkLearnCard({ seed: secretSeed, network: true });
 const inviteChallenge = await networkLearnCard.invoke.generateInvite();
 
 const redirectUrl = `https://learncard.app/launchpad?connectTo=${encodeURI(profileId)}&challenge=${inviteChallenge.challenge}`
@@ -116,11 +116,11 @@ A URL where users will be redirected to after they select credentials and click 
 You can then get the verifiable credentials that the user just shared with your application!
 
 ```typescript
-import { initNetworkLearnCard } from '@learncard/network-plugin';
+import { initLearnCard } from '@learncard/init';
 
 // Gets the credentials that the user most recently sent to your application
 const getSharedCredentials = async (userProfileId: string) => {
-    const networkLearnCard = await initNetworkLearnCard({ seed: secretSeed });
+    const networkLearnCard = await initLearnCard({ seed: secretSeed, network: true });
 
     const sharedCreds = await networkLearnCard.invoke.getIncomingPresentations(userProfileId);
     

@@ -19,6 +19,12 @@ There are several advantages to the VPQR approach:
 * **Base-64 Image:** for locally generated, transient QR codes.
 * **CBOR-LD Compression**: because VPs are JSON-LD, they can often be bloated with context files; VPQR handles compressing/expanding JSON-LD files for minimal QR data footprint.
 
+### Installation
+
+```bash
+pnpm i @learncard/vpqr-plugin
+```
+
 ### Use Cases
 
 There are many use cases for converting between VPs & QR codes.

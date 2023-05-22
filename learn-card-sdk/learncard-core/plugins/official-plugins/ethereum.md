@@ -4,6 +4,12 @@ description: A plugin for interacting with the Ethereum blockchain
 
 # Ethereum
 
+## Installation
+
+```bash
+pnpm i @learncard/ethereum-plugin
+```
+
 ## Instantiation
 
 To use this plugin, you must include an `ethereumConfig` object as a part of the LearnCardConfig parameter for `initLearnCard`

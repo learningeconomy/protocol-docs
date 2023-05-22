@@ -6,31 +6,21 @@ The LearnCard Network Plugin (`@learncard/network-plugin`) simplifies the proces
 
 #### Installation
 
-First, install the LearnCard Network Plugin:
-
 ```bash
 pnpm install @learncard/network-plugin
 ```
 
 #### Initialization
 
-To start using the LearnCard Network Plugin, you'll need to import it and initialize it with your application. Here's an example of how to do this:
-
 ```javascript
-import { initLearnCard } from '@learncard/core'
-import { getLearnCardNetworkPlugin } from '@learncard/network-plugin';
-import didkit from '@learncard/core/dist/didkit/didkit_wasm_bg.wasm?url';
+import { initLearnCard } from '@learncard/init'
+import didkit from '@learncard/didkit-plugin/dist/didkit/didkit_wasm_bg.wasm?url';
 
-const lcnAPI = 'https://network.learncard.app/trpc';
-
-const learnCard = await initLearnCard({
+const networkLearnCard = await initLearnCard({
     seed,
+    network: true,
     didkit,
 });
-
-const networkLearnCard = learnCard.addPlugin(
-    await getLearnCardNetworkPlugin(learnCard, lcnAPI)
-);
 ```
 
 #### Accessing Plugin Methods

@@ -10,7 +10,7 @@ The Cache Control Plane is responsible for speeding up and making a LearnCard mo
 
 To better encourage and allow separation of the caching between different planes, Cache plugins are required to implement separate caching methods for each plane. In general, when consuming a LearnCard object, you should rarely, if ever, need to interact with the cache directly_—_it should just work underneath each of the other Planes 🚀!
 
-The Cache Plane implements six methods: `getIndex`, `setIndex`, `flushIndex`, `getVc`, `setVc`, `flushVc`
+The Cache Plane implements ten methods: `getIndex`, `setIndex`, `getIndexPage`, `setIndexPage`, (optionally) `getIndexCount`, (optionally) `setIndexCount`, `flushIndex`, `getVc`, `setVc`, and `flushVc`
 
 ### cache.getIndex
 
@@ -20,9 +20,25 @@ The `getIndex` method takes in a query returns a list of `CredentialRecords`, si
 
 The `setIndex` method takes in a query and a list of `CredentialRecords` and caches the records against the query, returning `true` if successful and `false` if not.
 
+### cache.getIndexPage
+
+The `getIndexPage` method takes in a query with pagination options and returns a paginated result of `CredentialRecord`s, similar to the Index Plane's `getPage` method.
+
+### cache.setIndexPage
+
+The `setIndexPage` method takes in a query with pagination options and a paginated result of `CredentialRecord`s and caches the result against the query/options, returning `true` if successful and `false` if not.
+
+### cache.getIndexCount
+
+The `getIndexCount` method takes in a query and returns a number, intending to cache the Index Plane's `getCount` method.
+
+### cache.setIndexCount
+
+The `setIndexCount` method takes in a query and number and caches the number against the query, returning `true` if successful and `false` if not.
+
 ### cache.flushIndex
 
-The `flushIndex` method empties out everything in the cache that can be returned by `getIndex.`
+The `flushIndex` method empties out everything in the cache that can be returned by `getIndex`, `getIndexPage`, or `getIndexCount`
 
 ### cache.getVc
 

@@ -17,7 +17,7 @@ Let's use LearnCard to build out the issuer side of this flow together!
 As an issuer, we will need an _identity_ in the form of a did. LearnCard allows us to determinstically create a did from a simple string. In a real application, you will want to use a true random source to generate one of these strings, and then store it somewhere very secure. However, for the purposes of this documentation, we will get by with the string `'a'` 😉
 
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const learnCard = await initLearnCard({ seed: 'a' });
 ```

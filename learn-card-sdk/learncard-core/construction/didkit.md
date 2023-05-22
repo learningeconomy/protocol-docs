@@ -17,15 +17,15 @@ The wasm binary is exposed in the npm package, and can be imported like so (depe
 {% tabs %}
 {% tab title="Webpack 5" %}
 ```typescript
-import didkit from '@learncard/core/dist/didkit/didkit_wasm_bg.wasm';
+import didkit from '@learncard/didkit-plugin/dist/didkit/didkit_wasm_bg.wasm';
 ```
 {% endtab %}
 
 {% tab title="Vite" %}
 ```typescript
-import didkit from '@learncard/core/dist/didkit/didkit_wasm_bg.wasm?url';
+import didkit from '@learncard/didkit-plugin/dist/didkit/didkit_wasm_bg.wasm?url';
 ```
 {% endtab %}
 {% endtabs %}
 
-Doing the above will use your site's web server to host the wasm payload, allowing clients to download that payload faster (especially if you are using HTTP/2!) This method is also a bit safer. On the off-chance that `@learncard/core` updates the wasm payload without uploading the updated wasm and updating the default URL, you will still have the most up-to-date wasm payload!
+Doing the above will use your site's web server to host the wasm payload, allowing clients to download that payload faster (especially if you are using HTTP/2!) This method is also a bit safer. On the off-chance that `@learncard/didkit-plugin` updates the wasm payload without uploading the updated wasm and updating the default URL, you will still have the most up-to-date wasm payload!

@@ -25,3 +25,7 @@ If a plugin implementing get is unable to resolve a URI, it should return undefi
 {% content-ref url="../plugins/official-plugins/ceramic.md" %}
 [ceramic.md](../plugins/official-plugins/ceramic.md)
 {% endcontent-ref %}
+
+{% content-ref url="../plugins/official-plugins/learncloud.md" %}
+[learncloud.md](../plugins/official-plugins/learncloud.md)
+{% endcontent-ref %}

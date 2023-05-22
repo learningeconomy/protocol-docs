@@ -13,7 +13,7 @@ Under the hood, it is simply a map between the config you provide and the init f
 ## Example Usage
 
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 // Constructs an empty LearnCard without key material (can not sign VCs). 
 // Useful for Verifying Credentials only in a light-weight form.
@@ -21,6 +21,9 @@ const emptyLearncard = await initLearnCard();
 
 // Constructs a LearnCard from a deterministic seed. 
 const learncard = await initLearnCard({ seed: 'abc123' });
+
+// Constructs a LearnCard default connected to LearnCard Network hosted at https://network.learncard.com
+const networkLearnCard = await initLearnCard({ seed: 'abc123', network: true });
 
 // Constructs a LearnCard default connected to VC-API at https://bridge.learncard.com for handling signing
 const defaultApi = await initLearnCard({ vcApi: true });

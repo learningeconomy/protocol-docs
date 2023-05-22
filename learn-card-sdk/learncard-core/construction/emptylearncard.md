@@ -3,7 +3,7 @@
 ## Example Usage
 
 ```typescript
-import { emptyLearncard } from '@learncard/core';
+import { emptyLearncard } from '@learncard/init';
 
 const learnCard = await emptyLearnCard();
 ```

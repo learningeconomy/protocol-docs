@@ -6,7 +6,7 @@ description: Add the following files/routes to your app to become CHAPI complian
 
 {% code title="/" %}
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const learnCard = await initLearnCard();
 
@@ -37,7 +37,7 @@ await learnCard.invoke.installChapiHandler();
 
 {% code title="/wallet-worker" %}
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const learnCard = await initLearnCard();
 
@@ -58,7 +58,7 @@ learnCard.invoke.activateChapiHandler({
 
 {% code title="/store" %}
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const learnCard = await initLearnCard({ seed });
 
@@ -82,7 +82,7 @@ const reject = () => event.respondWith(Promise.resolve(null));
 
 {% code title="/get" %}
 ```typescript
-import { initLearnCard } from '@learncard/core';
+import { initLearnCard } from '@learncard/init';
 
 const learnCard = await initLearnCard({ seed });
 
