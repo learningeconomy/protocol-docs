@@ -124,6 +124,7 @@
     * [Issuing into SuperSkills!](learn-card-examples/superskills/superskills-sdk/issuing-into-superskills.md)
     * [🦸 Creating a SuperSkills! Issuer](learn-card-examples/superskills/superskills-sdk/creating-a-superskills-issuer.md)
 * [Metaversity](learn-card-examples/metaversity.md)
+* [Admin Dashboard](learn-card-examples/admin-dashboard.md)
 
 ## 🔗 Resources
 
