@@ -34,7 +34,7 @@ console.log(learnCard.index.providers);
 ```
 {% endhint %}
 
-The Index Plane implements six methods: `get`, (optionally) `getPage`, (optionally) `getCount`, `add`, `update`, and `remove`
+The Index Plane implements eight  methods: `get`, (optionally) `getPage`, (optionally) `getCount`, `add`, `addMany`, `update`, `remove`, and `removeAll.`
 
 ### index.get
 
