@@ -24,7 +24,7 @@ _We'd love to hear to hear from you! Share your story in our_[ _Github Discussio
 
 These are some of the most common and quickest ways to get started.&#x20;
 
-### #1**—Broadcast Your Content to the LearnGraph**
+### #&#x31;**—Broadcast Your Content to the LearnGraph**
 
 > 🚧 Coming soon
 

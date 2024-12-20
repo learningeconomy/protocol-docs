@@ -2,7 +2,7 @@
 description: Let's Build a CHAPI Wallet App together!
 ---
 
-# 🖥 Demo Application
+# 🖥️ Demo Application
 
 Hey there! 👋 Let's build a CHAPI Wallet App together with LearnCard!
 
@@ -151,7 +151,7 @@ Then, open up a browser and go to `https://localhost:3000` (take great care to m
 **Hint:** If you get a warning about the site being insecure, that is okay! You may just click "proceed anyway" and continue your local development.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Default Astro Landing Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Default Astro Landing Page</p></figcaption></figure>
 
 Let's remove all this default content and get a basic skeleton app for a simple wallet.&#x20;
 
@@ -533,7 +533,7 @@ Phew! That was a lot of code! But now let's test it out! Head on over to [https:
 
 <figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>CredentialStorage in action!</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Backside of VC Card</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption><p>Backside of VC Card</p></figcaption></figure>
 
 ## Managing Credentials
 

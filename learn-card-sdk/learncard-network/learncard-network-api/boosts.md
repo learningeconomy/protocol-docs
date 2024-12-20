@@ -4,7 +4,7 @@ description: Boosts Management
 
 # Boosts
 
-### 1**. Create a Boost**
+### &#x31;**. Create a Boost**
 
 To create a boost, use the `createBoost` method. This method accepts a `credential` object (which can be an `UnsignedVC` or `VC`) and an optional `metadata` object.
 

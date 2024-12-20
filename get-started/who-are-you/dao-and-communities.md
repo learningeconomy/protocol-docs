@@ -28,7 +28,7 @@ _We'd love to hear to hear from you! Share your story in our_[ _Github Discussio
 
 These are some of the most common and quickest ways to get started.&#x20;
 
-### #1**—Issue Credentials in your Community**
+### #&#x31;**—Issue Credentials in your Community**
 
 Great! You've decided that you would like to issue credentials in your community—achievements, skills, learning certificates, endorsements, identities, etc.&#x20;
 

@@ -25,7 +25,7 @@ _We'd love to hear to hear from you! Share your story in our_[ _Github Discussio
 
 These are some of the most common and quickest ways to get started.&#x20;
 
-### #1**—Issue IDs from your Agencies**
+### #&#x31;**—Issue IDs from your Agencies**
 
 To **issue credentials to your citizens** this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your Agencies](../../resources/custom-development.md).
 
@@ -59,6 +59,6 @@ See the full CHAPI documentation for verifiers [here](https://chapi.io/developer
 
 By integrating CHAPI and LearnCard SDK into your government platform, you can create a seamless and secure process for accepting and verifying citizen credentials for various use cases. This will not only streamline the verification process but also provide added security and trust in the credentials presented by citizens, enhancing overall public services and facilitating the cultivation of a thriving ecosystem in your state or nation.
 
-### #3**—Support Open, Interoperable Ecosystems with Policy**&#x20;
+### #&#x33;**—Support Open, Interoperable Ecosystems with Policy**&#x20;
 
 > 🚧 Coming soon

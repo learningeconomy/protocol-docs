@@ -10,7 +10,7 @@ description: >-
 
 1. (optional) Apps in the [**Trusted App Registry**](connect-your-application.md#become-a-trusted-application) will be displayed in the LearnCard Launchpad.
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (2).png>)
 
 2. (optional) Users will be redirected to your [connectUrl](connect-your-application.md#connecturl) when they click connect.
 3. (optional) Users sign up / login to your application.&#x20;
@@ -21,11 +21,11 @@ description: >-
 If you are not in the [Trusted App Registry](connect-your-application.md#get-added-to-the-trusted-app-registry), the user will see the "Unknown App Request" prompt:
 {% endhint %}
 
-![](<../../.gitbook/assets/image (8).png>)![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (8).png>)![](<../../.gitbook/assets/image (3).png>)
 
 7. If they Accept the connection request, they will be connected with your application and select the credentials that they wish to share with your application.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 8. After clicking "Share Credentials" they will be redirected to your [redirectUrl](connect-your-application.md#redirecturl)
 9. You now have an active connection with this user and their LearnCard! This enables you to bi-directionally share and send credentials and presentations to each other using the[ LearnCard Network API](https://network.learncard.com/docs) . 🎉

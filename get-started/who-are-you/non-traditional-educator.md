@@ -28,7 +28,7 @@ _We'd love to hear to hear from you! Share your story in our_[ _Github Discussio
 
 These are some of the most common and quickest ways to get started.&#x20;
 
-### #1**—Issue Credentials**
+### #&#x31;**—Issue Credentials**
 
 To **issue credentials to your learners** this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your processes](../../resources/custom-development.md).
 

@@ -115,6 +115,7 @@
       * [LearnCard Back](learn-card-sdk/learncard-ux/components/learncards/learncard-back.md)
   * [API](https://api.docs.learncard.com/docs/react/modules)
 * [LearnCard Bridge](learn-card-sdk/learncard-bridge.md)
+* [ConsentFlow](learn-card-sdk/consentflow.md)
 
 ## 🚀 Applications <a href="#learn-card-examples" id="learn-card-examples"></a>
 

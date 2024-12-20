@@ -12,7 +12,7 @@ description: A zero to sixty guide on this
 
 If that all sounds true, let's get started 🎉
 
-### 1**—**Identify what credentials you want to issue.
+### &#x31;**—**&#x49;dentify what credentials you want to issue.
 
 For the purposes of plugfest, we can use the[ JFF Plugfest I example achievement](https://w3c-ccg.github.io/vc-ed/plugfest-1-2022/). If you'd like to customize it, these are the 4 main fields you will want to tweak for each achievement:
 
@@ -37,7 +37,7 @@ Ideally, these credentials would be mapped to credential-able items in your plat
 
 Once you've established what credentials you would like to issue, you can checkout the [guide for creating new credentials](../../../../learn-card-sdk/learncard-core/quick-start/create-new-credentials.md), then return here.&#x20;
 
-### 2**—**Sending credentials from your platform using CHAPI.
+### &#x32;**—**&#x53;ending credentials from your platform using CHAPI.
 
 On the client side, you will need to prepare your web application for issuing credentials. An easy way to achieve interoperability is to use CHAPI.&#x20;
 
@@ -45,7 +45,7 @@ On the client side, you will need to prepare your web application for issuing cr
 * [**Initialize** LearnCard in your web application with CHAPI enabled](../../../../learn-card-sdk/learncard-core/chapi/using-learncard-to-interact-with-a-chapi-wallet.md). Reference the[ Issuer cheatsheet for CHAPI.](../../../../learn-card-sdk/learncard-core/chapi/cheat-sheets/issuers.md)&#x20;
 * **Replace the Test VC** with the `newCredential()` you defined in [step 1](creating-an-interop-issuer.md#1-identify-what-credentials-you-want-to-issue.).
 
-### 3**—**Setting up your VC-API endpoint
+### &#x33;**—**&#x53;etting up your VC-API endpoint
 
 * [**Deploy LearnCard Bridge**](../../../../learn-card-sdk/learncard-bridge.md) as your VC-API endpoint. _(🚧 guide coming soon)._
 * **Configure** your [LearnCard to use your VC-API endpoint](../../../../learn-card-sdk/learncard-core/plugins/official-plugins/vc-api.md) upon initialization.

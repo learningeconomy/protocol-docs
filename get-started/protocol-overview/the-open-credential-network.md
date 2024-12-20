@@ -66,19 +66,19 @@ The IoE Network is an open credential network, focused on building an interopera
 
 ## Definitions
 
-* **Credential—**a set of one or more claims made by an issuer
-* **Decentralized identifier—**a portable URL-based identifier, also known as a DID, associated with an entity. These identifiers are most often used in a verifiable credential and are associated with subjects such that a verifiable credential itself can be easily ported from one repository to another without the need to reissue the credential. An example of a DID is did:example:123456abcdef.
-* **Decentralized identifier document—**also referred to as a DID document, this is a document that is accessible using a verifiable data registry and contains information related to a specific decentralized identifier, such as the associated repository and public key information.
-* **Holder—**A role an entity might perform by possessing one or more verifiable credentials and generating presentations from them. A holder is usually, but not always, a subject of the verifiable credentials they are holding. Holders store their credentials in credential repositories.
-* **Issuer—**A role an entity can perform by asserting claims about one or more subjects, creating a verifiable credential from these claims, and transmitting the verifiable credential to a holder.
-* **Key material—**the cryptographic secrets that compose a key.
-* **Presentation—**data derived from one or more verifiable credentials, issued by one or more issuers, that is shared with a specific verifier.
-* **Protocol—**official set of procedures for what actions to take in a certain situation
-* **Relying Party—**A role an entity performs by receiving one or more verifiable credentials, optionally inside a verifiable presentation for processing.
-* **Subject—**A thing about which claims are made.
-* **Triangle of Trust—**three roles of the “trust triangle” which make credentials of any kind work: issuing the credential, holding it in a wallet, and verifying it when it's presented by the holder.
-* **Verifiable credential—**a tamper-evident credential that has authorship that can be cryptographically verified.
-* **Verifiable presentation—**tamper-evident presentation encoded in such a way that authorship of the data can be trusted after a process of cryptographic verification.
+* **Credential—**&#x61; set of one or more claims made by an issuer
+* **Decentralized identifier—**&#x61; portable URL-based identifier, also known as a DID, associated with an entity. These identifiers are most often used in a verifiable credential and are associated with subjects such that a verifiable credential itself can be easily ported from one repository to another without the need to reissue the credential. An example of a DID is did:example:123456abcdef.
+* **Decentralized identifier document—**&#x61;lso referred to as a DID document, this is a document that is accessible using a verifiable data registry and contains information related to a specific decentralized identifier, such as the associated repository and public key information.
+* **Holder—**&#x41; role an entity might perform by possessing one or more verifiable credentials and generating presentations from them. A holder is usually, but not always, a subject of the verifiable credentials they are holding. Holders store their credentials in credential repositories.
+* **Issuer—**&#x41; role an entity can perform by asserting claims about one or more subjects, creating a verifiable credential from these claims, and transmitting the verifiable credential to a holder.
+* **Key material—**&#x74;he cryptographic secrets that compose a key.
+* **Presentation—**&#x64;ata derived from one or more verifiable credentials, issued by one or more issuers, that is shared with a specific verifier.
+* **Protocol—**&#x6F;fficial set of procedures for what actions to take in a certain situation
+* **Relying Party—**&#x41; role an entity performs by receiving one or more verifiable credentials, optionally inside a verifiable presentation for processing.
+* **Subject—**&#x41; thing about which claims are made.
+* **Triangle of Trust—**&#x74;hree roles of the “trust triangle” which make credentials of any kind work: issuing the credential, holding it in a wallet, and verifying it when it's presented by the holder.
+* **Verifiable credential—**&#x61; tamper-evident credential that has authorship that can be cryptographically verified.
+* **Verifiable presentation—**&#x74;amper-evident presentation encoded in such a way that authorship of the data can be trusted after a process of cryptographic verification.
 
 ## The Protocol
 

@@ -12,7 +12,7 @@ description: A zero to sixty guide
 
 If that all sounds true, let's get started 🎉
 
-### 1**—**Identify what credentials you want to issue.
+### &#x31;**—**&#x49;dentify what credentials you want to issue.
 
 While there are infinite ways you can customize your unique credential, these are the 4 main fields you will want to tweak for each achievement:
 
@@ -37,7 +37,7 @@ Ideally, these credentials would be mapped to credential-able items in your plat
 
 Once you've established what credentials you would like to issue, you can checkout the [guide for creating new credentials](../../../learn-card-sdk/learncard-core/quick-start/create-new-credentials.md), then return here.&#x20;
 
-### 2**—**Sending credentials from your platform using CHAPI.
+### &#x32;**—**&#x53;ending credentials from your platform using CHAPI.
 
 On the client side, you will need to prepare your web application for issuing credentials. An easy way to achieve interoperability is to use CHAPI.&#x20;
 
@@ -49,7 +49,7 @@ On the client side, you will need to prepare your web application for issuing cr
 
 <img src="../../../.gitbook/assets/Screen Shot 2022-12-19 at 4.45.01 PM.png" alt="" data-size="original"><img src="../../../.gitbook/assets/Screen Shot 2022-12-19 at 4.50.04 PM.png" alt="" data-size="original">
 
-### 3**—**Setting Up a Remote Issuer using VC-API (Optional)
+### &#x33;**—**&#x53;etting Up a Remote Issuer using VC-API (Optional)
 
 At this point, it's up to you where and how you want to create the credential itself. A very common pattern is to host a remote issuer. Our current recommendation is to setup your own VC-API endpoints using the LearnBridge inside the LearnCard SDK for handling this:
 

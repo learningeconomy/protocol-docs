@@ -28,7 +28,7 @@ _We'd love to hear to hear from you! Share your story in our_[ _Github Discussio
 
 These are some of the most common and quickest ways to get started.&#x20;
 
-### #1**—Setup Your LearnCard**
+### #&#x31;**—Setup Your LearnCard**
 
 Head to the LearnCard application page to get setup with LearnCard on web, iOS, or Android:
 
@@ -36,7 +36,7 @@ Head to the LearnCard application page to get setup with LearnCard on web, iOS, 
 [learncard.md](../../learn-card-examples/learncard.md)
 {% endcontent-ref %}
 
-### #2**—Claim a Credential You've Received**
+### #&#x32;**—Claim a Credential You've Received**
 
 > 🚧 Coming soon
 

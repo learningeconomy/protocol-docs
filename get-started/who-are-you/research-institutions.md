@@ -25,7 +25,7 @@ _We'd love to hear to hear from you! Share your story in our_[ _Github Discussio
 
 These are some of the most common and quickest ways to get started.&#x20;
 
-### #1**—Query data from the LearnGraph**
+### #&#x31;**—Query data from the LearnGraph**
 
 > 🚧 Coming soon
 

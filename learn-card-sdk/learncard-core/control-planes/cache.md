@@ -8,7 +8,7 @@ description: One of the two hardest problems in computer science
 
 The Cache Control Plane is responsible for speeding up and making a LearnCard more efficient through the use of Caching.
 
-To better encourage and allow separation of the caching between different planes, Cache plugins are required to implement separate caching methods for each plane. In general, when consuming a LearnCard object, you should rarely, if ever, need to interact with the cache directly_—_it should just work underneath each of the other Planes 🚀!
+To better encourage and allow separation of the caching between different planes, Cache plugins are required to implement separate caching methods for each plane. In general, when consuming a LearnCard object, you should rarely, if ever, need to interact with the cache directl&#x79;_—_&#x69;t should just work underneath each of the other Planes 🚀!
 
 The Cache Plane implements ten methods: `getIndex`, `setIndex`, `getIndexPage`, `setIndexPage`, (optionally) `getIndexCount`, (optionally) `setIndexCount`, `flushIndex`, `getVc`, `setVc`, and `flushVc`
 

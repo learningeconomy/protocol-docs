@@ -42,12 +42,7 @@ const result = await learnCard.invoke.storeCredentialViaChapiDidAuth(testVc);
 
 The `result` object is a simple object with a `success` boolean, and a `reason` string. The four possible values it can hold, as well as what they represent are below:
 
-| Value                                                                                                                          | Explanation                                                          |
-| ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| `{ success: true }`                                                                                                            | The credential was successfully stored                               |
-| <p><code>{</code><br>  <code>success: false,</code><br>  <code>reason: 'did not auth'</code><br><code>}</code></p>             | The user rejected the DIDAuth request                                |
-| <p><code>{</code><br>  <code>success: false,</code><br>  <code>reason: 'auth failed verification'</code><br><code>}</code></p> | The user's wallet software failed the verification challenge         |
-| <p><code>{</code><br>  <code>success: false,</code><br>  <code>reason: 'did not store'</code><br><code>}</code></p>            | The user passed DID Authentication, but did not store the credential |
+<table><thead><tr><th width="394">Value</th><th>Explanation</th></tr></thead><tbody><tr><td><code>{ success: true }</code></td><td>The credential was successfully stored</td></tr><tr><td><code>{</code><br>  <code>success: false,</code><br>  <code>reason: 'did not auth'</code><br><code>}</code></td><td>The user rejected the DIDAuth request</td></tr><tr><td><code>{</code><br>  <code>success: false,</code><br>  <code>reason: 'auth failed verification'</code><br><code>}</code></td><td>The user's wallet software failed the verification challenge</td></tr><tr><td><code>{</code><br>  <code>success: false,</code><br>  <code>reason: 'did not store'</code><br><code>}</code></td><td>The user passed DID Authentication, but did not store the credential</td></tr></tbody></table>
 
 ## Option 2: Skipping DID Auth
 

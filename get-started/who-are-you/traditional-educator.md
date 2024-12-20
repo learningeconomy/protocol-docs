@@ -27,7 +27,7 @@ _We'd love to hear to hear from you! Share your story in our_[ _Github Discussio
 
 These are some of the most common and quickest ways to get started.&#x20;
 
-### #1**—Issue Credentials directly to your learners**
+### #&#x31;**—Issue Credentials directly to your learners**
 
 The easiest way to get started, is to use the LearnCard app to design and issue credentials directly to your learners! No coding required, and you can get started today. For free!
 
@@ -43,7 +43,7 @@ Second, watch this Loom to show you have to start issuing:
 **🚧 Coming soon**
 {% endhint %}
 
-### #2**—Issue Credentials from your Institution to a Learner**
+### #&#x32;**—Issue Credentials from your Institution to a Learner**
 
 {% hint style="info" %}
 **Example**: Stefania has completed a graded course in "Electrical Systems 1" at her local community college.

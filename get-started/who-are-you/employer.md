@@ -23,7 +23,7 @@ _We'd love to hear to hear from you! Share your story in our_[ _Github Discussio
 
 These are some of the most common and quickest ways to get started.&#x20;
 
-### #1**—Verify Credentials in Your Hiring Practice**
+### #&#x31;**—Verify Credentials in Your Hiring Practice**
 
 > 🚧 Coming soon
 
