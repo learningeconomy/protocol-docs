@@ -185,7 +185,7 @@ Credentials can be converted back and forth to [URIs](../uris.md), which can be 
 const holderDid = 'did:key:z6MknqnHBn4Rx64gH4Dy1qjmaHjxFjaNG1WioKvQuXKhEKL5'
 const uvc = learnCard.invoke.newCredential({ subject: holderDid });
 const vc = await learnCard.invoke.issueCredential(uvc);
-const uri = await learnCard.store.Ceramic.upload(vc);
+const uri = await learnCard.store.LearnCloud.upload(vc);
 
 // *** Send URI to Holder ***
 ```
@@ -199,11 +199,11 @@ const credential = await learnCard.read.get(uri);
 const result = await learnCard.invoke.verifyCredential(credential);
 
 if (result.errors.length == 0) {
-    await learnCard.index.IDX.add({ uri, id: 'test' });
+    await learnCard.index.LearnCloud.add({ uri, id: 'test' });
 }
 
 // Later, when the Holder would like to see the credential again
-const records = await learnCard.index.all.get();
+const records = await learnCard.index.LearnCloud.get();
 const record = records.find(({ id }) => id === 'test');
 const storedCredential = await learnCard.read.get(record.uri);
 

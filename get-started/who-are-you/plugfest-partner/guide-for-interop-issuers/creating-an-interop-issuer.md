@@ -35,7 +35,7 @@ For the purposes of plugfest, we can use the[ JFF Plugfest I example achievement
 
 Ideally, these credentials would be mapped to credential-able items in your platform i.e. for completing a course in your platform.
 
-Once you've established what credentials you would like to issue, you can checkout the [guide for creating new credentials](../../../../learn-card-sdk/learncard-core/quick-start/create-new-credentials.md), then return here.&#x20;
+Once you've established what credentials you would like to issue, you can checkout the [guide for creating new credentials](../../../../learn-card-sdk/learncard-core/quick-start/create-new-credentials/), then return here.&#x20;
 
 ### &#x32;**—**&#x53;ending credentials from your platform using CHAPI.
 
