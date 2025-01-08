@@ -129,7 +129,7 @@ await learnCard.invoke.connectWith(profileId);
 
 ### **2. Connect with a Profile using an Invite**
 
-To connect with another profile using an invite, use the `connectWithInvite` method. This method accepts a `profileId` and a `challenge` parameter.
+To connect with another profile using an invite, use the `connectWithInvite` method. This method requires a `profileId` and a `challenge` parameter.&#x20;
 
 <pre class="language-javascript"><code class="lang-javascript">const profileId = 'janesmith';
 const challenge = 'your_challenge';
@@ -220,12 +220,14 @@ await learnCard.invoke.getConnectionRequests();
 
 ### **9. Generate an Invite**
 
-To generate an invite, use the `generateInvite` method. This method accepts an optional `challenge` parameter.
+To generate an invite, use the `generateInvite` method. This method now accepts two parameters: a `challenge` and an `expiration` parameter. The `challenge` parameter is optional and will be automatically generated if not provided. The `expiration` parameter sets the duration (in seconds) for which the invite remains valid and defaults to 30 days if not specified.
 
-<pre class="language-javascript"><code class="lang-javascript">const challenge = 'your_challenge';
+```javascript
+const challenge = 'your_challenge'; // Custom challenge string (optional)
+const expiration = 3600 * 24 * 7; // Invitation expires in 7 days (optional)
 
-<strong>await learnCard.invoke.generateInvite(challenge);
-</strong></code></pre>
+await learnCard.invoke.generateInvite({ challenge, expiration });
+```
 
 {% swagger src="https://network.learncard.com/docs/openapi.json" path="/profile/generate-invite" method="post" %}
 [https://network.learncard.com/docs/openapi.json](https://network.learncard.com/docs/openapi.json)

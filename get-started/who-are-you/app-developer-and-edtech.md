@@ -79,7 +79,7 @@ const credentialTemplate = {
 };
 ```
 
-For more info on [creating credential templates, click here](../../learn-card-sdk/learncard-core/quick-start/create-new-credentials/).
+For more info on [creating credential templates, click here](../../learn-card-sdk/learncard-core/quick-start/create-new-credentials.md).
 
 ### Step 3: Sign & Issue the Credential
 

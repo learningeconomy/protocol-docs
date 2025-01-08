@@ -26,8 +26,8 @@ const basicCredential = learnCard.invoke.newCredential({ type: 'basic' });
 const achievementCredential = learnCard.invoke.newCredential({ type: 'achievement' });
 ```
 
-For more info on Credential Templates, checkout the [VC-Templates Plugin](../../plugins/official-plugins/vc-templates.md):
+For more info on Credential Templates, checkout the [VC-Templates Plugin](../plugins/official-plugins/vc-templates.md):
 
-{% content-ref url="../../plugins/official-plugins/vc-templates.md" %}
-[vc-templates.md](../../plugins/official-plugins/vc-templates.md)
+{% content-ref url="../plugins/official-plugins/vc-templates.md" %}
+[vc-templates.md](../plugins/official-plugins/vc-templates.md)
 {% endcontent-ref %}
