@@ -20,7 +20,7 @@ description: >-
 
 ```
 const serviceProfile = {
-  dipslayName: 'Learning Platform',
+  displayName: 'Learning Platform',
   profileId: 'learningplatform',
   image: 'https://example.com/service-avatar.jpg',
 };
@@ -78,12 +78,6 @@ const exampleConsentFlowContract = {
 const contractUri = await networkLearnCard.invoke.createContract(exampleConsentFlowContract);
 ```
 
-If you'd like to set an expiration for your contract you can use the `expiresAt` parameter e.g.
-
-```
-"expiresAt": "2022-02-22T12:34:56.789Z" // ISO format
-```
-
 Supported values for credential categories are:
 
 * `Achievement`
@@ -98,6 +92,30 @@ Supported values for credential categories are:
 * `Skill`
 * `Social Badge`
 * `Work History`
+
+#### Additional Fields
+
+If you'd like to set an expiration for your contract you can use the `expiresAt` parameter e.g.
+
+```
+"expiresAt": "2022-02-22T12:34:56.789Z" // ISO format
+```
+
+If your contract is inteded for minors use the `needsGuardianConsent`parameter
+
+```
+"needsGuardianConsent": true
+```
+
+If you'd like to specify a url to direct a user to after they've consented to use the `redirectUrl`parameter
+
+Upon consenting to the contract users will be redirected to this url with the consenting user's did added as a url parameter
+
+```
+"redirectUrl": "https://yourUrl.com"
+
+// User will be redirected to "https://yourUrl.com?did=..."
+```
 
 ### 5. Generate URL
 
