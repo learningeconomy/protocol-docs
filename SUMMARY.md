@@ -117,6 +117,7 @@
   * [API](https://api.docs.learncard.com/docs/react/modules)
 * [LearnCard Bridge](learn-card-sdk/learncard-bridge.md)
 * [ConsentFlow](learn-card-sdk/consentflow.md)
+* [GameFlow](learn-card-sdk/gameflow.md)
 
 ## 🚀 Applications <a href="#learn-card-examples" id="learn-card-examples"></a>
 
