@@ -49,7 +49,7 @@ javascriptCopyredirectUrl: "https://your-game-domain.com/callback"
 After consent is granted, GameFlow needs to know where to send the user. The redirect URL must:
 
 * Begin with either `http://` or `https://`
-* Be prepared to receive the consenting user's DID as a parameter: `did={consentingUsersDid}`
+* Be prepared to receive the consenting user's DID as a query parameter: `did={consentingUsersDid}`
 * Lead to an appropriate landing page in your game
 
 **3. Access Reason (Recommended)**
@@ -105,3 +105,17 @@ const exampleGameFlowContract = {
 const contractUri = await networkLearnCard.invoke.createContract(exampleGameFlowContract);
 ```
 
+## Integrating with xAPI
+
+### Overview
+
+GameFlow seamlessly integrates with xAPI to track learning experiences while maintaining secure authentication through DIDs (Decentralized Identifiers). Let's explore how to implement this integration step by step.
+
+### Authentication Process
+
+When a user consents to your application through GameFlow, they provide a special "Delegate Credential" via the LearnCard Network. This credential enables your application to issue xAPI statements on behalf of the user. Here's how the authentication flow works:
+
+1. The user grants consent to your application
+2. You receive a Verifiable Presentation (VP) containing the Delegate Credential through the query param `vp`
+3. (Optionally) You create a new DID-Auth VP using this credential
+4. The DID-Auth VP from either Step 2 or Step 3 is included with your xAPI requests as an "X-VP" header
