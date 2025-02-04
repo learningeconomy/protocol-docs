@@ -17,7 +17,7 @@ if (result.success) console.log('Credential stored! 😎');
 ```
 
 {% hint style="info" %}
-This cheat-sheet uses a test credential. Often, issuers will want to use VC-API or OIDCv4 protocols for signing the actual credential in tandem with CHAPI for selecting which wallet to send the credential to. Once you've got CHAPI setup, check out [LearnCard Bridge](../../../learncard-bridge.md) to setup VC-API.
+This cheat-sheet uses a test credential. Often, issuers will want to use VC-API or OIDCv4 protocols for signing the actual credential in tandem with CHAPI for selecting which wallet to send the credential to. Once you've got CHAPI setup, check out [LearnCard Bridge](../../learncard-bridge.md) to setup VC-API.
 {% endhint %}
 
 ### More Info

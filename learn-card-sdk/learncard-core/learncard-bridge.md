@@ -15,10 +15,10 @@ To deploy your own LearnCard Bridge&#x20;
 
 ### Connect a LearnCard Wallet
 
-Once you have a deployed LearnCard Bridge VC-API, check out the [VC-API plugin](learncard-core/plugins/official-plugins/vc-api.md) for connecting it to your LearnCard agents:
+Once you have a deployed LearnCard Bridge VC-API, check out the [VC-API plugin](plugins/official-plugins/vc-api.md) for connecting it to your LearnCard agents:
 
-{% content-ref url="learncard-core/plugins/official-plugins/vc-api.md" %}
-[vc-api.md](learncard-core/plugins/official-plugins/vc-api.md)
+{% content-ref url="plugins/official-plugins/vc-api.md" %}
+[vc-api.md](plugins/official-plugins/vc-api.md)
 {% endcontent-ref %}
 
 LearnCard Bridge exposes a DID discovery endpoint at `/did`, so you do not need to specify the Issuer DID when instantiating a connected LearnCard agent.

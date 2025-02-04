@@ -47,7 +47,7 @@ On the client side, you will need to prepare your web application for issuing cr
 
 ### &#x33;**—**&#x53;etting up your VC-API endpoint
 
-* [**Deploy LearnCard Bridge**](../../../../learn-card-sdk/learncard-bridge.md) as your VC-API endpoint. _(🚧 guide coming soon)._
+* [**Deploy LearnCard Bridge**](../../../../learn-card-sdk/learncard-core/learncard-bridge.md) as your VC-API endpoint. _(🚧 guide coming soon)._
 * **Configure** your [LearnCard to use your VC-API endpoint](../../../../learn-card-sdk/learncard-core/plugins/official-plugins/vc-api.md) upon initialization.
 * When you use `learnCard.invoke.storeCredentialViaChapiDidAuth(vc)` to send the signed credential to an interoperable wallet, your LearnCard will now use your VC-API endpoint for signing the Verifiable Credential! ✅
 

@@ -157,8 +157,8 @@ By integrating CHAPI and LearnCard SDK into your hiring platform, you can create
 
 ### #3—Display Credentials in Your Platform&#x20;
 
-{% content-ref url="../../learn-card-sdk/learncard-ux/" %}
-[learncard-ux](../../learn-card-sdk/learncard-ux/)
+{% content-ref url="../../learn-card-sdk/learncard-core/learncard-ux/" %}
+[learncard-ux](../../learn-card-sdk/learncard-core/learncard-ux/)
 {% endcontent-ref %}
 
 ### #4—Build a Plugin to Connect Your Platform

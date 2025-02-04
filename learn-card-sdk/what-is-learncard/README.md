@@ -20,8 +20,8 @@ Feeling like an eager beaver? Jump in to the quick start docs and get making you
 
 * [**Quick Start with LearnCard Core**](../learncard-core/quick-start/): a pluggable wallet for issuing, receiving, storing, sharing, and spending currency and credentials.  This powerful suite of tools has everything you need to have total control and freedom over your credentials.
 * [**Quick Start with the LearnCard Network**](../learncard-core/plugins/official-plugins/learncard-network.md)**:** a decentralized network that enables the issuance, exchange, and verification of verifiable credentials, empowering individuals and organizations to securely manage, discover, and connect their digital identities and achievements.
-* [**Quick Start with LearnCard UX**](../learncard-ux/quick-start.md): a dedicated set of open-source, flexible, and reusable Storybook UX React components for credential and currency built for the future of education and work.
-* [**Quick Start with LearnCard Bridge**](../learncard-bridge.md): a suite of tools with a simple CLI for deploying a serverless VC-API Issuer.&#x20;
+* [**Quick Start with LearnCard UX**](../learncard-core/learncard-ux/quick-start.md): a dedicated set of open-source, flexible, and reusable Storybook UX React components for credential and currency built for the future of education and work.
+* [**Quick Start with LearnCard Bridge**](../learncard-core/learncard-bridge.md): a suite of tools with a simple CLI for deploying a serverless VC-API Issuer.&#x20;
 
 ## **Want to read some background first?**
 
