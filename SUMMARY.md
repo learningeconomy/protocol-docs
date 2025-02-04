@@ -35,6 +35,7 @@
     * [Create New Credentials](learn-card-sdk/learncard-core/quick-start/create-new-credentials.md)
       * [Achievement Types and Categories](learn-card-sdk/learncard-core/quick-start/create-new-credentials/achievement-types-and-categories.md)
       * [Custom Types](learn-card-sdk/learncard-core/quick-start/create-new-credentials/custom-types.md)
+      * [Understanding Boosts](learn-card-sdk/learncard-core/quick-start/create-new-credentials/understanding-boosts.md)
     * [Sign & Send Credentials](learn-card-sdk/learncard-core/quick-start/sign-and-send-credentials.md)
     * [Accept & Verify Credentials](learn-card-sdk/learncard-core/quick-start/accept-and-verify-credentials.md)
     * [Share & Present Credentials](learn-card-sdk/learncard-core/quick-start/share-and-present-credentials.md)
