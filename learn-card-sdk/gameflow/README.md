@@ -120,4 +120,4 @@ When a user consents to your application through GameFlow, they provide a specia
 3. (Optionally) You create a new DID-Auth VP using this credential
 4. The DID-Auth VP from either Step 2 or Step 3 is included with your xAPI requests as an "X-VP" header
 
-When you're ready, head to the next section to start [sending xAPI statements](sending-xapi-statements.md).
+When you're ready, head to the next section to start [sending xAPI statements](sending-xapi-statements/).

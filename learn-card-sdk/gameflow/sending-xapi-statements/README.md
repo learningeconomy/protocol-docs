@@ -18,7 +18,7 @@ Before you begin, you'll need:
 * The LearnCloud xAPI endpoint URL
   * [https://cloud.learncard.com/xapi](https://cloud.learncard.com/xapi)
 
-If you _don't_ have any of these, check out the [Game Flow docs ](./)and come back here.
+If you _don't_ have any of these, check out the [Game Flow docs ](../)and come back here.
 
 ### Understanding Key Concepts
 

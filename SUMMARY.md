@@ -120,7 +120,9 @@
   * [🔌 Connect Your Application](learn-card-sdk/learncard-network/connect-your-application.md)
 * [ConsentFlow](learn-card-sdk/consentflow.md)
 * [GameFlow](learn-card-sdk/gameflow/README.md)
-  * [Sending xAPI Statements](learn-card-sdk/gameflow/sending-xapi-statements.md)
+  * [Sending xAPI Statements](learn-card-sdk/gameflow/sending-xapi-statements/README.md)
+    * [xAPI URIs](learn-card-sdk/gameflow/sending-xapi-statements/xapi-uris.md)
+  * [Reading xAPI Statements](learn-card-sdk/gameflow/reading-xapi-statements.md)
 
 ## 🚀 Applications <a href="#learn-card-examples" id="learn-card-examples"></a>
 
