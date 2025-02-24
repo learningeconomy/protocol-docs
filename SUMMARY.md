@@ -30,9 +30,9 @@
 
 * [What is LearnCard?](learn-card-sdk/what-is-learncard/README.md)
   * [Why a Universal Wallet?](learn-card-sdk/what-is-learncard/why-a-universal-wallet.md)
-* [Production Deployment Guide](learn-card-sdk/production-deployment-guide.md)
-* [Troubleshooting Guide](learn-card-sdk/troubleshooting-guide.md)
-* [Architectural Patterns](learn-card-sdk/architectural-patterns.md)  
+  * [Architectural Patterns](learn-card-sdk/what-is-learncard/architectural-patterns.md)
+  * [Production Deployment Guide](learn-card-sdk/what-is-learncard/production-deployment-guide.md)
+  * [Troubleshooting Guide](learn-card-sdk/what-is-learncard/troubleshooting-guide.md)
 * [LearnCard Core](learn-card-sdk/learncard-core/README.md)
   * [Quick Start](learn-card-sdk/learncard-core/quick-start/README.md)
     * [Create New Credentials](learn-card-sdk/learncard-core/quick-start/create-new-credentials.md)
