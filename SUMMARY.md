@@ -122,8 +122,6 @@
     * [Launch Your Own Network](learn-card-sdk/learncard-network/learncard-network-api/launch-your-own-network.md)
   * [🔌 Connect Your Application](learn-card-sdk/learncard-network/connect-your-application.md)
 * [ConsentFlow](learn-card-sdk/consentflow.md)
-* [Retrieving User DIDs](learn-card-sdk/retrieving-user-did.md)
-* [Platform Integration Guide](learn-card-sdk/app-integration-guide.md)
 * [GameFlow](learn-card-sdk/gameflow/README.md)
   * [Sending xAPI Statements](learn-card-sdk/gameflow/sending-xapi-statements/README.md)
     * [xAPI URIs](learn-card-sdk/gameflow/sending-xapi-statements/xapi-uris.md)
