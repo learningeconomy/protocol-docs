@@ -59,7 +59,7 @@ async function quickstartBoost() {
     });
 
     const signingLearnCard = learnCard.addPlugin(
-      await getSimpleSigningPlugin(learnCard, 'https://api.learncard.com/trpc')
+      await getSimpleSigningPlugin(learnCard, 'https://api.learncard.app/trpc')
     );
 
     const claimableLearnCard = await signingLearnCard.addPlugin(
@@ -89,12 +89,12 @@ async function quickstartBoost() {
     const boostTemplate = await claimableLearnCard.invoke.newCredential({
       type: 'boost', 
       boostName: 'Quickstart Achievement',
-      boostImage: 'https://via.placeholder.com/150/0000FF/FFFFFF?text=Quickstart', // Optional placeholder image
+      boostImage: 'https://placehold.co/400x400?text=Quickstart', // Optional placeholder image
       achievementType: 'Influencer',
       achievementName:'Quickstart Achievement',
       achievementDescription: 'Completed the quickstart guide!',
       achievementNarrative: 'User successfully ran the quickstart script.'
-      achievementImage: 'https://via.placeholder.com/150/0000FF/FFFFFF?text=Quickstart', // Optional placeholder image
+      achievementImage: 'https://placehold.co/400x400?text=Quickstart', // Optional placeholder image
     });
     console.log('Boost template created.');
 
@@ -180,7 +180,7 @@ const learnCard = await initLearnCard({
 
 // Add signing capability
 const signingLearnCard = learnCard.addPlugin(
-  await getSimpleSigningPlugin(learnCard, 'https://api.learncard.com/trpc') // Use the LearnCard API endpoint
+  await getSimpleSigningPlugin(learnCard, 'https://api.learncard.app/trpc') // Use the LearnCard API endpoint
 );
 
 // Add claimable boosts capability
@@ -219,12 +219,12 @@ try {
 const boostTemplate = await claimableLearnCard.invoke.newCredential({
     type: 'boost', 
     boostName: 'Advanced Course Completion',
-    boostImage: 'https://via.placeholder.com/150/0000FF/FFFFFF?text=Course', // Optional placeholder image
+    boostImage: 'https://placehold.co/400x400?text=Course', // Optional placeholder image
     achievementType: 'Achievement',
     achievementName:'Advanced Course Completion',
     achievementDescription: 'Recognizes successful completion of the advanced curriculum.',
     achievementNarrative: 'Student must pass all modules with a score of 85% or higher.'
-    achievementImage: 'https://via.placeholder.com/150/0000FF/FFFFFF?text=Course', // Optional placeholder image   
+    achievementImage: 'https://placehold.co/400x400?text=Course', // Optional placeholder image   
 });
 ```
 
@@ -317,7 +317,7 @@ QRCode.toString(qrCodeDataWithOptions, { type: 'svg' }, (err, svgString) => {
 
 * **"Profile ID already exists"**: This error occurs during `createProfile` if the profileId is already registered on the network. You can either choose a different unique profileId or safely ignore this error if you intend to use the existing profile (as shown in the Quickstart and Setup examples). Ensure the learnCard instance you're using is the controller of the existing profile if you intend to manage it.
 * **"Invalid credential format"**: Double-check that your boostTemplate conforms to the expected structure. Refer to LearnCard documentation for specific schema requirements.
-* **"Network error" / "Failed to fetch"**: Verify your internet connection. Ensure the LearnCard API endpoint (https://api.learncard.com/trpc by default) is accessible. Check for any network proxies or firewalls that might be blocking the connection.
+* **"Network error" / "Failed to fetch"**: Verify your internet connection. Ensure the LearnCard API endpoint (https://api.learncard.app/trpc by default) is accessible. Check for any network proxies or firewalls that might be blocking the connection.
 * **"Authentication Error" / "Unauthorized"**: Ensure your seed is correct and corresponds to the DID that controls the profileId you are trying to manage (especially when creating boosts under an existing profile).
 * **Seed Security**: Remember to handle your seed phrase securely using environment variables or a dedicated secrets manager. Avoid hardcoding it directly in your source code.
 
@@ -350,7 +350,7 @@ async function createClaimableBadgeFull() {
       allowRemoteContexts: true
     });
     const signingLearnCard = learnCard.addPlugin(
-      await getSimpleSigningPlugin(learnCard, 'https://api.learncard.com/trpc')
+      await getSimpleSigningPlugin(learnCard, 'https://api.learncard.app/trpc')
     );
     const claimableLearnCard = await signingLearnCard.addPlugin(
       await getClaimableBoostsPlugin(signingLearnCard)
@@ -381,12 +381,12 @@ async function createClaimableBadgeFull() {
     const boostTemplate = await claimableLearnCard.invoke.newCredential({
         type: 'boost', 
         boostName: 'Full Example Certificate',
-        boostImage: 'https://via.placeholder.com/150/FFA500/FFFFFF?text=Full+Example', // Optional placeholder image
+        boostImage: 'https://placehold.co/400x400?text=Full+Example', // Optional placeholder image
         achievementType: 'Achievement',
         achievementName:'Advanced Course Completion',
         achievementDescription: 'Awarded for running the complete example script.',
         achievementNarrative: 'Executed the full NodeJS script for claimable boosts.'
-        achievementImage: 'https://via.placeholder.com/150/FFA500/FFFFFF?text=Full+Example', // Optional placeholder image   
+        achievementImage: 'https://placehold.co/400x400?text=Full+Example', // Optional placeholder image   
     });
     console.log('Boost template created.');
 
