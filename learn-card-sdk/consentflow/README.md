@@ -16,7 +16,7 @@ description: >-
 
 `const networkLearnCard = await initLearnCard({ seed: '[your secure key]', network: true })`
 
-### 3. Create a service profile ([docs](learncard-network/learncard-network-api/profile.md#/id-2.-create-a-service-profile))
+### 3. Create a service profile ([docs](../learncard-network/learncard-network-api/profile.md#/id-2.-create-a-service-profile))
 
 ```
 const serviceProfile = {
