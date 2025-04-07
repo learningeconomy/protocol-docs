@@ -130,6 +130,7 @@
     * [xAPI URIs](learn-card-sdk/gameflow/sending-xapi-statements/xapi-uris.md)
   * [Reading xAPI Statements](learn-card-sdk/gameflow/reading-xapi-statements/README.md)
     * [Advanced xAPI Statement Queries](learn-card-sdk/gameflow/reading-xapi-statements/advanced-xapi-statement-queries.md)
+  * [Consentful "Claim Later" Flow](learn-card-sdk/gameflow/consentful-claim-later-flow.md)
 
 ## 🚀 Applications <a href="#learn-card-examples" id="learn-card-examples"></a>
 
