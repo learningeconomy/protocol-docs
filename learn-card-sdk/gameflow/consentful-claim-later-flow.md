@@ -26,8 +26,6 @@ const serviceProfile = {
 };
 
 await learnCard.invoke.createServiceProfile(serviceProfile);
-
-// 8098b0b14b97c9603f99de0143cc8c55009a60ec7d414e46e957005c8927dce4
 ```
 {% endhint %}
 
