@@ -256,14 +256,14 @@ const gameFlowContract = {
       anonymize: true,
       credentials: {
         categories: {
-          "Achievement": { required: false }
+          "Social Badge": { required: false }
         }
       }
     },
     write: {
       credentials: {
         categories: {
-          "Achievement": { required: true }
+          "Social Badge": { required: true }
         }
       }
     }
