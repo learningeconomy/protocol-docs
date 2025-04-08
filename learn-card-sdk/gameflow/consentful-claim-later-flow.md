@@ -399,11 +399,20 @@ async function lookupByCatName(catName) {
     
     // The boost is claimed, extract user profileId
     const profileId = recipients.records[0].to.profileId
+    const profileDID = `did:web:network.learncard.com:users:${profileId}`
+    
+    // Check that the Guardian approved with consent
+    const consentFlowData = await learnCard.invoke.getConsentFlowDataForDid(profileDID)
+    const didGuardianConsent = await learnCard.invoke.verifyConsent(consentFlowData.records[0].contractUri, profileDID)
+    
+    if (!didGuardianConsent) {
+      return showError("Guardian has not yet consented for this user.")
+    }
     
     // Extract the saved cat credential in the boost.
     const catCredential = (await learnCard.invoke.getBoost(boost.uri)).boost
     
-    // Restore session using the DID
+    // Restore session using the cat credential
     restoreUserSession(catCredential);
   } catch (error) {
     console.error("Error looking up cat:", error);
@@ -423,31 +432,7 @@ async function lookupByCatName(catName) {
 7. Application retrieves "Save Game" data using the DID
 8. Application restores the user's session
 
-### Additional Features
 
-#### Searching for Boosts
-
-You can search for boosts based on metadata properties:
-
-```javascript
-const boosts = await learnCard.invoke.searchBoosts({
-  additionalProperties: {
-    catName: "Butternut"
-  }
-});
-```
-
-#### Getting Boost Recipients
-
-To check if a boost has been claimed and by whom:
-
-```javascript
-const uri = 'your_boost_uri';
-const recipients = await learnCard.invoke.getBoostRecipients(uri);
-
-// If recipients array has entries, the boost has been claimed
-const isClaimed = recipients.length > 0;
-```
 
 ### Best Practices
 
