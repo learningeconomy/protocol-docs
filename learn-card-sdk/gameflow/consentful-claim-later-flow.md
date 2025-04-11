@@ -46,8 +46,8 @@ const credential {
   "@context": [
     "https://www.w3.org/2018/credentials/v1",
     "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.1.json",
+    "https://ctx.learncard.com/boosts/1.0.0.json",
     {
-      "lcn": "https://docs.learncard.com/definitions#",
       "tabby": "https://docs.mylittletabbycat.com/definitions#",
       "xsd": "https://www.w3.org/2001/XMLSchema#",
       "TabbyCat": {
@@ -82,72 +82,6 @@ const credential {
         },
         "@id": "tabby:tabbyCat"
       },
-      "BoostCredential": {
-        "@context": {
-          "address": {
-            "@id": "https://purl.imsglobal.org/spec/vc/ob/vocab.html#Address"
-          },
-          "attachments": {
-            "@container": "@set",
-            "@context": {
-              "title": {
-                "@id": "lcn:boostAttachmentTitle",
-                "@type": "xsd:string"
-              },
-              "type": {
-                "@id": "lcn:boostAttachmentType",
-                "@type": "xsd:string"
-              },
-              "url": {
-                "@id": "lcn:boostAttachmentUrl",
-                "@type": "xsd:string"
-              }
-            },
-            "@id": "lcn:boostAttachments"
-          },
-          "boostId": {
-            "@id": "lcn:boostId",
-            "@type": "xsd:string"
-          },
-          "display": {
-            "@context": {
-              "backgroundColor": {
-                "@id": "lcn:boostBackgroundColor",
-                "@type": "xsd:string"
-              },
-              "backgroundImage": {
-                "@id": "lcn:boostBackgroundImage",
-                "@type": "xsd:string"
-              },
-              "displayType": {
-                "@id": "lcn:boostDisplayType",
-                "@type": "xsd:string"
-              }
-            },
-            "@id": "lcn:boostDisplay"
-          },
-          "skills": {
-            "@container": "@set",
-            "@context": {
-              "category": {
-                "@id": "lcn:boostSkillCategory",
-                "@type": "xsd:string"
-              },
-              "skill": {
-                "@id": "lcn:boostSkill",
-                "@type": "xsd:string"
-              },
-              "subskills": {
-                "@container": "@set",
-                "@id": "lcn:boostSubskills",
-                "@type": "xsd:string"
-              }
-            },
-            "@id": "lcn:boostSkills"
-          }
-        },
-        "@id": "lcn:boostCredential"
-      }
     }
   ],
   "credentialSubject": {
