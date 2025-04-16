@@ -5,7 +5,8 @@
 To interact with the LearnCard Network API, you can choose one of two ways to authenticate:
 
 1. Using the LearnCard Network Plugin (`@learncard/network-plugin`) which handles authentication for you. **(Preferred option)**
-2. Directly through the API endpoints using challenge-based DID Authentication.
+2. [Creating a scoped Auth Grant and generating an API Token](auth-grants-and-api-tokens.md) for authentication with API endpoints. (recommended for implementations using REST endpoints).&#x20;
+3. Directly through the API endpoints using challenge-based DID Authentication. (most complex)
 
 #### 1. Using LearnCard Network Plugin
 
@@ -93,10 +94,10 @@ The `getChallenges` function fetches a list of challenges from the API. The `get
 
 ### API Quick Reference
 
-{% swagger src="https://network.learncard.com/docs/openapi.json" path="/challenges" method="get" %}
+{% openapi src="https://network.learncard.com/docs/openapi.json" path="/challenges" method="get" %}
 [https://network.learncard.com/docs/openapi.json](https://network.learncard.com/docs/openapi.json)
-{% endswagger %}
+{% endopenapi %}
 
-{% swagger src="https://network.learncard.com/docs/openapi.json" path="/did" method="get" %}
+{% openapi src="https://network.learncard.com/docs/openapi.json" path="/did" method="get" %}
 [https://network.learncard.com/docs/openapi.json](https://network.learncard.com/docs/openapi.json)
-{% endswagger %}
+{% endopenapi %}
