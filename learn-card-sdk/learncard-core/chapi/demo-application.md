@@ -36,22 +36,25 @@ We will use [Astro](https://astro.build/) to create this app, so let's go ahead 
 
 ```bash
 pnpm create astro chapi-example
-> Just the basics (recommended)
-> Would you like to install pnpm dependencies? (recommended) > Y
-> Would you like to initialize a new git repository? (optional) > Y
-> How would you like to setup TypeScript? > Strict (recommended)
+> Include sample files (recommended)
+> Do you plan to write TypeScript? > Yes
+> How strict should TypeScript be? > Strict (recommended)
+> Install dependencies? (recommended) > Yes
+> Initialize a new git repository? (optional) > Yes
 ```
 
 ### React and Tailwind
 
-Great! Now let's `cd` in and start setting up some boilerplate. To start, let's add support for React and Tailwind
+Great! Now let's `cd chapi-example` and start setting up some boilerplate. To start, let's add support for React and Tailwind
 
 ```bash
 cd chapi-example
 pnpm exec astro add react
 > Continue? yes
 > Continue? yes
+> Continue? yes
 pnpm exec astro add tailwind
+> Continue? yes
 > Continue? yes
 > Continue? yes
 ```
@@ -110,30 +113,33 @@ export default defineConfig({
 pnpm i -D @esbuild-plugins/node-globals-polyfill node-stdlib-browser
 ```
 
-<pre class="language-javascript" data-title="astro.config.mjs" data-line-numbers><code class="lang-javascript">import { defineConfig } from "astro/config";
+{% code title="astro.config.mjs" lineNumbers="true" %}
+```javascript
+import { defineConfig } from "astro/config";
 import react from "@astrojs/react";
 
 import tailwind from "@astrojs/tailwind";
 
 import basicSsl from "@vitejs/plugin-basic-ssl";
-<strong>import GlobalPolyfill from "@esbuild-plugins/node-globals-polyfill";
-</strong><strong>import stdlibbrowser from "node-stdlib-browser";
-</strong>
+import { NodeGlobalsPolyfillPlugin } from "@esbuild-plugins/node-globals-polyfill";
+import stdlibbrowser from "node-stdlib-browser";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
     plugins: [basicSsl()],
-<strong>    optimizeDeps: {
-</strong><strong>      esbuildOptions: {
-</strong><strong>        define: { global: "globalThis" },
-</strong><strong>        plugins: [GlobalPolyfill({ process: true, buffer: true })],
-</strong><strong>      },
-</strong><strong>    },
-</strong><strong>    resolve: { alias: stdlibbrowser },
-</strong>  },
+    optimizeDeps: {
+      esbuildOptions: {
+        define: { global: "globalThis" },
+        plugins: [NodeGlobalsPolyfillPlugin({ process: true, buffer: true })],
+      },
+    },
+    resolve: { alias: stdlibbrowser },
+  },
   integrations: [react(), tailwind()],
 });
-</code></pre>
+```
+{% endcode %}
 
 Great! With all that boilerplate out of the way, we can now _finally_ begin the real dev work!
 
@@ -151,33 +157,44 @@ Then, open up a browser and go to `https://localhost:3000` (take great care to m
 **Hint:** If you get a warning about the site being insecure, that is okay! You may just click "proceed anyway" and continue your local development.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Default Astro Landing Page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 Let's remove all this default content and get a basic skeleton app for a simple wallet.&#x20;
 
-{% code title="src/pages/index.astro" lineNumbers="true" %}
-```tsx
----
+<pre class="language-tsx" data-title="src/pages/index.astro" data-line-numbers><code class="lang-tsx">---
 import Layout from "@layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <section id="modal-container"></section>
+&#x3C;Layout title="Welcome to Astro.">
+<strong>  &#x3C;section id="modal-container">&#x3C;/section>
+</strong>
+  &#x3C;main class="w-full h-full flex flex-col justify-center items-center p-4">
+    &#x3C;header>
+      &#x3C;h1>LearnCard CHAPI Example&#x3C;/h1>
+    &#x3C;/header>
 
-  <main class="w-full h-full flex flex-col justify-center items-center p-4">
-    <header>
-      <h1>LearnCard CHAPI Example</h1>
-    </header>
+    &#x3C;h3 id="loading-wallet">Loading wallet...&#x3C;/h3>
+  &#x3C;/main>
+&#x3C;/Layout>
+</code></pre>
 
-    <h3 id="loading-wallet">Loading wallet...</h3>
-  </main>
-</Layout>
+Change background color in the `Layout.astro` file to white so you can read the dark text.
+
+{% code title="src/layouts/Layout.astro" %}
+```tsx
+...
+html {
+    font-family: system-ui, sans-serif;
+    background: white;
+    background-size: 224px;
+}
+...
 ```
 {% endcode %}
 
 The site should now look like this:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Skeleton</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 It's not much, but it's a start! Let's stop that loading text from lying to us and actually add in a wallet! For the purposes of this demo app, let's hardcode the seed `'1234'`. In a real app, you would never want to hardcode the seed used for the wallet, preferring instead to use a truly random source to generate a seed, then securely storing it, but for now, we will be fine simply hardcoding `'1234'`.
 
@@ -220,7 +237,7 @@ import Layout from "@layouts/Layout.astro";
 
 This will update our UI to reveal that a wallet has been loaded! Great!
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Wallet loaded! Yay! =D</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 Once we've got CHAPI set up and we're able to store credentials in our wallet, we'll come back to this page and display the credentials we've stored, but for now, we can call it a day on this Landing Page! Phew! 😅
 
@@ -246,9 +263,9 @@ Our first real step! To do this, simply call the `installChapiHandler` method on
 
 {% code title="src/pages/index.astro" %}
 ```typescript
-const learnCard = await initLearnCard({ seed: "1234" });
+  const wallet = await initLearnCard({ seed: "1234" });
 
-await learnCard.invoke.installChapiHandler();
+  await wallet.invoke.installChapiHandler();
 ```
 {% endcode %}
 
@@ -350,22 +367,22 @@ In order to retrieve the credential, we can use the `receiveChapiEvent` method o
 
 <pre class="language-tsx" data-title="src/components/CredentialStorage.tsx" data-line-numbers><code class="lang-tsx"><strong>import React, { useState, useEffect } from "react";
 </strong><strong>import { initLearnCard } from "@learncard/init";
-</strong><strong>import { CredentialStoreEvent } from "@learncard/chapi-plugin";
-</strong>
+</strong>import type { CredentialStoreEvent } from "@learncard/chapi-plugin";
+
 const CredentialStorage: React.FC = () => {
 <strong>  const [event, setEvent] = useState&#x3C;CredentialStoreEvent>();
 </strong><strong>
-</strong><strong>  useEffect(() => {
-</strong><strong>    const fetchData = async () => {
-</strong><strong>      const learnCard = await initLearnCard();
-</strong><strong>
-</strong><strong>      const _event = await learnCard.invoke.receiveChapiEvent();
-</strong><strong>
-</strong><strong>      if ("credential" in _event) setEvent(_event);
-</strong><strong>    };
-</strong><strong>    fetchData();
-</strong><strong>  }, []);
-</strong><strong>  
+</strong>  useEffect(() => {
+    const fetchData = async () => {
+      const learnCard = await initLearnCard();
+
+      const _event = await learnCard.invoke.receiveChapiEvent();
+
+      if ("credential" in _event) setEvent(_event);
+    };
+    fetchData();
+  }, []);
+<strong>  
 </strong><strong>  if (!event) return &#x3C;h1>Loading...&#x3C;/h1>;
 </strong>
   return &#x3C;div>&#x3C;/div>;
@@ -400,7 +417,7 @@ pnpm i @learncard/react
 
 <pre class="language-tsx" data-title="src/components/CredentialStorage.tsx" data-line-numbers><code class="lang-tsx">import React, { useState, useEffect } from "react";
 import { initLearnCard } from "@learncard/init";
-import { CredentialStoreEvent } from "@learncard/chapi-plugin";
+import type { CredentialStoreEvent } from "@learncard/chapi-plugin";
 <strong>import { VCCard } from "@learncard/react";
 </strong><strong>
 </strong><strong>import "@learncard/react/dist/main.css";
@@ -423,8 +440,8 @@ const CredentialStorage: React.FC = () => {
 
   if (!event) return &#x3C;h1>Loading...&#x3C;/h1>;
 
-<strong>  const presentation = event.credential.data;
-</strong><strong>
+  const presentation = event?.credential?.data;
+<strong>
 </strong><strong>  const credential = presentation &#x26;&#x26; getCredentialFromVp(presentation);
 </strong><strong>
 </strong><strong>  return (
@@ -441,9 +458,11 @@ export default CredentialStorage;
 
 The final step for this page is to allow the user to either add an id and store this credential, or to reject this credential without storing it. Let's add that now!
 
-<pre class="language-tsx" data-title="src/components/CredentialStorage.tsx" data-line-numbers><code class="lang-tsx">import React, { useState, useEffect } from "react";
+{% code title="src/components/CredentialStorage.tsx" lineNumbers="true" %}
+```tsx
+import React, { useState, useEffect } from "react";
 import { initLearnCard } from "@learncard/init";
-import { CredentialStoreEvent } from "@learncard/chapi-plugin";
+import type { CredentialStoreEvent } from "@learncard/chapi-plugin";
 import { VCCard } from "@learncard/react";
 
 import "@learncard/react/dist/main.css";
@@ -451,9 +470,9 @@ import "@learncard/react/dist/main.css";
 import { getCredentialFromVp } from "@helpers/credential.helpers";
 
 const CredentialStorage: React.FC = () => {
-  const [event, setEvent] = useState&#x3C;CredentialStoreEvent>();
-<strong>  const [id, setId] = useState("Test");
-</strong>
+  const [event, setEvent] = useState<CredentialStoreEvent>();
+  const [id, setId] = useState("Test");
+
   useEffect(() => {
     const fetchData = async () => {
       const learnCard = await initLearnCard();
@@ -465,69 +484,70 @@ const CredentialStorage: React.FC = () => {
     fetchData();
   }, []);
 
-  if (!event) return &#x3C;h1>Loading...&#x3C;/h1>;
+  if (!event) return <h1>Loading...</h1>;
 
-<strong>  const accept = async () => {
-</strong><strong>    const learnCard = await initLearnCard({ seed: '1234' });
-</strong><strong>
-</strong><strong>    const uri = await learnCard.store.Ceramic.upload(credential);
-</strong><strong>
-</strong><strong>    await learnCard.index.IDX.add({ id, uri });
-</strong><strong>
-</strong><strong>    event.respondWith(
-</strong><strong>      Promise.resolve({
-</strong><strong>        dataType: "VerifiablePresentation",
-</strong><strong>        data: presentation,
-</strong><strong>      })
-</strong><strong>    );
-</strong><strong>  };
-</strong><strong>
-</strong><strong>  const reject = () => event.respondWith(Promise.resolve(null));
-</strong>
-  const presentation = event.credential.data;
+  const accept = async () => {
+    const learnCard = await initLearnCard({ seed: "1234" });
 
-  const credential = presentation &#x26;&#x26; getCredentialFromVp(presentation);
+    const uri = await learnCard.store.LearnCloud.upload(credential);
+
+    await learnCard.index.LearnCloud.add({ id, uri });
+
+    event.respondWith(
+      Promise.resolve({
+        dataType: "VerifiablePresentation",
+        data: presentation,
+      })
+    );
+  };
+
+  const reject = () => event.respondWith(Promise.resolve(null));
+
+  const presentation = event?.credential?.data;
+
+  const credential = presentation && getCredentialFromVp(presentation);
 
   return (
-<strong>    &#x3C;form
-</strong><strong>      onSubmit={(e) => e.preventDefault()}
-</strong><strong>      className="w-full h-full flex flex-col justify-center items-center gap-4 p-4"
-</strong><strong>    >
-</strong>      &#x3C;VCCard credential={credential} />
+    <form
+      onSubmit={(e) => e.preventDefault()}
+      className="w-full h-full flex flex-col justify-center items-center gap-4 p-4"
+    >
+      <VCCard credential={credential} />
 
-<strong>      &#x3C;fieldset>
-</strong><strong>        &#x3C;label className="flex gap-2">
-</strong><strong>          Title:
-</strong><strong>          &#x3C;input
-</strong><strong>            type="text"
-</strong><strong>            onChange={(e) => setId(e.target.value)}
-</strong><strong>            value={id}
-</strong><strong>          />
-</strong><strong>        &#x3C;/label>
-</strong><strong>      &#x3C;/fieldset>
-</strong><strong>
-</strong><strong>      &#x3C;fieldset className="flex gap-4">
-</strong><strong>        &#x3C;button
-</strong><strong>          type="button"
-</strong><strong>          className="bg-green-200 rounded border px-4 py-2"
-</strong><strong>          onClick={accept}
-</strong><strong>        >
-</strong><strong>          Accept
-</strong><strong>        &#x3C;/button>
-</strong><strong>        &#x3C;button
-</strong><strong>          type="button"
-</strong><strong>          className="bg-red-200 rounded border px-4 py-2"
-</strong><strong>          onClick={reject}
-</strong><strong>        >
-</strong><strong>          Reject
-</strong><strong>        &#x3C;/button>
-</strong><strong>      &#x3C;/fieldset>
-</strong><strong>    &#x3C;/form>
-</strong>  );
+      <fieldset>
+        <label className="flex gap-2">
+          Title:
+          <input
+            type="text"
+            onChange={(e) => setId(e.target.value)}
+            value={id}
+          />
+        </label>
+      </fieldset>
+
+      <fieldset className="flex gap-4">
+        <button
+          type="button"
+          className="bg-green-200 rounded border px-4 py-2"
+          onClick={accept}
+        >
+          Accept
+        </button>
+        <button
+          type="button"
+          className="bg-red-200 rounded border px-4 py-2"
+          onClick={reject}
+        >
+          Reject
+        </button>
+      </fieldset>
+    </form>
+  );
 };
 
 export default CredentialStorage;
-</code></pre>
+```
+{% endcode %}
 
 Phew! That was a lot of code! But now let's test it out! Head on over to [https://playground.chapi.io/issuer](https://playground.chapi.io/issuer) and try issuing yourself a credential! You should ultimately land on a page like this:
 
@@ -593,21 +613,24 @@ In order to actually render those List Items, we'll need to grab our credentials
 {% code title="src/components/Credentials.tsx" lineNumbers="true" %}
 ```tsx
 import React, { useState, useEffect } from "react";
-import { initLearnCard, LearnCardFromSeed } from "@learncard/init";
+import { initLearnCard, type LearnCardFromSeed } from "@learncard/init";
 import type { CredentialRecord } from "@learncard/types";
 import CredentialListItem from "@components/CredentialListItem";
 
+import { VCDisplayCard } from "@learncard/react";
+
 const Credentials: React.FC = () => {
   const [credentialsList, setCredentialsList] = useState<CredentialRecord[]>();
-  const [learnCard, setLearnCard] = useState<LearnCardFromSeed['returnValue']>();
+  const [learnCard, setLearnCard] =
+    useState<LearnCardFromSeed["returnValue"]>();
 
   useEffect(() => {
     initLearnCard({ seed: "1234" }).then(setLearnCard);
   }, []);
 
   useEffect(() => {
-    if (learnCard) learnCard.index.all.get().then(setCredentialsList);
-  }, [wallet]);
+    if (learnCard) learnCard.index.LearnCloud.get().then(setCredentialsList);
+  }, [learnCard]);
 
   if (!learnCard || !credentialsList) return <></>;
 
@@ -640,36 +663,39 @@ export default Credentials;
 
 Now let's actually render this on the index page!
 
-<pre class="language-tsx" data-title="src/pages/index.astro" data-line-numbers><code class="lang-tsx">---
+{% code title="src/pages/index.astro" lineNumbers="true" %}
+```tsx
+---
 import Layout from "@layouts/Layout.astro";
 import Credentials from "@components/Credentials";
 ---
 
-&#x3C;Layout title="LearnCard CHAPI Example">
-  &#x3C;section id="modal-container">&#x3C;/section>
+<Layout title="LearnCard CHAPI Example">
+  <section id="modal-container"></section>
 
-  &#x3C;main class="w-full h-full flex flex-col justify-center items-center p-4">
-    &#x3C;header>
-      &#x3C;h1>LearnCard CHAPI Example&#x3C;/h1>
-    &#x3C;/header>
+  <main class="w-full h-full flex flex-col justify-center items-center p-4">
+    <header>
+      <h1>LearnCard CHAPI Example</h1>
+    </header>
 
-    &#x3C;h3 id="loading-wallet">Loading wallet...&#x3C;/h3>
+    <h3 id="loading-wallet">Loading wallet...</h3>
 
-<strong>    &#x3C;Credentials client:only="react" />
-</strong>  &#x3C;/main>
-&#x3C;/Layout>
+    <Credentials client:only="react" />
+  </main>
+</Layout>
 
-&#x3C;script>
-  import { initLearnCard } from "@learncard/core";
+<script>
+  import { initLearnCard } from "@learncard/init";
 
   const wallet = await initLearnCard({ seed: "1234" });
 
-  await wallet.installChapiHandler();
+  await wallet.invoke.installChapiHandler();
 
   const loadingWallet = document.getElementById(
     "loading-wallet"
   ) as HTMLElement;
 
   loadingWallet.innerText = "Wallet loaded!";
-&#x3C;/script>
-</code></pre>
+</script>
+```
+{% endcode %}
