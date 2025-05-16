@@ -1,27 +1,63 @@
----
-description: >-
-  Everything you need to get started with LearnCard and the Internet of
-  Education!
----
+# What is LearnCard?
 
-# 👋 Welcome
+[**LearnCard**](https://www.learncard.com) is a modular, open-source wallet and SDK designed to give learners and workers control over their credentials, achievements, and learning data. Built on open standards like [W3C Verifiable Credentials](core-concepts/credentials-and-data/verifiable-credentials-vcs.md) and [Decentralized Identifiers (DIDs)](core-concepts/identities-and-keys/decentralized-identifiers-dids.md), LearnCard enables privacy-respecting, consent-based data sharing across educational and employment ecosystems.
 
-**Freedom, Mobility, Agency.** By your very presence, you have already embarked on a rich and rewarding journey with us, and countless allies around the globe, toward transforming learning to radically improve lives throughout the world.&#x20;
+Whether you're building edtech apps, issuing credentials, or designing learner-focused dashboards, LearnCard offers the foundation and flexibility to integrate trustworthy, portable data.
 
-So what are you waiting for? The easiest way to get started is by following a guidebook designed for your needs from a particular vantage point within the ecosystem:
+[**LearnCard**](https://www.learncard.com) is maintained by [**Learning Economy Foundation**](https://www.learningeconomy.io).&#x20;
 
-{% content-ref url="get-started/who-are-you/" %}
-[who-are-you](get-started/who-are-you/)
-{% endcontent-ref %}
+***
 
-For easy navigation, the rest of these docs are organized around high-level concepts. You can jump quickly to where you need to go:
+### Why Use LearnCard?
 
-* [The Learning Economy Protocol](get-started/protocol-overview/): everything you need to know about the values, principles, and concepts underpinning the LE Protocol, and how it relates to the [Internet of Education](https://www.internetofeducation.org) and [Learning Economy Foundation](https://www.learningeconomy.io).
-* [Applications](broken-reference): information on how to access, download, and use key applications for interacting with the LE Protocol, including the general purpose [LearnCard](learn-card-examples/learncard.md), it's k-12 version [SuperSkills!](learn-card-examples/superskills/), and [Metaversity](learn-card-examples/metaversity.md), optimized for post-secondary to workforce.
-* [Services](broken-reference): guidebooks to help you get up and running with services built on top of the LE Protocol, including a [CLI](learncard-services/learncard-cli.md), the [LearnCard Network](learn-card-sdk/learncard-core/plugins/official-plugins/learncard-network.md), a [Discord bot](learncard-services/discord-bot.md), and [Metamask Snap](learncard-services/metamask-snap.md).
-* [LearnCard SDK](broken-reference): an open-source digital wallet, ID, credentialing technology, and UX to enable any individual or organization to seamlessly **issue, earn, store, share, and spend currency and credentials.**
-* [LearnBank SDK](broken-reference): an open-source suite of tools, smart-contracts, and UX to enable any individual or organization to mint learn-and-earn micro-scholarships to solve last mile equity challenges. _(coming soon 🚧)_
-* [LearnGraph SDK](broken-reference): an open-source suite of tools and UX for querying and mapping the topography of global learning and employment. _(coming soon 🚧)_
+* **Portable**: Credentials travel with the learner—not locked into one system.
+* **Consentful**: Learners control who sees what, and when.
+* **Open**: Built on interoperable, community-driven standards.
+* **Developer-Friendly**: Plug in easily to existing apps with modern APIs and tools.
+
+***
+
+### What You Can Build With It
+
+LearnCard is already used to:
+
+* Issue and verify credentials (skills, achievements, badges)
+* Build learner passports and skill profiles
+* Power AI copilots and bots that adapt to learner data
+* Create consent-based dashboards for families, schools, and career counselors
+* Support interoperability across educational, employment, and credentialing platforms
+
+***
+
+### Docs Structure at a Glance
+
+This documentation is your guide to building with LearnCard. Here’s how to navigate it:
+
+* [**Core Concepts**](archive/archive/core-concepts.md): Understand the philosophy and structure of the ecosystem.
+* [**Use Cases & Possibilities**](introduction/use-cases-and-possibilities.md): Explore real-world implementations.
+* [**Quick Start**](broken-reference): Go from zero to integrated in minutes.
+* [**Guides & Tutorials**](broken-reference): Step-by-step help with key workflows.
+* [**SDK & API Reference**](broken-reference): Deep dive into our SDKs and REST APIs.
+* [**Resources**](broken-reference): Links to the community, GitHub, and support.
+
+If you're new, start with [**Your First Integration**](quick-start/your-first-integration.md) under the Quick Start section.
+
+***
+
+### How to Implement LearnCard
+
+1. **Pick your flow**: Do you want to issue credentials, verify them, or manage a user's digital wallet?
+2. **Install the SDK**: Use the `@learncard/core` SDK, or interact via our APIs.
+3. **Use open schemas**: LearnCard supports OBv3, CLR, LTI, and more—no need to reinvent standards.
+4. **Add advanced features**: Selective disclosure, zero-knowledge proofs, guardianship models, bots, and more.
+
+Whether you're building a web app, mobile experience, backend service, or bot, LearnCard has the primitives and integrations to make it seamless.
+
+***
+
+### You're in Good Hands
+
+This stack was built by developers, for developers. It supports open standards and real-world interoperability from day one. We’re glad you’re here—let’s build a more learner-friendly future together.
 
 ### Comments, Questions, or Palpitations of the Heart?
 
@@ -31,4 +67,4 @@ The best way to start engaging in the community is to participate in our [Github
 * [Ask for Help](https://github.com/learningeconomy/LearnCard/discussions/categories/help) 💖
 * [Show off your project to the community!](https://github.com/learningeconomy/LearnCard/discussions/categories/show-and-tell) 🙌
 
-Do you need custom development or technical support? Click [here](resources/custom-development.md), or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).
+Do you need custom development or technical support? Click [here](development/custom-development.md), or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).
