@@ -59,7 +59,7 @@ cd simple-plugin
 {% endtabs %}
 
 {% hint style="info" %}
-If you'd like to publish your plugin to npm for others to use, please see our documentation on [publishing plugins](broken-reference)
+If you'd like to publish your plugin to npm for others to use, please see our documentation on [publishing plugins](the-simplest-plugin.md#publish-your-plugin-to-npm)
 {% endhint %}
 
 ### Install @learncard/core
@@ -88,7 +88,7 @@ npm i @learncard/core
 
 ### Create the Types
 
-To ease plugin development, it's best to start by defining the interface for your plugin. This can be done quite easily using [the `Plugin` type](broken-reference):
+To ease plugin development, it's best to start by defining the interface for your plugin. This can be done quite easily using [the `Plugin` type](../../sdks/learncard-core/writing-plugins.md#the-plugin-type):
 
 {% code title="src/types.ts" lineNumbers="true" %}
 ```typescript
