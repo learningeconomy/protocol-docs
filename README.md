@@ -36,9 +36,10 @@ This documentation is your guide to building with LearnCard. Here’s how to nav
 * [**Core Concepts**](archive/archive/core-concepts.md): Understand the philosophy and structure of the ecosystem.
 * [**Use Cases & Possibilities**](introduction/use-cases-and-possibilities.md): Explore real-world implementations.
 * [**Quick Start**](broken-reference): Go from zero to integrated in minutes.
-* [**Guides & Tutorials**](broken-reference): Step-by-step help with key workflows.
+* [**Tutorials**](broken-reference): Learn by building key example projects with LearnCard SDK and APIs.&#x20;
+* [**How-To Guides**](broken-reference)**:** Step-by-step recipes for with key workflows and integrations.
 * [**SDK & API Reference**](broken-reference): Deep dive into our SDKs and REST APIs.
-* [**Resources**](broken-reference): Links to the community, GitHub, and support.
+* [**Development**](broken-reference): Links to contributing, roadmap, etc.
 
 If you're new, start with [**Your First Integration**](quick-start/your-first-integration.md) under the Quick Start section.
 
@@ -47,7 +48,7 @@ If you're new, start with [**Your First Integration**](quick-start/your-first-in
 ### How to Implement LearnCard
 
 1. **Pick your flow**: Do you want to issue credentials, verify them, or manage a user's digital wallet?
-2. **Install the SDK**: Use the `@learncard/core` SDK, or interact via our APIs.
+2. [**Install the SDK**](sdks/learncard-core/): Use the `@learncard/core` SDK, or interact via our APIs.
 3. **Use open schemas**: LearnCard supports OBv3, CLR, LTI, and more—no need to reinvent standards.
 4. **Add advanced features**: Selective disclosure, zero-knowledge proofs, guardianship models, bots, and more.
 
