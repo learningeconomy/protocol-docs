@@ -49,8 +49,6 @@ const customLearnCard = await initLearnCard({ custom: true });
 The examples above are not exhaustive of possible ways to instantiate a LearnCard:
 
 * For more on initialization with a VC-API, check out the [VC-API Plugin](../official-plugins/vc-api.md).&#x20;
-* For more info on instantiating a wallet with a seed, click [here](broken-reference).
-* For more info on instantiating an empty wallet, click [here](broken-reference).&#x20;
 
 #### The learnCardFromSeed function
 
@@ -130,7 +128,7 @@ const learnCard = await initLearnCard({ seed: 'abc123', didkit });
 {% endtab %}
 {% endtabs %}
 
-If you're curious about what the above code is doing, read more[ here](broken-reference).
+If you're curious about what the above code is doing, read more[ here](../official-plugins/didkit.md).
 
 ## Create Credentials
 
