@@ -112,7 +112,7 @@ Here, Urmila creates one "Book Club ID" Boost. Then, when she sends it to Ted an
 4. Send this Boost (as individual credentials) to two different recipient Profile IDs.
 5. Briefly discuss how you might see who received the Boost.
 
-{% embed url="https://codepen.io/Jacks-n-Smith/pen/oggVZbj" fullWidth="true" %}
+{% embed url="https://codepen.io/Jacks-n-Smith/pen/oggVZbj" fullWidth="false" %}
 Full Create and Send a Boost Example
 {% endembed %}
 
@@ -129,7 +129,7 @@ Full Create and Send a Boost Example
        npm install @learncard/init @learncard/didkit-plugin
        # or pnpm / yarn
        ```
-4. **Basic Understanding:** Review [What is a Verifiable Credential?](../../core-concepts/credentials-and-data/verifiable-credentials-vcs.md) and the previous tutorial [Create and Send Your First Digital Credential.](create-a-credential.md)
+4. **Basic Understanding:** Review [What is a Verifiable Credential?](../core-concepts/credentials-and-data/verifiable-credentials-vcs.md) and the previous tutorial [Create and Send Your First Digital Credential.](create-a-credential.md)
 
 ***
 
@@ -389,4 +389,4 @@ Boosts are a powerful way to manage credentialing at scale. From here, you can e
 * **Boost Hierarchies:** Organize Boosts into parent-child relationships. (See Boost Hierarchies).
 * Customizing **Display Options** for your Boosts to make them visually appealing in wallets.
 
-Explore the [Boost Credentials Core Concept page](../../core-concepts/credentials-and-data/boost-credentials.md) for more in-depth information on all the capabilities of Boosts!
+Explore the [Boost Credentials Core Concept page](../core-concepts/credentials-and-data/boost-credentials.md) for more in-depth information on all the capabilities of Boosts!

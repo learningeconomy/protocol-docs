@@ -18,7 +18,7 @@ Welcome! This tutorial will walk you through creating your very first digital Ve
 
 **Why is this useful?** Understanding this basic flow is the first step to building applications that can issue digital badges, certificates, or any other kind of verifiable proof to users, empowering them with portable and trustworthy records.
 
-{% embed url="https://codepen.io/Jacks-n-Smith/pen/YPPgyyM" fullWidth="true" %}
+{% embed url="https://codepen.io/Jacks-n-Smith/pen/YPPgyyM" fullWidth="false" %}
 
 ## **Prerequisites:**
 
@@ -37,7 +37,7 @@ Welcome! This tutorial will walk you through creating your very first digital Ve
        # or
        # yarn add @learncard/init @learncard/didkit-plugin
        ```
-4. **Basic Understanding:** While this is a beginner tutorial, a quick read of our [What is a Verifiable Credential?](../../core-concepts/credentials-and-data/verifiable-credentials-vcs.md) and [What is a DID?](../../core-concepts/identities-and-keys/decentralized-identifiers-dids.md) Core Concept pages will be helpful.
+4. **Basic Understanding:** While this is a beginner tutorial, a quick read of our [What is a Verifiable Credential?](../core-concepts/credentials-and-data/verifiable-credentials-vcs.md) and [What is a DID?](../core-concepts/identities-and-keys/decentralized-identifiers-dids.md) Core Concept pages will be helpful.
 
 ***
 
@@ -86,7 +86,7 @@ async function setupIssuerLearnCard() {
 This code initializes a LearnCard instance.&#x20;
 
 {% hint style="info" %}
-The `seed` is used to generate a unique Decentralized Identifier (DID) and cryptographic keys for your Issuer. In a real application, this seed must be kept extremely secure. [Learn more](../../core-concepts/identities-and-keys/seed-phrases.md).
+The `seed` is used to generate a unique Decentralized Identifier (DID) and cryptographic keys for your Issuer. In a real application, this seed must be kept extremely secure. [Learn more](../core-concepts/identities-and-keys/seed-phrases.md).
 {% endhint %}
 
 ### **Step 1.3:  Ensure Issuer Has a Service Profile**&#x20;
@@ -326,8 +326,8 @@ Congratulations! You've successfully: ✅ Set up a basic Issuer using the LearnC
 
 This tutorial covers the fundamental flow of issuing credentials. From here, you can explore:
 
-* Creating more complex credentials with different [**Schemas and Types**](../../core-concepts/credentials-and-data/achievement-types-and-categories.md).
-* Using [**ConsentFlows**](../../core-concepts/consent-and-permissions/consentflow-overview.md) to manage data sharing before issuing credentials.
+* Creating more complex credentials with different [**Schemas and Types**](../core-concepts/credentials-and-data/achievement-types-and-categories.md).
+* Using [**ConsentFlows**](../core-concepts/consent-and-permissions/consentflow-overview.md) to manage data sharing before issuing credentials.
 * Integrating this issuance logic into your own applications and backend services.
 
 Explore the rest of our documentation to learn more about the powerful features of LearnCard!

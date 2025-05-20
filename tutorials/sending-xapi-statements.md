@@ -8,15 +8,15 @@ This tutorial will walk you through the essential steps to send an xAPI statemen
 * Send the statement to the LearnCloud xAPI endpoint.
 * Retrieve and verify the statement you sent.
 
-{% embed url="https://codepen.io/Jacks-n-Smith/pen/xbbBmBV" fullWidth="true" %}
+{% embed url="https://codepen.io/Jacks-n-Smith/pen/xbbBmBV" fullWidth="false" %}
 
 ## **Prerequisites:**
 
 1. **Understanding Key Concepts:**
-   * **What is xAPI?** xAPI (Experience API) is a way to track learning experiences using a simple "Actor - Verb - Object" structure (e.g., "Sarah completed 'Safety Course'"). For a deeper dive, see our [Understanding xAPI Data in LearnCard](../../core-concepts/credentials-and-data/xapi-data.md) core concept page.
-   * **What is a DID?** A DID (Decentralized Identifier) is a unique identifier for your user. Think of it as a secure, private digital ID. More details can be found on our [Understanding DIDs](../../core-concepts/identities-and-keys/decentralized-identifiers-dids.md) core concept page.
+   * **What is xAPI?** xAPI (Experience API) is a way to track learning experiences using a simple "Actor - Verb - Object" structure (e.g., "Sarah completed 'Safety Course'"). For a deeper dive, see our [Understanding xAPI Data in LearnCard](../core-concepts/credentials-and-data/xapi-data.md) core concept page.
+   * **What is a DID?** A DID (Decentralized Identifier) is a unique identifier for your user. Think of it as a secure, private digital ID. More details can be found on our [Understanding DIDs](../core-concepts/identities-and-keys/decentralized-identifiers-dids.md) core concept page.
 2. **Your Environment:**
-   * You have the [LearnCard SDK ](../../sdks/learncard-core/)initialized in your project.
+   * You have the [LearnCard SDK ](../sdks/learncard-core/)initialized in your project.
    * You have obtained a **JSON Web Token (JWT)** for authentication. This JWT represents the authenticated user (the "actor"). As an example of how to create this JWT, check out ["Connect a Game" tutorial.](gameflow.md)
    * You have the **DID** of the authenticated user.
    * The default LearnCloud xAPI endpoint is `https://cloud.learncard.com/xapi/statements`.
@@ -277,7 +277,7 @@ The response from a `GET` request to the `/statements` endpoint will be a JSON o
   * Users can typically only read statements where they are the actor. The DID in your JWT (`X-VP` header) must match the actor's DID you are querying for. A `401 Unauthorized` error often means a DID mismatch or an invalid/expired JWT.
 * **Error Handling:** Always check response statuses and handle potential errors from the API or network issues.
 * **Delegated Access:** For scenarios where another party needs to read statements, LearnCloud supports a delegated access mechanism using Verifiable Credentials. (See Advanced Topics: Delegated Access for more info).
-* **Voiding Statements:** You can invalidate previously sent statements. (See [Advanced Topics: Voiding Statements](../../sdks/learncloud-storage-api/xapi-reference.md#voiding-statements) for how).
+* **Voiding Statements:** You can invalidate previously sent statements. (See [Advanced Topics: Voiding Statements](../sdks/learncloud-storage-api/xapi-reference.md#voiding-statements) for how).
 
 ***
 
@@ -288,8 +288,8 @@ Congratulations! You've now seen how to send and read basic xAPI statements with
 From here, you can explore:
 
 * Sending different types of xAPI statements (e.g., `completed`, `mastered`, with `result` objects).
-* Using the other examples provided in our [xAPI Concepts Guide](../../core-concepts/credentials-and-data/xapi-data.md).
-* Implementing more advanced queries to filter and retrieve statements. (See [Advanced xAPI Statement Queries](../../sdks/learncloud-storage-api/xapi-reference.md#advanced-xapi-statement-queries)).
+* Using the other examples provided in our [xAPI Concepts Guide](../core-concepts/credentials-and-data/xapi-data.md).
+* Implementing more advanced queries to filter and retrieve statements. (See [Advanced xAPI Statement Queries](../sdks/learncloud-storage-api/xapi-reference.md#advanced-xapi-statement-queries)).
 * Connecting these xAPI statements as evidence for Verifiable Credentials.
 
 Happy tracking!

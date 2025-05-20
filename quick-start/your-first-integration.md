@@ -17,7 +17,7 @@ No experience required. Just code, coffee, and a terminal.
 
 ### ⭐️ What You'll Be Making
 
-{% embed url="https://codepen.io/Jacks-n-Smith/pen/KwwEbjY" fullWidth="true" %}
+{% embed url="https://codepen.io/Jacks-n-Smith/pen/KwwEbjY" fullWidth="false" %}
 
 ### 🧰 Installation
 
