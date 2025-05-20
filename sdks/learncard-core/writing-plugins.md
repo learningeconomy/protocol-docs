@@ -130,7 +130,7 @@ This argument defaults to `never`, specifying that this plugin does not depend o
 Specifying one or more Dependent Control Planes will add those planes to the [implicit LearnCard](writing-plugins.md#the-implicit-learncard-object) passed into each plugin method!
 
 {% hint style="warning" %}
-Specifying Dependent Planes here will _not_ force LearnCards to implement those planes when adding this plugin! Please see [Depending on Plugins](broken-reference) for more information.
+Specifying Dependent Planes here will _not_ force LearnCards to implement those planes when adding this plugin! Please see [Depending on Plugins](writing-plugins.md#depending-on-plugins) for more information.
 {% endhint %}
 
 #### Arg 5: Dependent Methods
