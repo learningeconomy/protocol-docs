@@ -7,7 +7,7 @@ description: Seek Context, Find Clarity
 {% hint style="danger" %}
 **Warning!**
 
-Usage of this Plugin is _strongly_ discouraged due to security and performance concerns! If there is a context that LearnCard isn't using, it is instead a much better idea to simply make a small plugin implementing the [Context Plane](broken-reference) that resolves it rather than resort to dynamic context resolution!
+Usage of this Plugin is _strongly_ discouraged due to security and performance concerns! If there is a context that LearnCard isn't using, it is instead a much better idea to simply make a small plugin implementing the [Context Plane](../../core-concepts/architecture-and-principles/control-planes.md#context-control-plane) that resolves it rather than resort to dynamic context resolution!
 
 See [https://www.w3.org/TR/json-ld11/#iana-security](https://www.w3.org/TR/json-ld11/#iana-security) for more details.
 {% endhint %}
