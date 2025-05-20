@@ -1124,6 +1124,10 @@ try {
 
 Examples for managing authorization grants and generating API tokens.
 
+{% hint style="info" %}
+Click here for more information on [Auth Grants and Scopes](../../core-concepts/architecture-and-principles/auth-grants-and-api-tokens.md).
+{% endhint %}
+
 ```typescript
 const authGrantPartial = { name: "External Service XYZ", description: "Auth Grant for XYZ Service", scope: 'read:profile write:boosts', expiresAt: new Date(Date.now() + 3600000).toISOString() };
 const authGrantIdToManage = 'grant-id-xyz'; // Example ID of an existing grant

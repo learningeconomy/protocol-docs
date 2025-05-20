@@ -37,7 +37,7 @@ These are some of the most common and quickest ways to get started.&#x20;
 Sometimes you need more than the basic, out-of-the-box flows because you have a complex community or use case. That's great! All of our tooling is fully pluggable and open-source, so with a little elbow grease and developer time, you should be able to accomplish your goals.
 
 {% hint style="warning" %}
-**Don't have your own developers?** We're here to [help](../../../development/custom-development.md).&#x20;
+**Don't have your own developers?** We're here to [help](../custom-development.md).&#x20;
 {% endhint %}
 
 ### **Build Your Own Bot**

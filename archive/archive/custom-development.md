@@ -1,5 +1,6 @@
 ---
 description: Need help? Learning Economy Studios is here to help.
+hidden: true
 layout:
   title:
     visible: true

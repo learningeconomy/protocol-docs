@@ -62,7 +62,7 @@ const AUTH_GRANT_AUTH_GRANTS_SCOPE = 'authGrants:*';
 
 ## Working with Auth Grants & API Tokens
 
-* Follow a tutorial on how to programmatically [generate-api-tokens.md](../../tutorials/explore-advanced-topics/generate-api-tokens.md "mention")
+* Follow a tutorial on how to programmatically [generate-api-tokens.md](../../how-to-guides/deploy-infrastructure/generate-api-tokens.md "mention")
 * Explore Usage Examples with LearnCard SDK Wallet
 
 ### Security Considerations

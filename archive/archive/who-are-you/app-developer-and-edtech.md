@@ -117,14 +117,14 @@ Alternatively, given your specific use case, you may not want to leverage the Le
 
 * [Deploy your own federated LearnCard Network node](broken-reference)**:** have full control over the exchange network while remaining fully interoperable with the total ecosystem!
 * &#x20;[Setup your own VC-API Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md).&#x20;
-* Or, you can [reach out to us for support and custom development to help connect your Institution](../../../development/custom-development.md).
+* Or, you can [reach out to us for support and custom development to help connect your Institution](../custom-development.md).
 
 {% hint style="info" %}
 Note: these options are not mutually exclusive! For example, you can use your existing or new VC-API compliant issuer within the LearnCard Network to send and sign VCs and handle key material. Or, you could launch your own Network node and use your own VC-API.
 {% endhint %}
 
-{% content-ref url="../../../development/custom-development.md" %}
-[custom-development.md](../../../development/custom-development.md)
+{% content-ref url="../custom-development.md" %}
+[custom-development.md](../custom-development.md)
 {% endcontent-ref %}
 
 ### #2—Accept & Verify Credentials in Your Platform&#x20;
@@ -178,7 +178,7 @@ By integrating CHAPI and LearnCard SDK into your hiring platform, you can create
 Sometimes you need more than the basic, out-of-the-box flows because you have a complex community or use case. That's great! All of our tooling is fully pluggable and open-source, so with a little elbow grease and developer time, you should be able to accomplish your goals.
 
 {% hint style="warning" %}
-**Need additional development assistance?** We're here to [help](../../../development/custom-development.md).&#x20;
+**Need additional development assistance?** We're here to [help](../custom-development.md).&#x20;
 {% endhint %}
 
 ## Coming Soon

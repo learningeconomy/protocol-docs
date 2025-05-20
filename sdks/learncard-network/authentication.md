@@ -5,7 +5,7 @@
 To interact with the LearnCard Network API, you can choose one of two ways to authenticate:
 
 1. Using the LearnCard Network Plugin (`@learncard/network-plugin`) which handles authentication for you. **(Preferred option)**
-2. Using[ a scoped API Token](../../tutorials/explore-advanced-topics/generate-api-tokens.md) for authentication with API endpoints. (recommended for implementations using REST endpoints).&#x20;
+2. Using[ a scoped API Token](../../how-to-guides/deploy-infrastructure/generate-api-tokens.md) for authentication with API endpoints. (recommended for implementations using REST endpoints).&#x20;
 3. Directly through the API endpoints using challenge-based DID Authentication. (most complex)
 
 #### 1. Using LearnCard Network Plugin
@@ -56,7 +56,7 @@ const networkLearnCard learnCard.addPlugin(
 
 When using the LearnCard Network Plugin, challenge-based DID Authentication is handled for you, so no further steps are necessary.
 
-#### 2.  Using a [scoped API Token](../../tutorials/explore-advanced-topics/generate-api-tokens.md)
+#### 2.  Using a [scoped API Token](../../how-to-guides/deploy-infrastructure/generate-api-tokens.md)
 
 ```typescript
 // Step 1: Create an AuthGrant with specific permissions

@@ -16,7 +16,7 @@ This guide will walk you through everything you need to collaborate with our com
 Additionally, based on some of our conversations, you may be interested in leveraging the LearnCard SDK as part of your platform or infrastructure for issuing or for your own wallet application. We have prepared two additional guides for these scenarios:
 
 1. [**Guide for Creating an Issuer**](guide-for-interop-issuers/creating-an-interop-issuer.md): how to use LearnCard SDK to issue credentials from your platform.
-2. [**Guide for Creating a Wallet**](../../../../tutorials/explore-advanced-topics/chapi/chapi-wallet-setup-guide.md): how to use LearnCard SDK to create your own wallet application.
+2. [**Guide for Creating a Wallet**](../../../../how-to-guides/implement-flows/chapi/chapi-wallet-setup-guide.md): how to use LearnCard SDK to create your own wallet application.
 
 Additionally, if you haven't already, we would love for you to [**join our early access cohort**](broken-reference) as a collaborator in Plugfest—to help strengthen open-source tools for the whole ecosystem!&#x20;
 

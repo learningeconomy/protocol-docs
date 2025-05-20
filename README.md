@@ -67,4 +67,4 @@ The best way to start engaging in the community is to participate in our [Github
 * [Ask for Help](https://github.com/learningeconomy/LearnCard/discussions/categories/help) 💖
 * [Show off your project to the community!](https://github.com/learningeconomy/LearnCard/discussions/categories/show-and-tell) 🙌
 
-Do you need custom development or technical support? Click [here](development/custom-development.md), or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).
+Do you need custom development or technical support? Click [here](archive/archive/custom-development.md), or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).

@@ -368,32 +368,32 @@ const credentialWithEvidence = {
       "image": "https://example.com/badge-images/web-dev-advanced.png",
       "name": "Advanced Web Development",
       "type": ["Achievement"],
-      // Evidence array within the achievement object
-      "evidence": [
-        {
-          "id": "urn:uuid:" + crypto.randomUUID(),
-          "type": ["Evidence"],
-          "name": "Final Project",
-          "description": "E-commerce website built with React and Node.js",
-          "narrative": "The student designed and developed a fully functional e-commerce platform with user authentication, product catalog, shopping cart, and payment processing integration.",
-          "genre": "Project",
-          // URL to the evidence
-          "url": "https://github.com/student-example/ecommerce-project"
-        },
-        {
-          "id": "urn:uuid:" + crypto.randomUUID(),
-          "type": ["Evidence"],
-          "name": "Technical Assessment",
-          "description": "Assessment of JavaScript proficiency",
-          "narrative": "Scored 95% on a comprehensive assessment covering advanced JavaScript concepts including asynchronous programming, closures, and ES6+ features.",
-          "genre": "Assessment",
-          "url": "https://example.com/assessment-results/student123"
-        }
-      ]
     },
     "id": "did:web:network.learncard.com:users:student-example",
     "type": ["AchievementSubject"]
   },
+  // Evidence array within the achievement object
+  "evidence": [
+    {
+      "id": "urn:uuid:" + crypto.randomUUID(),
+      "type": ["Evidence"],
+      "name": "Final Project",
+      "description": "E-commerce website built with React and Node.js",
+      "narrative": "The student designed and developed a fully functional e-commerce platform with user authentication, product catalog, shopping cart, and payment processing integration.",
+      "genre": "Project",
+      // URL to the evidence
+      "url": "https://github.com/student-example/ecommerce-project"
+    },
+    {
+      "id": "urn:uuid:" + crypto.randomUUID(),
+      "type": ["Evidence"],
+      "name": "Technical Assessment",
+      "description": "Assessment of JavaScript proficiency",
+      "narrative": "Scored 95% on a comprehensive assessment covering advanced JavaScript concepts including asynchronous programming, closures, and ES6+ features.",
+      "genre": "Assessment",
+      "url": "https://example.com/assessment-results/student123"
+    }
+  ],
   "display": {
     "backgroundColor": "#3F51B5",
     "displayType": "certificate"

@@ -36,10 +36,10 @@ These details are to be provided along with the plugin.
 
 ## How to Create a Plugin
 
-If you're looking for a guide on creating a plugin, check-out the [Build a Plugin ](../../tutorials/explore-advanced-topics/the-simplest-plugin.md)guide:
+If you're looking for a guide on creating a plugin, check-out the [Build a Plugin ](../../how-to-guides/deploy-infrastructure/the-simplest-plugin.md)guide:
 
-{% content-ref url="../../tutorials/explore-advanced-topics/the-simplest-plugin.md" %}
-[the-simplest-plugin.md](../../tutorials/explore-advanced-topics/the-simplest-plugin.md)
+{% content-ref url="../../how-to-guides/deploy-infrastructure/the-simplest-plugin.md" %}
+[the-simplest-plugin.md](../../how-to-guides/deploy-infrastructure/the-simplest-plugin.md)
 {% endcontent-ref %}
 
 ## The Plugin Type
@@ -335,7 +335,7 @@ const vc = await learnCard.read.get(uri);
 
 Sometimes plugins need to expose some bespoke logic that doesn't fit neatly into one of the [Control Planes](../../core-concepts/architecture-and-principles/control-planes.md). Plugin methods allow plugins to expose this logic directly on the resulting LearnCard object.
 
-We have already seen this in action in [The Simplest Plugin](../../tutorials/explore-advanced-topics/the-simplest-plugin.md), but let's go into a bit more depth about what's happening here by making a quick plugin that implements a basic counter.
+We have already seen this in action in [The Simplest Plugin](../../how-to-guides/deploy-infrastructure/the-simplest-plugin.md), but let's go into a bit more depth about what's happening here by making a quick plugin that implements a basic counter.
 
 ## Types
 
@@ -554,7 +554,7 @@ This pattern allows any number of plugins to add extra verification logic to the
 
 ## Depending On Plugins
 
-While it is useful for [The Simplest Plugin](../../tutorials/explore-advanced-topics/the-simplest-plugin.md) to add its own isolated logic to a LearnCard, part of the beauty of LearnCard plugins is to _depend_ on other plugins 💪&#x20;
+While it is useful for [The Simplest Plugin](../../how-to-guides/deploy-infrastructure/the-simplest-plugin.md) to add its own isolated logic to a LearnCard, part of the beauty of LearnCard plugins is to _depend_ on other plugins 💪&#x20;
 
 Plugin dependence comes in two flavors:&#x20;
 

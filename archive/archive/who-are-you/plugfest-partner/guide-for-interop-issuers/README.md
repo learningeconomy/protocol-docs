@@ -13,7 +13,7 @@ This guide will walk you through everything you need to **Issue credentials from
 ### VC-API/CHAPI
 
 1. If your issuing platform **already supports VC-API/CHAPI**, then we should already be interoperable! Open up the [LearnCard app](broken-reference), register it as a wallet, then try issuing from your platform and verify you can claim the Verifiable Credential in the LearnCard app. The[ CHAPI Playground](https://playground.chapi.io/issuer) is a great place to test as well (Contact [Digital Bazaar/Veres ](https://veres.io/contact/)to add yourself as an issuer).&#x20;
-2. If your issuing platform supports VC-API, **but does not yet support CHAPI.** Start [here](../../../../../tutorials/explore-advanced-topics/chapi/using-learncard-to-interact-with-a-chapi-wallet.md)—then replace the test VC with the signed credential from your VC-API. Reference the[ Issuer cheatsheet for CHAPI.](../../../../../tutorials/explore-advanced-topics/chapi/cheat-sheets/issuers.md)
+2. If your issuing platform supports VC-API, **but does not yet support CHAPI.** Start [here](../../../../../how-to-guides/implement-flows/chapi/using-learncard-to-interact-with-a-chapi-wallet.md)—then replace the test VC with the signed credential from your VC-API. Reference the[ Issuer cheatsheet for CHAPI.](../../../../../how-to-guides/implement-flows/chapi/cheat-sheets/issuers.md)
 3. If your issuing platform supports CHAPI, **but does not yet support VC-API.** You will need to [setup a VC-API endpoint](../../../learncard-bridge.md) to sign the Credential before passing it to CHAPI _(🚧 coming soon)._&#x20;
 4. If your issuing platform **does not yet support VC-API or CHAPI**. You will need to do #2 & #3. For a zero to sixty guide on this—start [here](creating-an-interop-issuer.md).
 

@@ -59,14 +59,14 @@ Let's walk through the steps to issue Stefania a course completion with LearnCar
 * You cryptographically sign and send a credential to Stefania.
 * Stefania accepts the credential into her LearnCard.
 
-To accomplish this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your Institution](../../../development/custom-development.md).
+To accomplish this, you can either [setup your own, interoperable Issuer by following these steps](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md), or you can [reach out to us for support and custom development to help connect your Institution](../custom-development.md).
 
 {% content-ref url="plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md" %}
 [creating-an-interop-issuer.md](plugfest-partner/guide-for-interop-issuers/creating-an-interop-issuer.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../development/custom-development.md" %}
-[custom-development.md](../../../development/custom-development.md)
+{% content-ref url="../custom-development.md" %}
+[custom-development.md](../custom-development.md)
 {% endcontent-ref %}
 
 ### **#3—Verify Credentials within your Institution from a Learner**
@@ -78,7 +78,7 @@ To accomplish this, you can either [setup your own, interoperable Issuer by foll
 Sometimes you need more than the basic, out-of-the-box flows because you have a complex institution or use case. That's great! All of our tooling is fully pluggable and open-source, so with a little elbow grease and developer time, you should be able to accomplish your goals.
 
 {% hint style="warning" %}
-**Don't have your own developers?** We're here to [help](../../../development/custom-development.md).&#x20;
+**Don't have your own developers?** We're here to [help](../custom-development.md).&#x20;
 {% endhint %}
 
 ### **Build Your Own Plugin**

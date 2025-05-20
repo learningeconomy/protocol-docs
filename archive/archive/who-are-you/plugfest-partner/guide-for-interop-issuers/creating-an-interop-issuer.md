@@ -42,7 +42,7 @@ Once you've established what credentials you would like to issue, you can checko
 On the client side, you will need to prepare your web application for issuing credentials. An easy way to achieve interoperability is to use CHAPI.&#x20;
 
 * [**Install**](broken-reference) [learn-card-core package](broken-reference) from pnpm, yarn, or npm into your project.
-* [**Initialize** LearnCard in your web application with CHAPI enabled](../../../../../tutorials/explore-advanced-topics/chapi/using-learncard-to-interact-with-a-chapi-wallet.md). Reference the[ Issuer cheatsheet for CHAPI.](../../../../../tutorials/explore-advanced-topics/chapi/cheat-sheets/issuers.md)&#x20;
+* [**Initialize** LearnCard in your web application with CHAPI enabled](../../../../../how-to-guides/implement-flows/chapi/using-learncard-to-interact-with-a-chapi-wallet.md). Reference the[ Issuer cheatsheet for CHAPI.](../../../../../how-to-guides/implement-flows/chapi/cheat-sheets/issuers.md)&#x20;
 * **Replace the Test VC** with the `newCredential()` you defined in [step 1](creating-an-interop-issuer.md#1-identify-what-credentials-you-want-to-issue.).
 
 ### &#x33;**—**&#x53;etting up your VC-API endpoint

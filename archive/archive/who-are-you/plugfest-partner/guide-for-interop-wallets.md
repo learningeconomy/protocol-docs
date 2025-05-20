@@ -20,7 +20,7 @@ This guide is divided between the two core protocols aligned with Plugfest that 
    3. Click "Generate Verifiable Credential"&#x20;
    4. Click "Store in Wallet" and select your Wallet. Then, claim your credential.
    5. If all went well, you should be able to see the credential issued in your wallet application. Success! ✅ 🎉
-2. If your wallet application **does not yet support CHAPI.** Start [here](../../../../tutorials/explore-advanced-topics/chapi/chapi-wallet-setup-guide.md). Reference the [Wallet cheatsheet for CHAPI.](../../../../tutorials/explore-advanced-topics/chapi/cheat-sheets/wallets.md) After you have implemented, return and do steps in #1 above.
+2. If your wallet application **does not yet support CHAPI.** Start [here](../../../../how-to-guides/implement-flows/chapi/chapi-wallet-setup-guide.md). Reference the [Wallet cheatsheet for CHAPI.](../../../../how-to-guides/implement-flows/chapi/cheat-sheets/wallets.md) After you have implemented, return and do steps in #1 above.
 
 {% hint style="success" %}
 Need extra help, or have a question? Engage in our [Github Discussions](https://github.com/learningeconomy/LearnCard/discussions)!&#x20;

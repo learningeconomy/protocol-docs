@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Generate API Tokens
 
 Click here for more information on [Auth Grants and Scopes](../../core-concepts/architecture-and-principles/auth-grants-and-api-tokens.md).
