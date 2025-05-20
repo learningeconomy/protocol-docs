@@ -1,14 +1,12 @@
----
-hidden: true
----
-
 # Generate API Tokens
 
+{% hint style="info" %}
 Click here for more information on [Auth Grants and Scopes](../../core-concepts/architecture-and-principles/auth-grants-and-api-tokens.md).
+{% endhint %}
 
-### Complete End-to-End Example
+### How to Generate API Tokens
 
-Here's a complete example showing how to:
+Here's an example showing how to:
 
 1. Create an AuthGrant
 2. Generate an API token

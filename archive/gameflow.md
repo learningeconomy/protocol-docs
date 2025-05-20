@@ -6,7 +6,7 @@ description: Securely connecting educational games with digital learning achieve
 
 
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>GameFlow Overview</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>GameFlow Overview</p></figcaption></figure>
 
 ## What is GameFlow?
 
@@ -14,7 +14,7 @@ GameFlow is an integration framework that creates a seamless connection between 
 
 Think of GameFlow as a secure bridge between two important pieces: the LearnCard App (which stores a learner's educational accomplishments) and educational games (which create new learning experiences). When a game is connected through GameFlow, it can both read existing achievements from the student's LearnCard wallet and write new credentials as the student progresses through the game.
 
-Since many educational games are designed for younger learners, GameFlow includes comprehensive safety features. Central to this is its built-in guardianship consent system, which ensures parents or guardians maintain oversight of how their child's educational data is used. The system leverages [ConsentFlow](../../archive/archive/consentflow.md) technology to provide precise control over data ownership and privacy, giving families peace of mind about their children's digital learning journey.
+Since many educational games are designed for younger learners, GameFlow includes comprehensive safety features. Central to this is its built-in guardianship consent system, which ensures parents or guardians maintain oversight of how their child's educational data is used. The system leverages [ConsentFlow](broken-reference) technology to provide precise control over data ownership and privacy, giving families peace of mind about their children's digital learning journey.
 
 By implementing GameFlow, game developers can focus on creating engaging educational experiences while knowing that all student achievement data will be securely and appropriately handled within the LearnCard ecosystem.
 
@@ -22,11 +22,11 @@ By implementing GameFlow, game developers can focus on creating engaging educati
 
 ### Overview
 
-GameFlow builds upon [ConsentFlow](../../core-concepts/consent-and-permissions/consentflow-overview.md)'s powerful contract system to manage permissions and data access in educational games. Before implementing GameFlow, we recommend familiarizing yourself with ConsentFlow's documentation to understand its contract system and management capabilities.
+GameFlow builds upon [ConsentFlow](../core-concepts/consent-and-permissions/consentflow-overview.md)'s powerful contract system to manage permissions and data access in educational games. Before implementing GameFlow, we recommend familiarizing yourself with ConsentFlow's documentation to understand its contract system and management capabilities.
 
 ### Creating Your GameFlow Contract
 
-While GameFlow contracts follow the standard [ConsentFlow](../../core-concepts/consent-and-permissions/consentflow-overview.md) creation process, they require three specific configurations to enable their educational gaming features:
+While GameFlow contracts follow the standard [ConsentFlow](../core-concepts/consent-and-permissions/consentflow-overview.md) creation process, they require three specific configurations to enable their educational gaming features:
 
 #### Required Configuration
 
@@ -122,4 +122,4 @@ When a user consents to your application through GameFlow, they provide a specia
 3. (Optionally) You create a new DID-Auth VP using this credential
 4. The DID-Auth VP from either Step 2 or Step 3 is included with your xAPI requests as an "X-VP" header
 
-When you're ready, head to the next section to start [sending xAPI statements](sending-xapi-statements.md).
+When you're ready, head to the next section to start [sending xAPI statements](../tutorials/sending-xapi-statements.md).

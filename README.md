@@ -33,7 +33,7 @@ LearnCard is already used to:
 
 This documentation is your guide to building with LearnCard. Here’s how to navigate it:
 
-* [**Core Concepts**](archive/archive/core-concepts.md): Understand the philosophy and structure of the ecosystem.
+* [**Core Concepts**](broken-reference): Understand the philosophy and structure of the ecosystem.
 * [**Use Cases & Possibilities**](introduction/use-cases-and-possibilities.md): Explore real-world implementations.
 * [**Quick Start**](broken-reference): Go from zero to integrated in minutes.
 * [**Tutorials**](broken-reference): Learn by building key example projects with LearnCard SDK and APIs.&#x20;
@@ -68,4 +68,4 @@ The best way to start engaging in the community is to participate in our [Github
 * [Ask for Help](https://github.com/learningeconomy/LearnCard/discussions/categories/help) 💖
 * [Show off your project to the community!](https://github.com/learningeconomy/LearnCard/discussions/categories/show-and-tell) 🙌
 
-Do you need custom development or technical support? Click [here](archive/archive/custom-development.md), or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).
+Do you need custom development or technical support? Click [here](broken-reference), or send us an email at [sdk@learningeconomy.io](mailto:sdk@learningeconomy.io).

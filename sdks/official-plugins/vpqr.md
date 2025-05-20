@@ -29,7 +29,7 @@ pnpm i @learncard/vpqr-plugin
 
 There are many use cases for converting between VPs & QR codes.
 
-* Issuing a Verifiable Credential to a subject: for example, check out the [LearnCard Discord Bot](../../archive/archive/discord-bot.md), which sends a QR code as an attachment to an issued credential in a Discord message, allowing receivers to scan and claim the credential from any interoperable wallet.
+* Issuing a Verifiable Credential to a subject: for example, check out the [LearnCard Discord Bot](broken-reference), which sends a QR code as an attachment to an issued credential in a Discord message, allowing receivers to scan and claim the credential from any interoperable wallet.
 * `//TODO: more examples`
 
 ### How to Convert a Verifiable Presentation into a QR code:

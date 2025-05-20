@@ -135,4 +135,4 @@ If you’re ready to see it in action:
 
 * 🔌 Go to [Your First Integration](../quick-start/your-first-integration.md)
 * 🧰 Dive into the [SDK Reference](broken-reference)
-* 🧠 Revisit[ Core Concepts](../archive/archive/core-concepts.md) if you want a deeper primer
+* 🧠 Revisit[ Core Concepts](broken-reference) if you want a deeper primer
