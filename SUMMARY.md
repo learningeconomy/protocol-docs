@@ -162,7 +162,3 @@
 
 * [Roadmap](development/roadmap.md)
 * [Contributing](development/contributing.md)
-
-## 💀 ARCHIVE
-
-* [Connect a Game](archive/gameflow.md)

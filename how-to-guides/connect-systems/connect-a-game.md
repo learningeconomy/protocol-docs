@@ -1,10 +1,10 @@
 ---
-description: 'Tutorial: Connect Your Educational Game with LearnCard GameFlow'
+description: 'How-To Guid: Connect Your Educational Game with LearnCard GameFlow'
 ---
 
 # Connect a Game
 
-Want to enable your educational game to securely issue verifiable badges, track learning progress, and respect user privacy with robust guardian consent? This tutorial will guide you through integrating your game with LearnCard using **GameFlow**.
+Want to enable your educational game to securely issue verifiable badges, track learning progress, and respect user privacy with robust guardian consent? This guide will walk you through integrating your game with LearnCard using **GameFlow**.
 
 ## **Our Example Use Case: "Math Adventures" Game**&#x20;
 
@@ -18,7 +18,7 @@ Imagine "Math Adventures," an online game designed to teach elementary school st
 GameFlow is a specialized framework built on LearnCard's powerful **ConsentFlow** system. It's designed to create a seamless and secure bridge between educational games and a student's LearnCard digital wallet. [Learn more.](../../core-concepts/consent-and-permissions/gameflow-overview.md)
 {% endhint %}
 
-## **What you'll accomplish in this tutorial:**
+## **What you'll accomplish in this Guide:**
 
 1. Set up your game's backend as a LearnCard Issuer.
 2. Create a "GameFlow Contract" with specific settings for guardian consent and data permissions.
@@ -30,7 +30,7 @@ GameFlow is a specialized framework built on LearnCard's powerful **ConsentFlow*
 
 * **LearnCard SDK Initialized (for your Game's Backend):** Your game's backend server will need an active `learnCard` instance.
 * **Service Profile for Your Game:** Your game will need its own identity on the LearnCard Network.
-* **Basic Understanding:** Familiarity with DIDs, Verifiable Credentials (VCs), Boosts, and the general ConsentFlow Tutorial is highly recommended. Understanding xAPI Concepts will be useful if you plan to use that feature.
+* **Basic Understanding:** Familiarity with [DIDs](../../core-concepts/identities-and-keys/decentralized-identifiers-dids.md), [Verifiable Credentials (VCs),](../../core-concepts/credentials-and-data/verifiable-credentials-vcs.md) [Boosts](../../core-concepts/credentials-and-data/boost-credentials.md), and the [general ConsentFlow Tutorial ](../../tutorials/create-a-consentflow.md)is highly recommended. Understanding [xAPI Concepts ](../../tutorials/sending-xapi-statements.md)will be useful if you plan to use that feature.
 * **Web Development Setup:**
   * A backend environment for your game (e.g., Node.js with Express).
   * A frontend for your game (HTML/JS, or your game engine's web interface).
