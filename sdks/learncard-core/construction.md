@@ -368,7 +368,7 @@ const storedCredential = await learnCard.read.get(record.uri);
 {% endcode %}
 
 {% hint style="info" %}
-The above example uses LearnCloud storage, but there are many ways to store and retrieve a credential! Check out the[ **Store control plane**](broken-reference) for more info and options.
+The above example uses LearnCloud storage, but there are many ways to store and retrieve a credential! Check out the[ **Store control plane**](../../core-concepts/architecture-and-principles/control-planes.md#store-control-plane) for more info and options.
 {% endhint %}
 
 

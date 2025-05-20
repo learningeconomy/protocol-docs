@@ -95,7 +95,7 @@ The `keypair` method (optionally) takes in a cryptographic algorithm (e.g. ed255
 The Read Control Plane is the interface responsible for resolving a [URI](../credentials-and-data/uris.md) to its Verifiable Credential.&#x20;
 
 {% hint style="info" %}
-If the LearnCard also implements the [Cache Plane](broken-reference), then this Plane will automatically be cached!
+If the LearnCard also implements the [Cache Plane](control-planes.md#cache-control-plane), then this Plane will automatically be cached!
 {% endhint %}
 
 The Read Plane implements one method: `get`
@@ -127,7 +127,7 @@ The `getMany` method takes in an array of [URI](../credentials-and-data/uris.md)
 The Store Control Plane is the interface responsible for storing a Verifiable Credential and returning a [URI](../credentials-and-data/uris.md) that resolves to it.
 
 {% hint style="info" %}
-If the LearnCard also implements the [Cache Plane](broken-reference), then this Plane will automatically be cached!
+If the LearnCard also implements the [Cache Plane](control-planes.md#cache-control-plane), then this Plane will automatically be cached!
 {% endhint %}
 
 {% hint style="info" %}
@@ -191,7 +191,7 @@ The `uploadMany` method takes in an array of Verifiable Credentials, stores the 
 The Index Control Plane is the interface responsible for managing [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) operations on the holder's personal index.
 
 {% hint style="info" %}
-If the LearnCard also implements the [Cache Plane](broken-reference), then this method will automatically be cached!
+If the LearnCard also implements the [Cache Plane](control-planes.md#cache-control-plane), then this method will automatically be cached!
 {% endhint %}
 
 {% hint style="info" %}
@@ -238,7 +238,7 @@ Note: This method is optional
 {% endhint %}
 
 {% hint style="info" %}
-If the LearnCard also implements the [Cache Plane](broken-reference), then this method will automatically be cached!
+If the LearnCard also implements the [Cache Plane](control-planes.md#cache-control-plane), then this method will automatically be cached!
 {% endhint %}
 
 When there are a lot of credentials stored in the index for a given query, it can be useful to paginate your queries rather than request all of them at once. That is what `getPage` is for! This call will return an object of the following shape:
@@ -272,7 +272,7 @@ Note: This method is optional
 {% endhint %}
 
 {% hint style="info" %}
-If the LearnCard also implements the [Cache Plane](broken-reference), then this Plane will automatically be cached!
+If the LearnCard also implements the [Cache Plane](control-planes.md#cache-control-plane), then this Plane will automatically be cached!
 {% endhint %}
 
 Sometimes, it can be useful for an app to display the total number of records for a given query without wanting to actual grab every credential for that query. This is where `getCount` comes in handy!
