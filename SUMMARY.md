@@ -16,9 +16,9 @@
 * [Create a Credential](tutorials/create-a-credential.md)
 * [Create a Boost](tutorials/create-a-boost.md)
 * [Create a ConsentFlow](tutorials/create-a-consentflow.md)
+* [Connect a Game](tutorials/gameflow.md)
 * [Use xAPI Statements](tutorials/sending-xapi-statements.md)
 * [Listen to Webhooks](tutorials/listen-to-webhooks.md)
-* [Connect a Game](tutorials/gameflow.md)
 * [Issue Badges from a Website](tutorials/issue-badges-from-a-website.md)
 
 ## ✅ How-To Guides
