@@ -382,4 +382,4 @@ async function lookupByCatName(catName) {
 
 ### Related Documentation
 
-For more information on GameFlow (the framework this flow is built on), see the [GameFlow ](broken-reference)documentation.
+For more information on GameFlow (the framework this flow is built on), see the [GameFlow ](../../core-concepts/consent-and-permissions/gameflow-overview.md)documentation.
