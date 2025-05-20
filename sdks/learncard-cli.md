@@ -172,7 +172,7 @@ const emptyWallet = await initLearnCard();
 const seededWallet = await initLearnCard({ seed: 'abc123' });
 ```
 
-Check out docs on[ initializing LearnCards](broken-reference) for more ways to create a wallet.
+Check out docs on[ initializing LearnCards](learncard-core/construction.md#the-initlearncard-function) for more ways to create a wallet.
 
 #### And beyond!&#x20;
 
