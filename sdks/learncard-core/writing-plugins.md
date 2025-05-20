@@ -63,7 +63,7 @@ type ComplexPlugin = Plugin<'Complex', 'store', Methods, 'id', DependentMethods>
 ```
 {% endcode %}
 
-This type describes a plugin named `'Complex'` that implements the [Store](broken-reference) [Control Plane](../../core-concepts/architecture-and-principles/control-planes.md), as well as the method `foo`. This plugin is also [dependent](broken-reference) on plugins that implement the [ID](broken-reference) Control Plane, as well as the method _bar_.
+This type describes a plugin named `'Complex'` that implements the [Store](../../core-concepts/architecture-and-principles/control-planes.md#store-control-plane) [Control Plane](../../core-concepts/architecture-and-principles/control-planes.md), as well as the method `foo`. This plugin is also [dependent](writing-plugins.md#depending-on-plugins) on plugins that implement the [ID](../../core-concepts/architecture-and-principles/control-planes.md#id-control-plane) Control Plane, as well as the method _bar_.
 
 Let's break down what each of these arguments are doing one at a time.
 
@@ -105,7 +105,7 @@ type ComplexPlugin = Plugin<'Complex', 'store', Methods, 'id', DependentMethods>
 //                                              ^^^^^^^
 ```
 
-This argument specifies which [methods](broken-reference) the plugin implements. It is an object whose values are functions.
+This argument specifies which [methods](writing-plugins.md#implementing-methods) the plugin implements. It is an object whose values are functions.
 
 This argument defaults to `Record<never, never>`, specifying that this plugin does not implement any methods.
 
@@ -127,7 +127,7 @@ This argument specifies which [Control Planes](../../core-concepts/architecture-
 
 This argument defaults to `never`, specifying that this plugin does not depend on any Control Planes.
 
-Specifying one or more Dependent Control Planes will add those planes to the [implicit LearnCard](broken-reference) passed into each plugin method!
+Specifying one or more Dependent Control Planes will add those planes to the [implicit LearnCard](writing-plugins.md#the-implicit-learncard-object) passed into each plugin method!
 
 {% hint style="warning" %}
 Specifying Dependent Planes here will _not_ force LearnCards to implement those planes when adding this plugin! Please see [Depending on Plugins](broken-reference) for more information.
@@ -141,14 +141,14 @@ type ComplexPlugin = Plugin<'Complex', 'store', Methods, 'id', DependentMethods>
 //                                                             ^^^^^^^^^^^^^^^^
 ```
 
-This argument specifies which [methods](broken-reference) the plugin depends on. It is an object whose values are functions.
+This argument specifies which [methods](writing-plugins.md#depending-on-methods) the plugin depends on. It is an object whose values are functions.
 
 This argument defaults to `Record<never, never>`, specifying that this plugin does not depend on any methods.
 
-Specifying dependent methods will add those methods to the [implicit LearnCard](broken-reference) passed into each plugin method!
+Specifying dependent methods will add those methods to the [implicit LearnCard](writing-plugins.md#the-implicit-learncard-object) passed into each plugin method!
 
 {% hint style="warning" %}
-Specifying Dependent Methods here will _not_ force `LearnCards` to implement those methods when adding this plugin! Please see [Depending on Plugins](broken-reference) for more information.
+Specifying Dependent Methods here will _not_ force `LearnCards` to implement those methods when adding this plugin! Please see [Depending on Plugins](writing-plugins.md#depending-on-plugins) for more information.
 {% endhint %}
 
 ## The LearnCard Type
@@ -182,7 +182,7 @@ type ImplementsFoo = LearnCard<any, any, { foo: () => 'bar'; }>;
 type ImplementsBoth = LearnCard<any, 'id', { foo: () => 'bar': }>;
 ```
 
-With this code, `ImplementsIdPlane` will accept any `LearnCard` that has plugins that implement the [ID](broken-reference) [Control Plane](../../core-concepts/architecture-and-principles/control-planes.md), `ImplementsFoo` will accept any `LearnCard` that implements a method named `foo` that returns `'bar'`, and `ImplementsBoth` will accept any `LearnCard` that implements both.
+With this code, `ImplementsIdPlane` will accept any `LearnCard` that has plugins that implement the [ID](../../core-concepts/architecture-and-principles/control-planes.md#id-control-plane) [Control Plane](../../core-concepts/architecture-and-principles/control-planes.md), `ImplementsFoo` will accept any `LearnCard` that implements a method named `foo` that returns `'bar'`, and `ImplementsBoth` will accept any `LearnCard` that implements both.
 
 
 
@@ -190,11 +190,11 @@ With this code, `ImplementsIdPlane` will accept any `LearnCard` that has plugins
 
 In order to promote convergence across Plugin APIs to support common functionality over complex workflows, plugins may choose to implement [Control Planes](../../core-concepts/architecture-and-principles/control-planes.md). Because each plane is slightly different, _how_ they are actually implemented will also be slightly different. For the most part, there are some standard conventions that plugins must follow when implementing methods for a plane.
 
-To demonstrate this, let's build a plugin that implements the [Read](broken-reference) and [Store](broken-reference) planes using [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+To demonstrate this, let's build a plugin that implements the [Read](../../core-concepts/architecture-and-principles/control-planes.md#read-control-plane) and [Store](../../core-concepts/architecture-and-principles/control-planes.md#store-control-plane) planes using [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
 ### Types
 
-Let's start with the types! We will use [the `Plugin` type](broken-reference) to define a Plugin that implements the Read and Store planes like so:
+Let's start with the types! We will use [the `Plugin` type](writing-plugins.md#the-plugin-type) to define a Plugin that implements the Read and Store planes like so:
 
 {% code title="src/types.ts" lineNumbers="true" %}
 ```typescript
@@ -228,7 +228,7 @@ Because we specified that this plugin is implementing the `read` and `store` pla
 
 #### URI Scheme
 
-Let's start by implementing the Store Plane! The [Store Plane docs](broken-reference) mention that the `upload` method should return a [`URI`](../../core-concepts/credentials-and-data/uris.md), so we will now devise a URI scheme. It looks like this:
+Let's start by implementing the Store Plane! The [Store Plane docs](../../core-concepts/architecture-and-principles/control-planes.md#store-control-plane) mention that the `upload` method should return a [`URI`](../../core-concepts/credentials-and-data/uris.md), so we will now devise a URI scheme. It looks like this:
 
 ```typescript
 `lc:localStorage:${id}`
@@ -272,7 +272,7 @@ export const getLocalStoragePlugin = (): LocalStoragePlugin => {
 </code></pre>
 
 {% hint style="info" %}
-Wondering what that unused `_learnCard` variable is about? It's [the implicit LearnCard](broken-reference)! Check out what it is and how to use it [here](broken-reference)!
+Wondering what that unused `_learnCard` variable is about? It's [the implicit LearnCard](writing-plugins.md#the-implicit-learncard-object)! Check out what it is and how to use it [here](writing-plugins.md#the-implicit-learncard-object)!
 {% endhint %}
 
 With this code in place, the Store Plane has successfully been implemented! Verifiable Credentials can now be stored by a LearnCard using this plugin with the following code:
@@ -339,7 +339,7 @@ We have already seen this in action in [The Simplest Plugin](../../how-to-guides
 
 ## Types
 
-Before implementing methods on a Plugin object, it's best to get the types in order. In general, starting with the types can be easier to think through, and once they're in place, they can guide the implementation. To add types for methods, we use the third generic argument of [the `Plugin` type](broken-reference).
+Before implementing methods on a Plugin object, it's best to get the types in order. In general, starting with the types can be easier to think through, and once they're in place, they can guide the implementation. To add types for methods, we use the third generic argument of [the `Plugin` type](writing-plugins.md#the-plugin-type).
 
 {% code title="src/types.ts" lineNumbers="true" %}
 ```typescript
@@ -434,7 +434,7 @@ counterLearnCard.invoke.getCounterValue(); // 0
 
 ### What is it?
 
-When implementing [Control Planes](broken-reference) or [Methods](broken-reference), you may have noticed [an unused `_learnCard` parameter get added.](broken-reference) This is what we call the _Implicit LearnCard_, and it can be very helpful!
+When implementing [Control Planes](../../core-concepts/architecture-and-principles/control-planes.md) or [Methods](writing-plugins.md#implementing-methods), you may have noticed [an unused `_learnCard` parameter get added.](writing-plugins.md#the-implicit-learncard-object) This is what we call the _Implicit LearnCard_, and it can be very helpful!
 
 ### What does it do?
 
@@ -447,7 +447,7 @@ There are a few use-cases for using the Implicit LearnCard, such as:
 * Calling a method that is implemented in the same plugin
 * Ensuring the most up-to-date method is called
 
-Let's implement a quick plugin that generates names to demonstrate this. The plugin will expose three methods: `generateFirstName`, `generateLastName`, and `generateFullName`. The types for this plugin look like this (using [the `Plugin` type](broken-reference)):
+Let's implement a quick plugin that generates names to demonstrate this. The plugin will expose three methods: `generateFirstName`, `generateLastName`, and `generateFullName`. The types for this plugin look like this (using [the `Plugin` type](writing-plugins.md#the-plugin-type)):
 
 {% code title="src/types.ts" lineNumbers="true" %}
 ```typescript
@@ -545,7 +545,7 @@ export const getExtensionPlugin = (
 </code></pre>
 
 {% hint style="info" %}
-See [Depending on Plugins](broken-reference) for more information about how we are depending on a LearnCard with the `verifyCredential` method here.
+See [Depending on Plugins](writing-plugins.md#depending-on-plugins) for more information about how we are depending on a LearnCard with the `verifyCredential` method here.
 {% endhint %}
 
 The `VerifyExtension` type defines one method: `verifyCredential` that takes in a Verifiable Credential and returns a `VerificationCheck` object. To add our extension, we depend on a LearnCard that already has the `verifyCredential` function (using the same `VerifyExtension` type!), then call the _old_ `verifyCredential` function at the top of our _new_ `verifyCredential` function.
@@ -559,7 +559,7 @@ While it is useful for [The Simplest Plugin](../../how-to-guides/deploy-infrastr
 Plugin dependence comes in two flavors:&#x20;
 
 * Depending on a [Control Plane](../../core-concepts/architecture-and-principles/control-planes.md)&#x20;
-* Depending on one or more [methods](broken-reference).
+* Depending on one or more [methods](writing-plugins.md#depending-on-methods).
 
 ### Boilerplate Plugins
 
@@ -638,7 +638,7 @@ export const MethodsPlugin: MethodsPluginType = {
 
 ### Dependence Convention
 
-As a convention, plugins will often be wrapped inside of a constructor function that requires a [LearnCard](broken-reference) of a certain type be passed in.
+As a convention, plugins will often be wrapped inside of a constructor function that requires a [LearnCard](writing-plugins.md#the-learncard-type) of a certain type be passed in.
 
 Let's update our base plugin to see what that looks like:
 
@@ -697,7 +697,7 @@ export const getDependencePlugin: (learnCard: LearnCard<any, 'id'>): DependenceP
 //                                                           ^^^^
 ```
 
-This change allows us to call `learnCard.id.did` on line 5, and requires consumers of this plugin to pass in a LearnCard that [implements](broken-reference) the [ID](broken-reference) plane when adding this plugin. For example, all of the following code will throw errors:
+This change allows us to call `learnCard.id.did` on line 5, and requires consumers of this plugin to pass in a LearnCard that [implements](writing-plugins.md#implementing-control-planes) the [ID](../../core-concepts/architecture-and-principles/control-planes.md#id-control-plane) plane when adding this plugin. For example, all of the following code will throw errors:
 
 {% tabs %}
 {% tab title="Passing in an empty wallet" %}
@@ -756,7 +756,7 @@ export const getDependencePlugin: (learnCard: LearnCard<any, any, { foo: () => '
 //                                                                ^^^^^^^^^^^^^^^^^^^^
 ```
 
-With this change in place, just like when we depended on a Control Plane, we are now able to call `learnCard.invoke.foo` on line 5. We also now require consumers of this plugin to pass in a LearnCard with a plugin that [implements](broken-reference) the `foo` method. For example, all of the following code will throw errors:
+With this change in place, just like when we depended on a Control Plane, we are now able to call `learnCard.invoke.foo` on line 5. We also now require consumers of this plugin to pass in a LearnCard with a plugin that [implements](writing-plugins.md#implementing-methods) the `foo` method. For example, all of the following code will throw errors:
 
 {% tabs %}
 {% tab title="Passing in an empty wallet" %}
@@ -792,7 +792,7 @@ const errors = await learnCard.addPlugin(getDependencePlugin(learnCard));
 
 ### Adding Type Safety to The Implicit LearnCard
 
-Thus far, when adding dependency requirements, we have _only_ added type safety to the argument of our constructor function. This works quite well, but does _not_ provide type safety to the [Implicit LearnCard](broken-reference) passed into every method. To add this type safety, we use the fourth and fifth generic arguments of [the `Plugin` type](broken-reference)
+Thus far, when adding dependency requirements, we have _only_ added type safety to the argument of our constructor function. This works quite well, but does _not_ provide type safety to the [Implicit LearnCard](writing-plugins.md#the-implicit-learncard-object) passed into every method. To add this type safety, we use the fourth and fifth generic arguments of [the `Plugin` type](writing-plugins.md#the-plugin-type)
 
 Let's demonstrate this by first depending on both the [Control Plane Plugin](writing-plugins.md#control-plane-plugin) _and_ the [Methods Plugin](writing-plugins.md#methods-plugin), then adding some logic that uses the Implicit LearnCard to take advantage of that dependency:
 
