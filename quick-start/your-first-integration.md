@@ -192,7 +192,7 @@ You must create a unique profile ID for your organization. It must be 3-40 chara
 
 {% code title=".env" overflow="wrap" %}
 ```bash
-SECURE_SEED="..." # Created from command in step 1 of "Run the Script"
+SECURE_SEED="..." # Created from command in prior step.
 PROFILE_ID="<unique-profile-id>" # Unique profile ID.
 PROFILE_NAME="<Display Name>" # Human Readable Display Name
 ```
