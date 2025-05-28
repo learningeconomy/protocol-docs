@@ -15,27 +15,27 @@ This quickstart helps you:
 
 No experience required. Just code, coffee, and a terminal.
 
-### ⭐️ What You'll Be Making
+## ⭐️ What You'll Be Making
 
 {% embed url="https://codepen.io/Jacks-n-Smith/pen/KwwEbjY" fullWidth="false" %}
 
-### 🧰 Installation
+## 🧰 Installation
 
 Choose your preferred package manager:
 
 ```bash
 # Using npm
-npm install @learncard/init @learncard/claimable-boosts-plugin @learncard/simple-signing-plugin
+npm install @learncard/init @learncard/claimable-boosts-plugin @learncard/simple-signing-plugin dotenv
 
 # Using yarn
-yarn add @learncard/init @learncard/claimable-boosts-plugin @learncard/simple-signing-plugin
+yarn add @learncard/init @learncard/claimable-boosts-plugin @learncard/simple-signing-plugin dotenv
 
 # Using pnpm
-pnpm add @learncard/init @learncard/claimable-boosts-plugin @learncard/simple-signing-plugin
+pnpm add @learncard/init @learncard/claimable-boosts-plugin @learncard/simple-signing-plugin dotenv
 
 ```
 
-### 🚀 Quickstart Script
+## 🚀 Quickstart Script
 
 This script:
 
@@ -45,26 +45,29 @@ This script:
 4. Issues the Boost to the network
 5. Generates a claim link for anyone to redeem
 
-#### ✅ Prerequisites
+## ✅ Prerequisites
 
 * Node.js (v14+)
 * A secure seed phrase (stored in `SECURE_SEED`)
 * A unique ID for your issuer (e.g. `my-awesome-org-profile`)
 
-#### 📁 Create `createBoost.js`:
+## 📁 Create `createBoost.js`:
 
-```javascript
-import { initLearnCard } from '@learncard/init';
-import { getClaimableBoostsPlugin } from '@learncard/claimable-boosts-plugin';
+<pre class="language-javascript"><code class="lang-javascript">import 'dotenv/config';
+
+<strong>import { initLearnCard } from '@learncard/init';
+</strong>import { getClaimableBoostsPlugin } from '@learncard/claimable-boosts-plugin';
 import { getSimpleSigningPlugin } from '@learncard/simple-signing-plugin';
 
-const seed = process.env.SECURE_SEED;
-const profileId = 'my-awesome-org-profile';
-const profileName = 'My Awesome Org';
+const DEMO_SEED = '0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdee'
+const secure_seed = process.env.SECURE_SEED;
+const profileId = process.env.PROFILE_ID || 'my-awesome-org-profile';
+const profileName = process.env.PROFILE_NAME || 'My Awesome Org';
 
-if (!seed) {
-  console.error('Error: SECURE_SEED environment variable is not set.');
-  process.exit(1);
+// Use user provided seed, or use backup DEMO seed 
+const seed = secure_seed || DEMO_SEED;
+if (!secure_seed) {
+  console.warn('Warning: SECURE_SEED environment variable is not set, using DEMO_SEED.');
 }
 
 async function quickstartBoost() {
@@ -94,7 +97,7 @@ async function quickstartBoost() {
       });
       console.log(`Profile "${profileId}" created successfully.`);
     } catch (error) {
-      if (error.message?.includes('Profile ID already exists')) {
+      if (error.message?.includes('Profile already exists')) {
         console.log(`Profile "${profileId}" already exists, continuing.`);
       } else {
         throw new Error(`Failed to create profile: ${error.message}`);
@@ -139,23 +142,69 @@ async function quickstartBoost() {
 
 quickstartBoost();
 
-```
+</code></pre>
 
-### 🏃‍♂️ Run the Script
+## 🔩 Setup Organization Config (optional)
 
-1. Set your seed (demo only – never hardcode in production):
+{% hint style="danger" %}
+This step sets up your secret seed phrase for controlling your Organization's profile. However, for demonstration, **you may safely skip this step to use the provided DEMO\_SEED**. Never hardcode a seed in production.  Learn more about [seeds](../core-concepts/identities-and-keys/seed-phrases.md).
+{% endhint %}
 
+#### Create and save your seed to .en&#x76;_:_
+
+{% tabs %}
+{% tab title="macOS / Linux" %}
+Run the following command in your terminal:&#x20;
+
+{% code overflow="wrap" %}
 ```bash
-export SECURE_SEED="your-very-secret-seed-phrase-here"
+echo "SECURE_SEED=\"$(node -e "console.log(require('crypto').randomBytes(32).toString('hex'))")\"" > .env
 ```
+{% endcode %}
+{% endtab %}
 
-2. Run the script:
+{% tab title="Windows Cmd" %}
+Run the following command in your Windows cmd prompt:&#x20;
+
+{% code overflow="wrap" %}
+```bash
+echo "SECURE_SEED=\"$(node -e "console.log(require('crypto').randomBytes(32).toString('hex'))")\"" > .env
+```
+{% endcode %}
+{% endtab %}
+
+{% tab title="Powershell" %}
+Run the following command in Powershell:&#x20;
+
+{% code overflow="wrap" %}
+```bash
+"SECURE_SEED=\"$(node -e "console.log(require('crypto').randomBytes(32).toString('hex'))")\"" | Out-File -Encoding utf8 .env
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
+
+#### Add config variables to your `.env`:
+
+{% hint style="info" %}
+You must create a unique profile ID for your organization. It must be 3-40 characters, lowercase, no spaces or special characters. E.g.: `my-organization`, `acme`, `taffy-co-organization` , etc.
+{% endhint %}
+
+{% code title=".env" overflow="wrap" %}
+```bash
+SECURE_SEED="..." # Created from command in step 1 of "Run the Script"
+PROFILE_ID="<unique-profile-id>" # Unique profile ID.
+PROFILE_NAME="<Display Name>" # Human Readable Display Name
+```
+{% endcode %}
+
+## 🏃‍♂️ Run the Script
 
 ```bash
 node createBoost.js
 ```
 
-### 🎉 What You'll See
+## 🎉 What You'll See
 
 The console will print a claimable URL like:
 
@@ -166,7 +215,7 @@ https://claim.learncard.app/boost/abc123...
 
 Anyone with that link can scan or click to claim their badge. It’s a live verifiable credential issued by your script.
 
-### ➡️ Next Steps
+## ➡️ Next Steps
 
 * 🔐 Add expiration, limits, or QR codes (see [Detailed Usage](../sdks/official-plugins/claimable-boosts.md))
 * 🧠 Learn how Boosts work under the hood (see Core Concepts)
