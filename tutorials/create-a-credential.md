@@ -125,7 +125,7 @@ async function setupIssuerLearnCard() {
     );
   }
 
-  const learnCardIssuer: NetworkLearnCardFromSeed = await initLearnCard({
+  const learnCardIssuer: NetworkLearnCardFromSeed['returnValue'] = await initLearnCard({
     seed: issuerSeed, // This generates the Issuer's DID and keys
     network: true, // We need network capabilities to send the credential
     allowRemoteContexts: true, // We will issue a credential with a remote context
@@ -188,7 +188,7 @@ To interact with the LearnCard Network effectively (like sending credentials), y
 {% tab title="TypeScript" %}
 {% code title="Add this function to issueCredential.ts" %}
 ```typescript
-async function ensureIssuerProfile(learnCardIssuer: NetworkLearnCardFromSeed) {
+async function ensureIssuerProfile(learnCardIssuer: NetworkLearnCardFromSeed['returnValue']) {
   // Use 'any' or the specific LearnCard type
   const issuerServiceProfileData = {
     profileId: process.env.PROFILE_ID,
@@ -358,7 +358,7 @@ A Verifiable Credential is a set of claims made by an Issuer about a Subject (th
 const recipientProfileId = 'YOUR_LEARNCARD_APP_PROFILE_ID'; 
 
 async function generateWorkshopCredentialForRecipient(
-  learnCardIssuer: NetworkLearnCardFromSeed,
+  learnCardIssuer: NetworkLearnCardFromSeed['returnValue'],
   recipientProfileId: string
 ): Promise<UnsignedVC> {
   // Retrieve recipient profile to retrieve their DID
@@ -519,7 +519,7 @@ The LearnCard SDK helps you with this:
 {% code title="// Add this function to issueCredential.ts" %}
 ```typescript
 async function createAndSignCredential(
-  learnCardIssuer: NetworkLearnCardFromSeed,
+  learnCardIssuer: NetworkLearnCardFromSeed['returnValue'],
   unsignedVc: UnsignedVC
 ) {
   console.log("Unsigned VC:", JSON.stringify(unsignedVc, null, 2));
@@ -574,7 +574,7 @@ This function from the LearnCard SDK (via the Network plugin) handles the delive
 {% code title="// Add this function to issueCredential.ts" %}
 ```typescript
 async function sendVcToRecipient(
-  learnCardIssuer: NetworkLearnCardFromSeed,
+  learnCardIssuer: NetworkLearnCardFromSeed['returnValue'],
   recipientLcnProfileId: string,
   signedVc: VC
 ) {
