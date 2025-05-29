@@ -43,7 +43,7 @@ The LEF Member Trusted Issuer Registry is a JSON file located in the LearnCard r
 ### **Step 3: Edit the `registry.json` File**
 
 1. On the GitHub page for `registry.json`, click the **pencil icon** (Edit this file) in the upper right corner of the file view.
-   * If you do not have direct write access to the repository (most users won't), GitHub will automatically help you **fork the repository**. This creates a personal copy of the LearnCard repository under your GitHub account where you can make changes. Click "Fork this repository and propose changes."
+   * If you do not have direct write access to the repository, GitHub will automatically help you **fork the repository**. This creates a personal copy of the LearnCard repository under your GitHub account where you can make changes. Click "Fork this repository and propose changes."
 2. You are now in the GitHub file editor. The `registry.json` file contains a main `registry` object, which holds key-value pairs. Each key is an issuer's DID, and the value is an object containing their details.
 3.  **Carefully add a new entry for your organization** within the `registry` object. Find a logical place (e.g., alphabetical by DID, though exact order isn't strictly enforced by the format, it helps readability).
 
