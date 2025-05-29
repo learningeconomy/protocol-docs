@@ -500,6 +500,8 @@ async function generateWorkshopCredentialForRecipient(
 * **`@context`**: Tells systems how to interpret the fields.
 * **`type`**: Helps categorize the credential. `VerifiableCredential` is standard.
 * **`credentialSubject`**: This is the core information. The `id` here should be the DID of the person receiving the credential. For this tutorial, we're using the `recipientProfileId` (which you got from your app) to construct a DID.
+
+Learn more about schemas in our[ Credentials and Data section of our Core Concepts](../core-concepts/credentials-and-data/).
 {% endhint %}
 
 ***
