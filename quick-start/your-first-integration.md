@@ -215,11 +215,16 @@ https://claim.learncard.app/boost/abc123...
 
 Anyone with that link can scan or click to claim their badge. It’s a live verifiable credential issued by your script.
 
+{% hint style="success" %}
+Want to customize your claimable boost even more? Check out our Core Concepts guide on "[Getting Started with Boosts](../core-concepts/credentials-and-data/getting-started-with-boosts.md)."
+{% endhint %}
+
 ## ➡️ Next Steps
 
+* 📝 Play with sending different kinds of credentials (see[ Building Verifiable Credentials](../core-concepts/credentials-and-data/building-verifiable-credentials.md))
 * 🔐 Add expiration, limits, or QR codes (see [Detailed Usage](../sdks/official-plugins/claimable-boosts.md))
-* 🧠 Learn how Boosts work under the hood (see Core Concepts)
-* 🛠️ Issue credentials dynamically in your app or game
+* 🧠 Learn how Boosts work under the hood (see [Core Concepts](../core-concepts/credentials-and-data/boost-credentials.md))
+* 🛠️ [Issue credentials ](../tutorials/create-a-credential.md)dynamically in your app or game
 
 **You just built your first digital credential.**\
 You’ve touched real-world decentralized identity and verifiable credentials—with just a few lines of code.
