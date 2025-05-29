@@ -55,7 +55,7 @@ npm install @learncard/init @learncard/core @learncard/types dotenv
 npm install --save-dev typescript tsx @types/node
 
 # 4. Create a TypeScript configuration file
-npx tsc --init --rootDir ./ --outDir ./dist --esModuleInterop --resolveJsonModule --lib es2022 --module nodenext
+npx tsc --init --rootDir ./ --outDir ./dist --esModuleInterop --resolveJsonModule --lib es2022 --module esnext  --moduleResolution node
 ```
 {% endtab %}
 
@@ -112,9 +112,7 @@ This instance will represent your workshop organization.
 import "dotenv/config";
 
 import { NetworkLearnCardFromSeed, initLearnCard } from "@learncard/init";
-import { UnsignedVC, VC } from "@learncard/types";
-// For Node.js, you might need to polyfill fetch or use a library like node-fetch
-// global.fetch = require('node-fetch'); // Uncomment if needed in Node.js without native fetch
+import { UnsignedVC, VC, LCNProfile } from "@learncard/types";
 
 async function setupIssuerLearnCard() {
   const issuerSeed = process.env.SECURE_SEED;
@@ -146,8 +144,6 @@ async function setupIssuerLearnCard() {
 import "dotenv/config";
 
 import { initLearnCard } from "@learncard/init";
-// For Node.js, you might need to polyfill fetch or use a library like node-fetch
-// global.fetch = require('node-fetch'); // Uncomment if needed in Node.js without native fetch
 
 async function setupIssuerLearnCard() {
   const issuerSeed = process.env.SECURE_SEED;
@@ -189,10 +185,11 @@ To interact with the LearnCard Network effectively (like sending credentials), y
 {% code title="Add this function to issueCredential.ts" %}
 ```typescript
 async function ensureIssuerProfile(learnCardIssuer: NetworkLearnCardFromSeed['returnValue']) {
-  // Use 'any' or the specific LearnCard type
-  const issuerServiceProfileData = {
-    profileId: process.env.PROFILE_ID,
-    displayName: process.env.PROFILE_NAME,
+  const issuerServiceProfileData: Omit<LCNProfile, 'did' | 'isServiceProfile'> = {
+    profileId: process.env.PROFILE_ID!,
+    displayName: process.env.PROFILE_NAME!,
+    bio: '',
+    shortBio: '',
     // Add other relevant details for your issuer profile
   };
 
@@ -225,7 +222,6 @@ async function ensureIssuerProfile(learnCardIssuer: NetworkLearnCardFromSeed['re
     }
   } catch (error: any) {
     console.error("Error ensuring issuer profile:", error.message);
-    // If it's a "profile already exists" error, you might want to ignore it for this script
   }
 }
 // (We'll call this after setupIssuerLearnCard)
@@ -383,9 +379,7 @@ async function generateWorkshopCredentialForRecipient(
     ],
     // "type" specifies what kind of credential this is
     type: ["VerifiableCredential", "OpenBadgeCredential", "BoostCredential"], // Standard VC type + OpenBadge type + Boost type
-    // "issuanceDate" will also be filled in automatically if not provided
     issuanceDate: new Date().toISOString(), // Today's date
-    // "issuer" will be filled in automatically by LearnCard SDK during signing, but we'll be explicit about it
     issuer: learnCardIssuer.id.did(),
     name: "LearnCard Basics Workshop",
     // "credentialSubject" is about whom or what the credential is
@@ -455,9 +449,7 @@ async function generateWorkshopCredentialForRecipient(
     ],
     // "type" specifies what kind of credential this is
     type: ["VerifiableCredential", "OpenBadgeCredential", "BoostCredential"], // Standard VC type + OpenBadge type + Boost type
-    // "issuanceDate" will also be filled in automatically if not provided
     issuanceDate: new Date().toISOString(), // Today's date
-    // "issuer" will be filled in automatically by LearnCard SDK during signing, but we'll be explicit about it
     issuer: learnCardIssuer.id.did(),
     name: "LearnCard Basics Workshop",
     // "credentialSubject" is about whom or what the credential is
@@ -580,13 +572,9 @@ async function sendVcToRecipient(
 ) {
   console.log(`Sending credential to Profile ID: ${recipientLcnProfileId}`);
   try {
-    // The 'encrypt' parameter is optional, defaults may vary.
-    // For simplicity, we'll try without explicit encryption,
-    // but in production, you'd likely want encryption (encrypt: true).
     const sentCredentialUri = await learnCardIssuer.invoke.sendCredential(
       recipientLcnProfileId,
-      signedVc
-      // encrypt: true // Optional: consider encryption for sensitive credentials
+      signedVc,
     );
     console.log(
       "Credential sent successfully! Sent Credential URI:",
@@ -654,25 +642,13 @@ async function main() {
     );
     return;
   }
-  if (
-    await setupIssuerLearnCard().then(
-      (issuer) =>
-        issuer.id.did() ===
-        "did:key:z6Mkpissg9N3752fGusN7f5KkHobbWp8rW4xY8y3JYR8XnpZ"
-    )
-  ) {
-    // Default DID for an empty seed, prompt user to change
-    console.warn(
-      "You are using a default/empty seed for the issuer. Please change 'your-unique-issuer-seed-phrase-or-hex-seed-keep-safe' to a unique value for a real issuer."
-    );
-  }
 
   const learnCardIssuer = await setupIssuerLearnCard();
   await ensureIssuerProfile(learnCardIssuer);
   const workshopCredential = await generateWorkshopCredentialForRecipient(
     learnCardIssuer,
     recipientProfileId
-  ); // Make sure the issuer has a service profile
+  );
 
   const signedVc = await createAndSignCredential(
     learnCardIssuer,
@@ -706,25 +682,13 @@ async function main() {
     );
     return;
   }
-  if (
-    await setupIssuerLearnCard().then(
-      (issuer) =>
-        issuer.id.did() ===
-        "did:key:z6Mkpissg9N3752fGusN7f5KkHobbWp8rW4xY8y3JYR8XnpZ"
-    )
-  ) {
-    // Default DID for an empty seed, prompt user to change
-    console.warn(
-      "You are using a default/empty seed for the issuer. Please change 'your-unique-issuer-seed-phrase-or-hex-seed-keep-safe' to a unique value for a real issuer."
-    );
-  }
 
   const learnCardIssuer = await setupIssuerLearnCard();
   await ensureIssuerProfile(learnCardIssuer);
   const workshopCredential = await generateWorkshopCredentialForRecipient(
     learnCardIssuer,
     recipientProfileId
-  ); // Make sure the issuer has a service profile
+  );
 
   const signedVc = await createAndSignCredential(
     learnCardIssuer,
