@@ -1,11 +1,6 @@
 ---
 description: 'Tutorial: Create and Send Your First Digital Credential'
-cover: ../.gitbook/assets/Screenshot 2025-05-29 at 12.58.44 PM (1).png
-coverY: 0
 layout:
-  cover:
-    visible: true
-    size: full
   title:
     visible: true
   description:
