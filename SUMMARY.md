@@ -24,8 +24,9 @@
 ## ✅ How-To Guides
 
 * [Send Credentials](how-to-guides/send-credentials.md)
-* [Verify My Issuer](how-to-guides/verify-my-issuer.md)
 * [Create Signing Authority](how-to-guides/create-signing-authority.md)
+* [Interoperate with LearnCard](how-to-guides/interoperate-with-learncard.md)
+* [Verify My Issuer](how-to-guides/verify-my-issuer.md)
 * [Connect Systems](how-to-guides/connect-systems/README.md)
   * [Connect a Website](how-to-guides/connect-systems/connect-a-website.md)
   * [Connect a Game](how-to-guides/connect-systems/connect-a-game.md)
