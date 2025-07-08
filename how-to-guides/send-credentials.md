@@ -18,55 +18,157 @@ This is the most common use case, perfect for one-off issuances like a course co
 
 **Example:**
 
+{% tabs %}
+{% tab title="SDK" %}
 ```javascript
 // A bootcamp sending an "Advanced Javascript" achievement to a student.
-const response = await learncardApiClient.post('/inbox/issue', {
-  recipient: {
-    type: 'email',
-    value: 'student@example.com',
-  },
+await learnCard.invoke.sendCredentialViaInbox({ 
+  recipient: { 
+    type: 'email', 
+    value: 'student@school.edu' 
+  }, 
   credential: {
     "@context": [
-      "https://www.w3.org/2018/credentials/v1",
-      "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.2.json"
+        "https://www.w3.org/2018/credentials/v1",
+        "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.2.json"
     ],
     "id": "http://example.com/credentials/3527",
     "type": [
-      "VerifiableCredential",
-      "OpenBadgeCredential"
+        "VerifiableCredential",
+        "OpenBadgeCredential"
     ],
     "issuer": "did:key:z6Mku381DztEvDosbgR5RZrvLxMhVgJ33sLVhTnngDuUA5bM",
     "issuanceDate": "2025-07-03T17:54:56.881Z",
     "name": "Advanced Javascript",
     "credentialSubject": {
-      "id": "did:example:d23dd687a7dc6787646f2eb98d0",
-      "type": [
-        "AchievementSubject"
-      ],
-      "achievement": {
-        "id": "https://example.com/certificates/javascript/advanced",
+        "id": "did:example:d23dd687a7dc6787646f2eb98d0",
         "type": [
-          "Achievement"
+            "AchievementSubject"
         ],
-        "criteria": {
-          "narrative": "Team members are nominated for this badge by their peers and recognized upon review by Example Corp management."
-        },
-        "description": "This badge recognizes advanced javasript proficiency.",
-        "name": "Advanced Javascript"
-      }
+        "achievement": {
+            "id": "https://example.com/certificates/javascript/advanced",
+            "type": [
+                "Achievement"
+            ],
+            "criteria": {
+                "narrative": "Team members are nominated for this badge by their peers and recognized upon review by Example Corp management."
+            },
+            "description": "This badge recognizes advanced javasript proficiency.",
+            "name": "Advanced Javascript"
+        }
     }
+  }
+})
+
+// Retrieve sent inbox credential
+const sentInbox = await learnCard.invoke.getMySentInboxCredentials()
+const inboxCredId = sentInbox.records[0].id
+
+// Retrieve inbox credential
+await learnCard.invoke.getInboxCredential(inboxCredId)
+```
+{% endtab %}
+
+{% tab title="Javascript" %}
+```javascript
+// A bootcamp sending an "Advanced Javascript" achievement to a student.
+const apiKey = 'YOUR_API_KEY';
+
+const response = await fetch('https://network.learncard.com/api/inbox/issue', {
+  method: 'POST',
+  headers: {
+    'Authorization': `Bearer ${apiKey}`,
+    'Content-Type': 'application/json',
   },
+  body: JSON.stringify({
+    recipient: {
+      type: 'email',
+      value: 'student@example.com',
+    },
+    credential: {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.2.json"
+      ],
+      "id": "http://example.com/credentials/3527",
+      "type": [
+        "VerifiableCredential",
+        "OpenBadgeCredential"
+      ],
+      "issuer": "did:key:z6Mku381DztEvDosbgR5RZrvLxMhVgJ33sLVhTnngDuUA5bM",
+      "issuanceDate": "2025-07-03T17:54:56.881Z",
+      "name": "Advanced Javascript",
+      "credentialSubject": {
+        "id": "did:example:d23dd687a7dc6787646f2eb98d0",
+        "type": [
+          "AchievementSubject"
+        ],
+        "achievement": {
+          "id": "https://example.com/certificates/javascript/advanced",
+          "type": [
+            "Achievement"
+          ],
+          "criteria": {
+            "narrative": "Team members are nominated for this badge by their peers and recognized upon review by Example Corp management."
+          },
+          "description": "This badge recognizes advanced javasript proficiency.",
+          "name": "Advanced Javascript"
+        }
+      }
+    },
+  }),
 });
 
-// The API responds immediately with a tracking ID and claim URL.
-console.log(response.data);
-// {
-//   "issuanceId": "iss_abc123",
-//   "status": "DELIVERED",
-//   "claimUrl": "https://learncard.app/interactions/unique-code..."
-// }
-
+const data = await response.json();
+console.log(data);
 ```
+{% endtab %}
+
+{% tab title="cURL" %}
+```bash
+curl -X POST https://network.learncard.com/api/inbox/issue \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "recipient": {
+      "type": "email",
+      "value": "student@example.com"
+    },
+    "credential": {
+      "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.2.json"
+      ],
+      "id": "http://example.com/credentials/3527",
+      "type": [
+        "VerifiableCredential",
+        "OpenBadgeCredential"
+      ],
+      "issuer": "did:key:z6Mku381DztEvDosbgR5RZrvLxMhVgJ33sLVhTnngDuUA5bM",
+      "issuanceDate": "2025-07-03T17:54:56.881Z",
+      "name": "Advanced Javascript",
+      "credentialSubject": {
+        "id": "did:example:d23dd687a7dc6787646f2eb98d0",
+        "type": [
+          "AchievementSubject"
+        ],
+        "achievement": {
+          "id": "https://example.com/certificates/javascript/advanced",
+          "type": [
+            "Achievement"
+          ],
+          "criteria": {
+            "narrative": "Team members are nominated for this badge by their peers and recognized upon review by Example Corp management."
+          },
+          "description": "This badge recognizes advanced javasript proficiency.",
+          "name": "Advanced Javascript"
+        }
+      }
+    }
+  }'
+```
+{% endtab %}
+{% endtabs %}
 
 {% hint style="warning" %}
 ## Have you configured your default Primary Signing Authority?
