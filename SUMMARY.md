@@ -11,16 +11,6 @@
 * [Setup & Prerequisites](quick-start/setup-and-prerequisites.md)
 * [Your First Integration](quick-start/your-first-integration.md)
 
-## 📚 Tutorials
-
-* [Create a Credential](tutorials/create-a-credential.md)
-* [Create a Boost](tutorials/create-a-boost.md)
-* [Create a ConsentFlow](tutorials/create-a-consentflow.md)
-* [Create a Connected Website](tutorials/create-a-connected-website.md)
-* [Send xAPI Statements](tutorials/sending-xapi-statements.md)
-* [Listen to Webhooks](tutorials/listen-to-webhooks.md)
-* [Verify Credentials](tutorials/verify-credentials.md)
-
 ## ✅ How-To Guides
 
 * [Send Credentials](how-to-guides/send-credentials.md)
@@ -54,6 +44,16 @@
   * [Deploy Your Own Network](how-to-guides/deploy-infrastructure/deploy-your-own-network.md)
   * [Connect to Independent Network](how-to-guides/deploy-infrastructure/connect-to-independent-network.md)
   * [Build a Plugin](how-to-guides/deploy-infrastructure/the-simplest-plugin.md)
+
+## 📚 Tutorials
+
+* [Create a Credential](tutorials/create-a-credential.md)
+* [Create a Boost](tutorials/create-a-boost.md)
+* [Create a ConsentFlow](tutorials/create-a-consentflow.md)
+* [Create a Connected Website](tutorials/create-a-connected-website.md)
+* [Send xAPI Statements](tutorials/sending-xapi-statements.md)
+* [Listen to Webhooks](tutorials/listen-to-webhooks.md)
+* [Verify Credentials](tutorials/verify-credentials.md)
 
 ## 🛠️ SDKs & API Reference <a href="#sdks" id="sdks"></a>
 
