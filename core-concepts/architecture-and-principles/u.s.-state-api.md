@@ -1,10 +1,8 @@
 ---
-description: 'Explanation: The U.S. State API'
+description: A Unified Infrastructure for Learning and Work
 ---
 
 # U.S. State API
-
-## The Vision: A Unified Infrastructure for Learning and Work
 
 At its core, the **U.S. State API** is a comprehensive, state-level infrastructure for creating, managing, and exchanging Learning and Employment Records (LERs). It is designed to break down the data silos that currently exist between K-12 districts, higher education institutions, workforce development agencies, and employers.
 

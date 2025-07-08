@@ -1,5 +1,5 @@
 ---
-description: 'Explanation: Interoperability, Open Standards, and LearnCard'
+description: Interoperability, Open Standards, and LearnCard
 ---
 
 # Interoperability
