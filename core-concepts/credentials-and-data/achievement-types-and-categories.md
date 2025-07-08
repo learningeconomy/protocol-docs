@@ -246,23 +246,6 @@ export const getCategoryTypeFromCustomType = (str: string) => {
 
 ### **FAQ**
 
-#### **How do I pass a type into a credential?**
-
-Types can be passed into credentials using the `newCredential` method. Here is an example:
-
-1.  **Passing a standard type:**
-
-    ```typescript
-    // Returns an unsigned, achievement credential
-    const achievementCredential = learnCard.invoke.newCredential({ type: 'CommunityService' });
-    ```
-2.  **Passing a custom type:**
-
-    ```typescript
-    // Returns an unsigned, custom credential
-    const customCredential = learnCard.invoke.newCredential({ type: 'ext:LCA_CUSTOM:Learning History:The_Coolest_Dog' });
-    ```
-
 **Can I create new categories?**
 
 No, our system only supports the following pre defined categories&#x20;

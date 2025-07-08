@@ -1,5 +1,5 @@
 ---
-description: 'How-to: Join the LEF Trusted Issuer Registry'
+description: 'How-To Guide: Join the LEF Trusted Issuer Registry'
 ---
 
 # Verify My Issuer

@@ -23,7 +23,9 @@
 
 ## ✅ How-To Guides
 
+* [Send Credentials](how-to-guides/send-credentials.md)
 * [Verify My Issuer](how-to-guides/verify-my-issuer.md)
+* [Create Signing Authority](how-to-guides/create-signing-authority.md)
 * [Connect Systems](how-to-guides/connect-systems/README.md)
   * [Connect a Website](how-to-guides/connect-systems/connect-a-website.md)
   * [Connect a Game](how-to-guides/connect-systems/connect-a-game.md)
@@ -153,6 +155,7 @@
   * [Network Vision & Principles](core-concepts/network-and-interactions/network-vision-and-principles.md)
   * [Key Network Procedures](core-concepts/network-and-interactions/key-network-procedures.md)
   * [Core Interaction Workflows](core-concepts/network-and-interactions/core-interaction-workflows.md)
+  * [Universal Inbox](core-concepts/network-and-interactions/universal-inbox.md)
 * [Architecture & Principles](core-concepts/architecture-and-principles/README.md)
   * [Control Planes](core-concepts/architecture-and-principles/control-planes.md)
   * [Plugin System](core-concepts/architecture-and-principles/plugins.md)

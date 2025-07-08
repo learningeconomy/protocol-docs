@@ -77,7 +77,7 @@ const payload = {
 
 // Step 4: Make an authenticated HTTP request using the token
 const response = await fetch(
-    `https://api.learncard.network/api/boost/send/via-signing-authority/RECIPIENT_PROFILE_ID`,
+    `https://network.learncard.com/api/boost/send/via-signing-authority/RECIPIENT_PROFILE_ID`,
     {
         method: 'POST',
         headers: {
