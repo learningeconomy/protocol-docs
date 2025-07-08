@@ -5,6 +5,7 @@
 * [What is LearnCard?](README.md)
 * [Use Cases & Possibilities](introduction/use-cases-and-possibilities.md)
 * [Ecosystem Architecture](introduction/ecosystem-architecture.md)
+* [Interoperability](introduction/interoperability.md)
 
 ## ⚡ Quick Start
 
