@@ -45,6 +45,10 @@ window.location.href = learnCardDeepLink;
 
 ### **Recipe 1b: Sending via an Interaction URL (Universal Method)**
 
+{% embed url="https://www.loom.com/share/6c4aef61e68d4f0bb3ec92d23e8fb6b1?sid=290d3fa1-cd46-4153-8e42-185cd00366e6" %}
+Video showing creating a VC-API interaction URL, and claiming it in LearnCard Native App using VC-API exchange flow.
+{% endembed %}
+
 **Goal:** You want to offer a credential via a QR code or link that _any_ standards-compliant wallet can use, providing maximum interoperability.
 
 **Method:** We will use a standard [**Interaction URL**](https://w3c-ccg.github.io/vc-api/#interaction-url-format). This is a two-step process: the wallet first identifies itself, and then you send it the credential.
@@ -108,6 +112,8 @@ app.post('/vc-api/issue-exchange/xyz', async (req, res) => {
   }
 });
 </code></pre>
+
+
 
 ## 2. Receiving a Credential FROM a LearnCard Passport
 
