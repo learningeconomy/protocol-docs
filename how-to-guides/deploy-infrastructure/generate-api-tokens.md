@@ -53,3 +53,32 @@ if (response.status === 200) {
 }
 ```
 
+### Generate API Tokens (In App)
+
+### Managing API Tokens in LearnCardApp
+
+#### Steps to Create an API Token
+
+1. **Navigate to Your Profile:**
+   * Go to **Developer Tools** > **API Tokens**.
+2. **Create an API Token:**
+   * **Click**: Create an API Token
+   * **Provide the Following Information:**
+     * **Name** (required)
+     * **Description** (optional)
+     * **Scope** (required)
+     * **Expiration** (optional)
+   * **Click**: Create
+
+#### Token Management Features
+
+* **Revoke/Delete a Token**
+* **Update an Existing Token**
+* **View Token Details**: Including status, token, creation date, expiration, and scope.
+
+{% embed url="https://www.loom.com/share/fe1901f8e3344f26b9dffdc7cd4bfff7" %}
+
+
+
+
+

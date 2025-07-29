@@ -1,5 +1,5 @@
 ---
-description: Interoperability, Open Standards, and LearnCard
+description: 'Explanation: Interoperability, Open Standards, and LearnCard'
 ---
 
 # Interoperability
@@ -41,3 +41,31 @@ Our commitment to interoperability is not theoretical; it's built into every lay
 Because we are built on these open standards, **you are never locked in.**
 
 A user can, at any time, export their credentials and identifiers from their LearnCard Passport and import them into any other standards-compliant wallet. This is the ultimate guarantee of user control and freedom. It's not our platform that gives the credentials their value; it's the standards they are built upon. Our job is simply to provide the most secure, user-friendly passport for carrying them.
+
+## The Wall of Interoperability
+
+LearnCard is a node in a growing global network. Our ability to interoperate is proven by our compatibility with other tools and platforms that also embrace open standards.
+
+**Compatible Wallets & Platforms:**
+
+* [MIT's Learner Credential Wallet](https://lcw.app/)
+* [iDatify's SmartResume](https://www.smartresume.com/)
+* [IEEE's Open Credential Publisher](https://opencredentialpublisher.org/access/login)
+* [Digital Bazaar's Veres One Wallet](https://veres.one/)
+* [Spruce's Credible Wallet](https://spruceid.com/products/credible)
+* [Acreditta](https://info.acreditta.com/)
+* [ASU's Pocket](https://pocket.asu.edu/)
+* [Danube Tech](https://danubetech.com/tech/uni-issuer-verifier)
+* [Participate](https://www.participate.com/)
+* [Gobekli](https://gobekli.io/)
+* [VC Playground](https://vcplayground.org/)
+* _And many others that implement the VC-API and OpenID4VC standards._
+
+**Supported Standards Bodies:**
+
+* [W3C Credentials Community Group](https://www.w3.org/community/credentials/)
+* [1EdTech](https://www.1edtech.org/) (formerly IMS Global)
+* [IEEE](https://www.ieee.org/)
+* [Decentralized Identity Foundation (DIF)](https://identity.foundation/)
+
+This ecosystem is a testament to the power of collaborative, open development. Our goal is to make LearnCard the easiest way to participate in it.
