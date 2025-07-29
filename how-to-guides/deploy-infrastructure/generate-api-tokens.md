@@ -67,6 +67,8 @@ if (response.status === 200) {
      * **Scope** (required)
      * **Expiration** (optional)
    * **Click**: Create
+3. Already Signed In? Deep link below 👇\
+   \- [LearnCardApp API Token Dev Tools](https://learncard.app/passport?showTokenDevTools=true)
 
 #### Token Management Features
 
