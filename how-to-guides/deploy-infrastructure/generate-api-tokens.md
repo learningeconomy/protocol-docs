@@ -53,8 +53,6 @@ if (response.status === 200) {
 }
 ```
 
-### Generate API Tokens (In App)
-
 ### Managing API Tokens in LearnCardApp
 
 #### Steps to Create an API Token
