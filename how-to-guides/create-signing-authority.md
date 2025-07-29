@@ -128,3 +128,19 @@ await learncardApiClient.post('/inbox/issue', {
 });
 
 ```
+
+## Generate a Signing Authority in LearnCardApp
+
+### Steps to Create a Signing Authority
+
+1. **Navigate to Your Profile:**
+   * Go to **Developer Tools** > **Signing Authority**.
+2. **Create:**
+   * **Click**: **Create Signing Authority**
+   * **Provide the Following Information:**
+     * **Name** (required)
+     * **Endpoint** (optional)
+     * DID (Endpoint required)
+   * **Click**: Create
+
+{% embed url="https://www.loom.com/share/080838131d82428289073699d19a2aa8" %}
