@@ -142,5 +142,8 @@ await learncardApiClient.post('/inbox/issue', {
      * **Endpoint** (optional)
      * DID (Endpoint required)
    * **Click**: Create
+3. Already Signed In? Deep link below 👇
+
+* [LearnCardApp Token DevTools](https://learncard.app/passport?showTokenDevTools=true)
 
 {% embed url="https://www.loom.com/share/080838131d82428289073699d19a2aa8" %}
