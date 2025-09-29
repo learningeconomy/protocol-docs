@@ -44,6 +44,12 @@ There are a couple of ways to get badges to your users:
   * A backend environment (e.g., Node.js with Express) to handle API calls and user data.
   * A frontend (simple HTML/JS is fine for this guide) for the user interface.
 
+{% hint style="success" %}
+You can skip **Part 1 & 2** by configuring your issuer and creating your ConsentFlow contract using the built-in UI:
+{% endhint %}
+
+{% embed url="https://www.loom.com/share/c4524abf747c4d6f8e3a67821c25050d" %}
+
 ## Part 1: Setting Up Your Platform (EduPlatform as Issuer)
 
 Your website's backend needs to act as an Issuer.
