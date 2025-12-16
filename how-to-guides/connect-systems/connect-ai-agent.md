@@ -1,6 +1,5 @@
 ---
 description: How to connect your AI client to LearnCard's MCP server
-hidden: true
 ---
 
 # Connect AI Agent
