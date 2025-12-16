@@ -2,6 +2,8 @@
 [<img width="3400" height="600" alt="repo-migrated" src="https://github.com/user-attachments/assets/53723e3c-0670-40fd-8139-18f6454ed4a8" />
 ]([url](https://github.com/learningeconomy/LearnCard))
 
+## [LearnCard Repo](https://github.com/learningeconomy/LearnCard)
+
 # What is LearnCard?
 
 [**LearnCard**](https://www.learncard.com) is a modular, open-source wallet and SDK designed to give learners and workers control over their credentials, achievements, and learning data. Built on open standards like [W3C Verifiable Credentials](core-concepts/credentials-and-data/verifiable-credentials-vcs.md) and [Decentralized Identifiers (DIDs)](core-concepts/identities-and-keys/decentralized-identifiers-dids.md), LearnCard enables privacy-respecting, consent-based data sharing across educational and employment ecosystems.
