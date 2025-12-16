@@ -2,7 +2,7 @@
 
 The IDX Plugin adds support for managing a bespoke list of Credential Records for the holder in [IDX](https://ceramic.network/)
 
-This plugin implements the [Index Plane](broken-reference).
+This plugin implements the [Index Plane](/broken/pages/plqXXrKGsTzgtcePKceH).
 
 ### Installation
 

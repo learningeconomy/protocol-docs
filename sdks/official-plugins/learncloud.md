@@ -27,4 +27,4 @@ Once you've initialized the LearnCloud Plugin, you can access the methods by cal
 await learnCard.index.LearnCloud.get();
 ```
 
-For a more detailed breakdown of how to use the [Read](broken-reference), [Store](broken-reference), and [Index](broken-reference) Planes, see their respective pages.
+For a more detailed breakdown of how to use the [Read](/broken/pages/s13FerGAbkHnrN13v85i), [Store](/broken/pages/AacoBhj2Q6kUaK1EVNnj), and [Index](/broken/pages/plqXXrKGsTzgtcePKceH) Planes, see their respective pages.

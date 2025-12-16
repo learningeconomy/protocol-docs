@@ -47,8 +47,7 @@ Version differences:
 
 {% @github-files/github-code-block url="https://github.com/learningeconomy/LearnCard/blob/942bb5f7/packages/learn-card-types/src/vc.ts#L129-L177" %}
 
-\
-
+<br>
 
 ## Verifiable Presentations (VPs) <a href="#verifiable-presentations-vps" id="verifiable-presentations-vps"></a>
 

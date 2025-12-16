@@ -151,4 +151,4 @@ Now that you understand the big ideas:
 
 * 🔗 Jump into [Your First Integration](../quick-start/your-first-integration.md)
 * 🧪 Try a live flow using the [LearnCard CLI](../sdks/learncard-cli.md)
-* 📚 Browse the [API Reference](broken-reference)
+* 📚 Browse the [API Reference](/broken/pages/2CFJ0iVopfhxEzxav7hh)

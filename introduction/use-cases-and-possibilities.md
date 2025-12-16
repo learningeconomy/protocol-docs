@@ -134,5 +134,5 @@ The LearnCard SDK and APIs are modular—combine any of the following:
 If you’re ready to see it in action:
 
 * 🔌 Go to [Your First Integration](../quick-start/your-first-integration.md)
-* 🧰 Dive into the [SDK Reference](broken-reference)
-* 🧠 Revisit[ Core Concepts](broken-reference) if you want a deeper primer
+* 🧰 Dive into the [SDK Reference](/broken/pages/2CFJ0iVopfhxEzxav7hh)
+* 🧠 Revisit[ Core Concepts](/broken/pages/Wc9n2nCjCt5tw1mOV0fz) if you want a deeper primer

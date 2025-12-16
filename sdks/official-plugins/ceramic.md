@@ -2,7 +2,7 @@
 
 The Ceramic Plugin adds support for storing and retrieving credentials on [Ceramic](https://ceramic.network/). It exposes the ability to publish and read from Ceramic, as well as providing access to a Ceramic client object with a did attached to it.
 
-This plugin implements the [Read](broken-reference) and [Store](broken-reference) Planes.
+This plugin implements the [Read](/broken/pages/s13FerGAbkHnrN13v85i) and [Store](/broken/pages/AacoBhj2Q6kUaK1EVNnj) Planes.
 
 ### Install
 
@@ -12,7 +12,7 @@ pnpm i @learncard/ceramic-plugin
 
 ### Uploading to Ceramic
 
-To upload a credential to Ceramic, you may use the [Store Plane](broken-reference):
+To upload a credential to Ceramic, you may use the [Store Plane](/broken/pages/AacoBhj2Q6kUaK1EVNnj):
 
 ```typescript
 const uri = await learnCard.store.Ceramic.upload(vc);
@@ -20,7 +20,7 @@ const uri = await learnCard.store.Ceramic.upload(vc);
 
 ### Uploading  to Ceramic with Encryption
 
-To upload a credential to Ceramic using encryption, you may use the [Store Plane](broken-reference):
+To upload a credential to Ceramic using encryption, you may use the [Store Plane](/broken/pages/AacoBhj2Q6kUaK1EVNnj):
 
 <pre class="language-typescript"><code class="lang-typescript"><strong>// Encrypted, only the controller(s) can decrypt
 </strong><strong>const uri = await learnCard.store.Ceramic.uploadEncrypted(vc);
@@ -34,7 +34,7 @@ _Note: Additional metadata is **not**, by default, encrypted._
 
 ### Reading from Ceramic
 
-To read a credential from Ceramic, you may use the [Read Plane](broken-reference):
+To read a credential from Ceramic, you may use the [Read Plane](/broken/pages/s13FerGAbkHnrN13v85i):
 
 ```typescript
 const vc = await learnCard.read.get(uri);

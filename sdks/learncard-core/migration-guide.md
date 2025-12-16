@@ -65,8 +65,8 @@ With this change, `@learncard/core` becomes version 9.0, however it also becomes
 
 #### Breaking Changes
 
-* Universal Wallets are now returned directly by [`initLearnCard`](broken-reference), rather than a wrapped object.
-  * This means you can now call [`addPlugin`](broken-reference) directly on the return value of `initLearnCard`:
+* Universal Wallets are now returned directly by [`initLearnCard`](/broken/pages/br6yNgOwLe1zZAxr9kpC), rather than a wrapped object.
+  * This means you can now call [`addPlugin`](/broken/pages/8H0hMQTbMTdDcpSZnw1v) directly on the return value of `initLearnCard`:
 
 ```typescript
 const learnCard = await initLearnCard();
@@ -74,25 +74,25 @@ const bespokeLearnCard = await learnCard.addPlugin(plugin);
 ```
 
 * Universal Wallets now implement[ _Control Planes_](../../core-concepts/architecture-and-principles/control-planes.md) as well as just methods - These are top-level objects with standardized functions that allow plugins/consumers access to a unified interface for common operations. When it makes sense, a specific plugin implementing a plane can also be chosen, such as choosing where to store a credential when uploading. - There are currently five planes, with more planned for the future:&#x20;
-  * [**Read**](broken-reference), which implements `get`&#x20;
+  * [**Read**](/broken/pages/s13FerGAbkHnrN13v85i), which implements `get`&#x20;
     * `get` simply resolves a URI to a VC
-  * &#x20;[**Store**](broken-reference), which implements `upload` and (optionally) `uploadMany`&#x20;
+  * &#x20;[**Store**](/broken/pages/AacoBhj2Q6kUaK1EVNnj), which implements `upload` and (optionally) `uploadMany`&#x20;
     * `upload` stores a VC and returns a URI that can be resolved&#x20;
     * `uploadMany` stores an array of VCs, returning an array of URIs that can be resolved&#x20;
-  * [**Index**](broken-reference), which implements `get`, `add`, `update`, and `remove`&#x20;
+  * [**Index**](/broken/pages/plqXXrKGsTzgtcePKceH), which implements `get`, `add`, `update`, and `remove`&#x20;
     * `get` returns a list of the holder's credential objects (currently named `IDXCredential`s)&#x20;
       * These objects contain (at a minimum) an `id` and a `uri` that can be resolved to a VC&#x20;
     * `add` adds a credential to the holder's list&#x20;
     * `update` updates an object in the holder's list&#x20;
     * `remove` removes an object from the holder's list&#x20;
-  * [**Cache**](broken-reference), which implements `getIndex`, `setIndex`, `flushIndex`, `getVc`, `setVc`, and `flushVc`&#x20;
+  * [**Cache**](/broken/pages/gwMHPTurOKzUunsu7wxm), which implements `getIndex`, `setIndex`, `flushIndex`, `getVc`, `setVc`, and `flushVc`&#x20;
     * `getIndex` returns the hodler's credential list as it exists in the cache&#x20;
     * `setIndex` sets the holder's credential list in the cache&#x20;
     * `flushIndex` emptys the holder's credential list cache&#x20;
     * `getVc` returns a VC for a URI if it exists in the cache&#x20;
     * `setVc` sets a VC for a URI in the cache&#x20;
     * `flushVc` emptys all VCs from the cache&#x20;
-  * [**ID**](broken-reference)**,** which implements `did` and `keypair`&#x20;
+  * [**ID**](/broken/pages/IxLd9QFu08nEXrI65rwA)**,** which implements `did` and `keypair`&#x20;
     * `did` is identical to the previous `wallet.did` method, returning a did for a given method&#x20;
     * `keypair` is identical to the previous `wallet.keypair` method, returning a JWK for a given cryptographic algorithm&#x20;
 * Plugins implement planes via the second generic parameter to the `Plugin` type&#x20;

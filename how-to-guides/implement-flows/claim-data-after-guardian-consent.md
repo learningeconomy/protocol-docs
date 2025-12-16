@@ -147,8 +147,7 @@ const metadata = {
 After creating the boost, set up a ConsentFlow that requires guardian consent:
 
 {% hint style="warning" %}
-To attach autoboosts to your ConsentFlow, you need to setup a "Signing Authority". You can do this once for your LearnCard service profile like so:\
-
+To attach autoboosts to your ConsentFlow, you need to setup a "Signing Authority". You can do this once for your LearnCard service profile like so:<br>
 
 ```javascript
 // Make sure to pnpm install @learncard/simple-signing-plugin

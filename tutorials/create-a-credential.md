@@ -1,16 +1,5 @@
 ---
 description: 'Tutorial: Create and Send Your First Digital Credential'
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Create a Credential

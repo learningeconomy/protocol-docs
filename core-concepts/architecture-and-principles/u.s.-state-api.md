@@ -29,7 +29,7 @@ Here is a breakdown of the key services and their functions:
 * [**Identity API**](../identities-and-keys/)**:** The foundation of the stack. It manages the creation and resolution of Decentralized Identifiers (DIDs) for individuals and organizations, ensuring everyone has a secure, self-sovereign digital identity.
 * [**Storage API**](../../sdks/learncloud-storage-api/)**:** Provides the secure, private data stores for each user—their **LearnCard Passport** (for user-managed data) and their **Learning and Employment Record (LER)** (for institutional data).
 * [**Data API**](https://campusapi.org/)**:** A powerful service for ingesting, transforming, and harmonizing data from disparate sources (like a Student Information System) into a standardized format.
-* [**Media API:**](broken-reference) Manages the storage and delivery of rich media files (images, videos, documents) that can be associated with credentials as evidence.
+* [**Media API:**](/broken/pages/017412f24eb0f2a9c95a7379c4a9c23f78713ce3) Manages the storage and delivery of rich media files (images, videos, documents) that can be associated with credentials as evidence.
 
 ### **Credential Lifecycle Services**
 

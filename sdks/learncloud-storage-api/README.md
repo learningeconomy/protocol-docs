@@ -13,4 +13,4 @@
 * **DID Web Resolution**: Resolve DIDs for identity management
 * **End-to-End Encryption:** Data is encrypted client-side.&#x20;
 
-\
+<br>

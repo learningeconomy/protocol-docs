@@ -157,7 +157,7 @@ Then, open up a browser and go to `https://localhost:3000` (take great care to m
 **Hint:** If you get a warning about the site being insecure, that is okay! You may just click "proceed anyway" and continue your local development.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 Let's remove all this default content and get a basic skeleton app for a simple wallet.&#x20;
 

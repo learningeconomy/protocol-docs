@@ -33,13 +33,13 @@ LearnCard is already used to:
 
 This documentation is your guide to building with LearnCard. Here’s how to navigate it:
 
-* [**Core Concepts**](broken-reference): Understand the philosophy and structure of the ecosystem.
+* [**Core Concepts**](/broken/pages/Wc9n2nCjCt5tw1mOV0fz): Understand the philosophy and structure of the ecosystem.
 * [**Use Cases & Possibilities**](introduction/use-cases-and-possibilities.md): Explore real-world implementations.
-* [**Quick Start**](broken-reference): Go from zero to integrated in minutes.
-* [**Tutorials**](broken-reference): Learn by building key example projects with LearnCard SDK and APIs.&#x20;
-* [**How-To Guides**](broken-reference)**:** Step-by-step recipes for with key workflows and integrations.
-* [**SDK & API Reference**](broken-reference): Deep dive into our SDKs and REST APIs.
-* [**Development**](broken-reference): Links to contributing, roadmap, etc.
+* [**Quick Start**](/broken/pages/d2FIDNQNWgVkGckv2wh2): Go from zero to integrated in minutes.
+* [**Tutorials**](/broken/pages/Y9wXsPvJ08m2dhSpoAPZ): Learn by building key example projects with LearnCard SDK and APIs.&#x20;
+* [**How-To Guides**](/broken/pages/Y9wXsPvJ08m2dhSpoAPZ)**:** Step-by-step recipes for with key workflows and integrations.
+* [**SDK & API Reference**](/broken/pages/2CFJ0iVopfhxEzxav7hh): Deep dive into our SDKs and REST APIs.
+* [**Development**](/broken/pages/tg4rp5RrLHvu021foafS): Links to contributing, roadmap, etc.
 
 If you're new, start with [**Your First Integration**](quick-start/your-first-integration.md) under the Quick Start section.
 
